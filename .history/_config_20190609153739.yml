@@ -1,0 +1,30 @@
+# Site settings
+title: Aditya
+subtitle: Raman
+email: adityaraman96@gmail.com
+altemail: adityaraman_cs004@smvit.edu
+description: Data Science Enthusiast, Former Full Stack Developer Intern
+baseurl:  # the subpath of your site, e.g. /blog
+url:  # the base hostname & protocol for your site
+author: Aditya
+street_address: Hunasamaranahalli
+city: Bengaluru
+state: Karnataka
+zip_code: 562157
+country: India
+phone: (+91) 99015-61092
+
+# Social settings
+500px_url:
+facebook_url:
+github_url:
+gitlab_url: https://gitlab.com/u/andrewbanchich
+googleplus_url: https://plus.google.com/u/0/+AndrewBanchich
+instagram_url: https://instagram.com/_adityaraman
+linkedin_url: https://www.linkedin.com/in/ramanaditya
+pinterest_url:
+slack_url:
+twitter_url: https://twitter.com/ramanaditya
+
+# Build settings
+markdown: kramdown
