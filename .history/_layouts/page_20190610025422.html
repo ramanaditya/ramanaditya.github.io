@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+{% include head.html %}
+
+<body>
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Main -->
+        <div id="main">
+        <div class="inner">
+
+                {% include header.html %}
+        </div>
+          <div class="row">
+            <div class="1u 12u$(small)">
+            <p></p>
+            </div>
+            <div class="7u 12u$(small)">
+            <div class="inner">
+                <!-- Content -->
+                
+                	<header class="main">
+                		<h1>{{ page.title | upcase }}</h1>
+                    <p>{{ page.categories[1] | upcase }} - {{ page.date | date: "%b %-d %Y" }} </p>
+                	</header>
+
+                  {% if page.image %}
+                	<span class="image main"><img src="{{ page.image | absolute_url }}" alt="" /></span>
+                  {% endif %}
+
+                {{ content }}
+                {% include author.html %}
+                {% include disqus.html %}
+
+              </div>
+            </div>
+            <div class="3u 12u$(small)">
+            <div class="inner box" style="border:0;">
+            <br>
+            <header class="major">
+              <h3>Similar Categories</h3>
+            </header>
+            
+            {% for category in site.categories %}
+            {% if category[0] == page.categories[1] %}
+            {% for post in category[1] %}
+            {% if post.title != page.title %}
+              <article>
+                <a href="{{ post.url | relative_url }}" class="image main"><img src="{{ post.image | absolute_url }}" alt="" /></a>
+                <a href="{{ post.url | relative_url }}"><div><strong>{{ post.title }}</strong></div></a>
+                <p>{{ post.description }}</p>
+                
+              </article>
+              
+            {% endif %}
+            {% endfor %}
+            {% endif %}
+            {% endfor %}
+            <hr>
+
+            </div>
+            </div>
+            <div class="1u 12u$(small)">
+            <p></p>
+            </div>
+            
+          </div>
+          <div class="inner">
+
+                {% include footer.html %}
+        </div>
+        </div>
+          {% include sidebar.html %}
+
+      </div>
+
+      {% include javascript.html %}
+
+</body>
+
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+{% include head.html %}
+
+<body>
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Main -->
+        <div id="main">
+        <div class="inner">
+
+                {% include header.html %}
+        </div>
+          <div class="row">
+            <div class="1u 12u$(small)">
+            <p></p>
+            </div>
+            <div class="7u 12u$(small)">
+            <div class="inner">
+                <!-- Content -->
+                <br>
+                	<header class="main">
+                		<h1>{{ page.title | upcase }}</h1>
+                    <p>{{ page.categories[1] | upcase }} - {{ page.date | date: "%b %-d %Y" }} <a class="a2a_dd" href="https://www.addtoany.com/share" style="float:right;"><i class="icon fa-share-alt fa-2x"></i></a></p>
+                    <!-- AddToAny BEGIN -->
+
+                    <script>
+                      var a2a_config = a2a_config || {};
+                      a2a_config.onclick = 1;
+                      </script>
+                      <script async src="https://static.addtoany.com/menu/page.js"></script>
+                      <!-- AddToAny END -->
+                      
+                	  </header>
+
+                  {% if page.image %}
+                	<span class="image main"><img src="{{ page.image | absolute_url }}" alt="" /></span>
+                  {% endif %}
+
+                {{ content }}
+                <hr>
+                <span class="icon fa-tags">&nbsp;
+                {% for tag in page.tags %}
+                <small><span class="icon fa-hashtag">{{ tag | upcase }} &nbsp;</span></small>
+                {% endfor %}
+                </span>
+                <small style="float:right;">{{ page.content | number_of_words }} &nbsp; Words</small>
+                <hr>
+                
+                {% include author.html %}
+                {% include disqus.html %}
+                <hr>
+                  {% if page.previous.url or page.next.url %}
+                    <header class="major">
+                        <h3>Also Read : </h3>
+                      </header>
+                    {% endif %}
+                <div class="row main">
+
+              {% if page.previous.url %}
+                <div class="6u 12u$(medium)" style="float:left;">
+					
+                    <h3><a class="thepostlink" href="{{page.previous.url | absolute_url}}">{{page.previous.title | upcase }}</a></h3>
+					
+					<p style="text-align: justify; text-justify: inter-word;"><span class="image left"><img src="{{ page.previous.image | absolute_url }}" alt="" /></span>{{ page.previous.excerpt | truncate: 200 }}</p>
+					<a href="{{page.previous.url | absolute_url}}" class="button fit medium" style="float:right;">&laquo; Prev</a>
+                </div>
+              {% endif %}
+			  
+              {% if page.next.url %}
+                <div class="6u 12u$(medium)" style="float:right;">
+                    <h3><a class="thepostlink" href="{{page.next.url | absolute_url}}">{{page.next.title | upcase }}</a></h3>
+					
+					<p style="text-align: justify;text-justify: inter-word;"><span class="image right"><img src="{{ page.next.image | absolute_url }}" alt="" /></span>{{ page.next.excerpt | truncate: 200 }}</p>
+					<a href="{{page.next.url | absolute_url}}" class="button fit medium" style="float:left;">Next &raquo; </a>
+                </div>
+              {% endif %}
+            </div>
+
+              </div>
+            </div>
+            <div class="3u 12u$(small)">
+            <div class="inner box" style="border:0;">
+            <br>
+            <header class="major">
+              <h3>Similar Categories</h3>
+            </header>
+            
+            {% for category in site.categories %}
+            {% if category[0] == page.categories[1] %}
+            {% for post in category[1] %}
+            {% if post.title != page.title %}
+              <article>
+                <a href="{{ post.url | relative_url }}" class="image main"><img src="{{ post.image | absolute_url }}" alt="" /></a>
+                <a href="{{ post.url | relative_url }}"><div><strong>{{ post.title }}</strong></div></a>
+                <p>{{ post.description }}</p>
+                
+              </article>
+              
+            {% endif %}
+            {% endfor %}
+            {% endif %}
+            {% endfor %}
+            <hr>
+
+            </div>
+            </div>
+            <div class="1u 12u$(small)">
+            <p></p>
+            </div>
+            
+          </div>
+          <div class="inner">
+
+                {% include footer.html %}
+        </div>
+        </div>
+          {% include sidebar.html %}
+
+      </div>
+
+      {% include javascript.html %}
+
+</body>
+
+</html>
