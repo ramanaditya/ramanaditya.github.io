@@ -25,7 +25,7 @@
 
         <!-- Main -->
         <div id="main">
-            <div class="inner">
+        <div class="inner">
 
                 <!-- Header -->
   <header id="header">
@@ -54,7 +54,13 @@
     </ul>
   </header>
 
-
+        </div>
+          <div class="row">
+            <div class="1u 12u$(small)">
+            <p></p>
+            </div>
+            <div class="8u 12u$(small)">
+            <div class="inner">
                 <!-- Content -->
                 
                 	<header class="main">
@@ -67,17 +73,37 @@
 
 
               </div>
+            </div>
+            <div class="3u 12u$(small)">
+            <div class="inner">
+            <p>Hello World</p>
+            </div>
+            </div>
           </div>
-
+        </div>
           <!-- Sidebar -->
   <div id="sidebar">
     <div class="inner">
 
       <!-- Search -->
         <section id="search" class="alt">
-          <form method="get" action="#">
-            <input type="text" name="query" id="query" placeholder="Search" />
-          </form>
+          <div id="search-container">
+            <form method="post" action="#">
+              <input type="text" name="query" id="search-input" placeholder="Search" />
+            </form>
+            <ol id="results-container"></ol>
+          </div>
+          <!-- Script pointing to search-script.js -->
+          <script src="/assets/js/search-script.js" type="text/javascript"></script>
+
+          <!-- Configuration -->
+          <script>
+          SimpleJekyllSearch({
+            searchInput: document.getElementById('search-input'),
+            resultsContainer: document.getElementById('results-container'),
+            json: '/assets/search.json'
+          })
+          </script>
         </section>
         
       <!-- Menu -->
@@ -128,7 +154,7 @@
           
             <article>
               <a href="/self/project/2019/05/24/Glug-Mvit.html" class="image"><img src="http://localhost:4000/assets/images/pic02.jpg" alt="" /></a>
-              <div><strong>Glug MVIT</strong></div>
+              <a href="/self/project/2019/05/24/Glug-Mvit.html"><div><strong>Glug MVIT</strong></div></a>
               <p>GNU Linux Users Group at Sir M. Visvesvaraya Institute of Technology</p>
             </article>
             
@@ -138,7 +164,7 @@
           
             <article>
               <a href="/blog/technical/2016/08/24/tempus.html" class="image"><img src="http://localhost:4000/assets/images/pic02.jpg" alt="" /></a>
-              <div><strong>Tempus</strong></div>
+              <a href="/blog/technical/2016/08/24/tempus.html"><div><strong>Tempus</strong></div></a>
               <p>Feugiat amet tempus</p>
             </article>
             
@@ -150,7 +176,7 @@
           
             <article>
               <a href="/blog/technical/2016/08/20/etiam.html" class="image"><img src="http://localhost:4000/assets/images/pic06.jpg" alt="" /></a>
-              <div><strong>Etiam</strong></div>
+              <a href="/blog/technical/2016/08/20/etiam.html"><div><strong>Etiam</strong></div></a>
               <p>Feugiat amet tempus</p>
             </article>
             

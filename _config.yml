@@ -35,5 +35,9 @@ sass:
 highlighter: rouge
 plugins:
   - jekyll-gist
+  - jekyll-paginate
 gist:
   noscript: false
+
+paginate: 6
+paginate_path: /page:num/
