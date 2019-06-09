@@ -4,7 +4,7 @@
 
       <!-- Search -->
         <section id="search" class="alt">
-          <form method="post" action="#">
+          <form method="get" action="#">
             <input type="text" name="query" id="query" placeholder="Search" />
           </form>
         </section>
@@ -16,6 +16,7 @@
           </header>
           <ul>
             <li><a href="{{ '' | absolute_url }}">Homepage</a></li>
+            <li><a href="{{ 'generic.html' | absolute_url }}">Portfolio</a></li>
             <li><a href="{{ 'generic.html' | absolute_url }}">Generic</a></li>
             <li><a href="{{ 'elements.html' | absolute_url }}">Elements</a></li>
             <li>

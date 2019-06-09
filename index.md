@@ -5,37 +5,37 @@ layout: default
 <!-- Section -->
 <section>
 	<header class="major">
-		<h2>Erat lacinia</h2>
+		<h2>About Me</h2>
 	</header>
 	<div class="features">
 		<article>
-			<span class="icon fa-user"></span>
+			<span class="icon" ><strong><i class="fas fa-user-tie" style="font-size:2.6em; color: rgb(255,92,95);margin-top:1.5em;"></i></strong></span>
 			<div class="content">
 				<h3>Portfolio</h3>
 				<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
 			</div>
 		</article>
 		<article>
-			<span class="icon fa-paper-plane"></span>
+			<span class="icon" ><strong><i class="fas fa-pencil-alt" style="font-size:2.6em; color: rgb(255,92,95);margin-top:1.5em;"></i></strong></span>
 			<div class="content">
-				<h3>Sapien veroeros</h3>
+				<h3>Blogs</h3>
 				<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
 			</div>
 		</article>
 		<article>
 			<span class="icon fa-rocket"></span>
 			<div class="content">
-				<h3>Quam lorem ipsum</h3>
+				<h3>Projects</h3>
 				<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
 			</div>
 		</article>
-		<article>
-			<span class="icon fa-signal"></span>
+		<!--<article>
+			<span class="icon fa-folder-open-o"></span>
 			<div class="content">
 				<h3>Sed magna finibus</h3>
 				<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
 			</div>
-		</article>
+		</article>-->
 	</div>
 </section>
 
