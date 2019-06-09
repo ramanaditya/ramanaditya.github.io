@@ -28,3 +28,12 @@ twitter_url: https://twitter.com/ramanaditya
 
 # Build settings
 markdown: kramdown
+lazyimages: "enab"
+sass:
+  style: compressed
+
+highlighter: rouge
+plugins:
+  - jekyll-gist
+gist:
+  noscript: false
