@@ -23,12 +23,12 @@
             <div class="1u 12u$(small)">
             <p></p>
             </div>
-            <div class="8u 12u$(small)">
+            <div class="7u 12u$(small)">
             <div class="inner">
                 <!-- Content -->
                 
                 	<header class="main">
-                		<h1>{{ page.title }}</h1>
+                		<h1>{{ page.title | upcase }}</h1>
                 	</header>
 
                   {% if page.image %}
@@ -36,15 +36,46 @@
                   {% endif %}
 
                 {{ content }}
+                {% include author.html %}
+                {% include disqus.html %}
 
               </div>
             </div>
             <div class="3u 12u$(small)">
-            <div class="inner">
-            <p>Hello World</p>
+            <div class="inner box" style="border:0;">
+            <br>
+            <header class="major">
+              <h3>Similar Categories</h3>
+            </header>
+            
+            {% for category in site.categories %}
+            {% if category[0] == page.categories[1] %}
+            {% for post in category[1] %}
+            {% if post.title != page.title %}
+              <article>
+                <a href="{{ post.url | relative_url }}" class="image main"><img src="{{ post.image | absolute_url }}" alt="" /></a>
+                <a href="{{ post.url | relative_url }}"><div><strong>{{ post.title }}</strong></div></a>
+                <p>{{ post.description }}</p>
+                
+              </article>
+              
+            {% endif %}
+            {% endfor %}
+            {% endif %}
+            {% endfor %}
+            <hr>
+
             </div>
             </div>
+            <div class="1u 12u$(small)">
+            <p></p>
+            </div>
+            
           </div>
+          <div class="inner">
+
+                {% include footer.html %}
+        </div>
         </div>
           {% include sidebar.html %}
 

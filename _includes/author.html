@@ -1,0 +1,42 @@
+<!-- Look the author details up from the site config. -->
+{% assign author = site.data.authors[page.author] %}
+<header class="major">
+    <h3>Author : </h3>
+</header>
+
+<!-- Author Box -->
+{% if author %}
+<div class="row post-top-meta">
+    <div class="">
+        <span class="image left"><img src="{{ author.gravatar }}" alt="{{ author.display_name }}" style="border-radius: 50%;width:5em;"></span>
+    
+        <a target="_blank" class="link-dark" href="{{ author.web }}">{{ author.display_name }}</a>&nbsp;&nbsp;&nbsp;
+        <a target="_blank" href="{{ author.linkedin_url }}" class="button small">Follow</a>
+        <p class="author-description">{{ author.description }}</p>
+    
+			<ul class="icons" style="text-align:center;">
+				{% if author.twitter_url %}
+				<li><a href="{{ author.twitter_url }}" class="icon alt fa-twitter" target="_blank"><span class="label">Twitter</span></a></li>
+				{% endif %}
+				
+				{% if author.facebook_url %}
+				<li><a href="{{ author.facebook_url }}" class="icon alt fa-facebook" target="_blank"><span class="label">Facebook</span></a></li>
+				{% endif %}
+				{% if author.instagram_url %}
+				<li><a href="{{ author.instagram_url }}" class="icon alt fa-instagram" target="_blank"><span class="label">Instagram</span></a></li>
+				{% endif %}
+				
+				{% if author.github_url %}
+				<li><a href="{{ author.github_url }}" class="icon alt fa-github" target="_blank"><span class="label">GitHub</span></a></li>
+				{% endif %}
+				{% if author.slack_url %}
+				<li><a href="{{ author.slack_url }}" class="icon alt fa-slack" target="_blank"><span class="label">Slack</span></a></li>
+				{% endif %}
+				{% if author.linkedin_url %}
+				<li><a href="{{ author.linkedin_url }}" class="icon alt fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
+				{% endif %}
+			</ul>
+		
+    </div>
+</div>
+{% endif %}

@@ -25,6 +25,7 @@ linkedin_url: https://www.linkedin.com/in/ramanaditya
 pinterest_url:
 slack_url:
 twitter_url: https://twitter.com/ramanaditya
+disqus: ramanaditya
 
 # Build settings
 markdown: kramdown

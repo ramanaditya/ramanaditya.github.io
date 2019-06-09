@@ -53,6 +53,13 @@
 				<p></p>
 			</div>
 		</article>
+        <article>
+			<span class="icon fa-code"></span>
+			<div class="content">
+				<h3>Coding</h3>
+				<p></p>
+			</div>
+		</article>
 		<!--<article>
 			<span class="icon fa-folder-open-o"></span>
 			<div class="content">
@@ -72,7 +79,8 @@
 		{% for post in paginator.posts %}
 		<article>
 			<a href="{{ post.url | relative_url }}" class="image"><img src="{{ post.image | absolute_url }}" alt="" /></a>
-			<h3>{{ post.title }}</h3>
+			<h3>{{ post.title | upcase }}</h3>
+            <p>{{ post.categories[1] | upcase }} - {{ post.date | date: "%b %-d %Y" }} </p>
 			<p>{{ post.excerpt }}</p>
 			<ul class="actions">
 				<li><a href="{{ post.url | relative_url }}" class="button">Read More</a></li>
