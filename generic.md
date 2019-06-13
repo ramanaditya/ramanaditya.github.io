@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: 
 title: Generic
 image: assets/images/pic11.jpg
 ---
