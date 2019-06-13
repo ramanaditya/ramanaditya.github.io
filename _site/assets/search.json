@@ -1,18 +1,6 @@
 [
   
     {
-    "title": "Comment",
-    "url": "/self/project/2019/06/02/comment.html",
-    "category": "self, project",
-    "tags": "web, project",
-    "date": "2019-06-02 00:00:00 +0530",
-    "content":"Technical Club of Sir MVIT. A community of open source enthusiasts and developers.",
-    "discription": "GNU Linux Users Group at Sir M. Visvesvaraya Institute of Technology",
-    "content": "GNU Linux Users Group : a community of open source enthusiasts and developers.Open to any free software enthusiasts. This community has been always described as place for learning and sharing, a place to evolve and grow together.The website has been build on the folloowing technologies.  Django : A python Web Framework  Firebase : For Storing DataThe website is hosted on https://www.glugmvit.com.This website has been build by a team of clear sense of purpose,measurable objectives.  Aditya Raman  Arsh Deep  Abhijeet Singh"
-  } ,
-  
-  
-    {
     "title": "Glug mvit",
     "url": "/self/project/2019/05/24/Glug-Mvit.html",
     "category": "self, project",
@@ -21,66 +9,6 @@
     "content":"Technical Club of Sir MVIT. A community of open source enthusiasts and developers.",
     "discription": "GNU Linux Users Group at Sir M. Visvesvaraya Institute of Technology",
     "content": "GNU Linux Users Group : a community of open source enthusiasts and developers.Open to any free software enthusiasts. This community has been always described as place for learning and sharing, a place to evolve and grow together.The website has been build on the folloowing technologies.  Django : A python Web Framework  Firebase : For Storing DataThe website is hosted on https://www.glugmvit.com.This website has been build by a team of clear sense of purpose,measurable objectives.  Aditya Raman  Arsh Deep  Abhijeet Singh"
-  } ,
-  
-  
-    {
-    "title": "Aliquam",
-    "url": "/blog/meltdown/2016/08/25/aliquam.html",
-    "category": "blog, meltdown",
-    "tags": "android, ml",
-    "date": "2016-08-25 00:00:00 +0530",
-    "content":"Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. ",
-    "discription": "Ipsum dolor sit amet",
-    "content": "Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus, vel sed vehicula.Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fersapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique lorem ipsum dolor."
-  } ,
-  
-  
-    {
-    "title": "Tempus",
-    "url": "/blog/technical/2016/08/24/tempus.html",
-    "category": "blog, technical",
-    "tags": "web",
-    "date": "2016-08-24 00:00:00 +0530",
-    "content":"Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. ",
-    "discription": "Feugiat amet tempus",
-    "content": "Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus, vel sed vehicula.Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fersapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique lorem ipsum dolor."
-  } ,
-  
-  
-    {
-    "title": "Ipsum",
-    "url": "/blog/technical/2016/08/22/ipsum.html",
-    "category": "blog, technical",
-    "tags": "android, ml",
-    "date": "2016-08-22 00:00:00 +0530",
-    "content":"Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. ",
-    "discription": "Nisl sed aliquam",
-    "content": "Post IpsumYes this is the updated"
-  } ,
-  
-  
-    {
-    "title": "Consequat",
-    "url": "/blog/meltdown/2016/08/21/consequat.html",
-    "category": "blog, meltdown",
-    "tags": "fictional, story",
-    "date": "2016-08-21 00:00:00 +0530",
-    "content":"Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. ",
-    "discription": "Ipsum dolor sit amet",
-    "content": "Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus, vel sed vehicula.Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fersapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique lorem ipsum dolor."
-  } ,
-  
-  
-    {
-    "title": "Etiam",
-    "url": "/blog/technical/2016/08/20/etiam.html",
-    "category": "blog, technical",
-    "tags": "web, ml",
-    "date": "2016-08-20 00:00:00 +0530",
-    "content":"Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. ",
-    "discription": "Feugiat amet tempus",
-    "content": "Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus, vel sed vehicula.Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fersapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique lorem ipsum dolor.def arr:    # This is a comment    for i in range(1,100):        print(i)        if i != 20:            print(&quot;less&quot;)                "
   } 
   
 ]

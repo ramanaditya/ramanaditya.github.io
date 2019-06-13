@@ -29,14 +29,14 @@
             <h2>Menu</h2>
           </header>
           <ul>
-            <li><a href="{{ '' | absolute_url }}"><span class="icon fa-home">&nbsp;Homepage</span></a></li>
-            <li><a href="{{ 'generic.html' | absolute_url }}"><span class="icon fa-user">&nbsp;Portfolio</span></a></li>
-            <li><a href="{{ 'generic.html' | absolute_url }}"><span class="icon fa-download">&nbsp;Resume</span></a></li>
+            <li><a href="{{ '' | absolute_url }}">Homepage</a></li>
+            <li><a href="{{ 'generic.html' | absolute_url }}">Portfolio</a></li>
             <li>
               <span class="opener">Category</span>
               <ul>
-                <li><a href="#">Blogs</a></li>
-                <li><a href="#">Project</a></li>
+                {% for category in site.categories %}
+                <li><a href="#">{{ category }}</a></li>
+                {% endfor %}
               </ul>
             </li>
             <!--<li><a href="#">Etiam Dolore</a></li>
@@ -44,10 +44,16 @@
             <li>
               <span class="opener">Tags</span>
               <ul>
-                <li><a href="#">Web</a></li>
-                <li><a href="#">Project</a></li>
+                {% for tag in site.tags %}
+                {% for i in tag %}
+                <li><a href="#">{{ i }}</a></li>
+                {% endfor %}
               </ul>
             </li>
+            <!--
+            <li><a href="#">Maximus Erat</a></li>
+            <li><a href="#">Sapien Mauris</a></li>
+            <li><a href="#">Amet Lacinia</a></li>-->
           </ul>
         </nav>
 
