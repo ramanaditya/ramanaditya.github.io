@@ -107,7 +107,9 @@
 			<span style="float:right;">
 				
 				{% assign words = content | number_of_words %}
-				{% if words < 360 %}
+				{% if words < 180 %}
+					Less than 1 min Read
+				{% else if words < 360 %}
 					1 min Read
 				{% else %}
 					{{ words | divided_by:180 }} mins Read
@@ -125,9 +127,13 @@
                       
                 	  </header></p>
 			<p>{{ post.excerpt }}</p>
-			<ul class="actions">
-				<li><a href="{{ post.url | relative_url }}" class="button">Read More</a></li>
-			</ul>
+			<div>
+			<a href="{{ post.url | relative_url }}" class="button">Read More</a>
+			<span style="float:right">
+			{% for tag in site.tags %}
+			&nbsp;<span class="icon fa-tag">{{ tag[0] }}</span>
+			{% endfor %}
+			</div>
 		</article>
 		{% endfor %}
     </div><br><br>

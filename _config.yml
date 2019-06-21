@@ -40,5 +40,6 @@ plugins:
 gist:
   noscript: false
 
+permalink: /:categories/:title
 paginate: 6
 paginate_path: /page:num/

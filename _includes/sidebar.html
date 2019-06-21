@@ -31,24 +31,26 @@
             <h2>Menu</h2>
           </header>
           <ul>
-            <li><a href="{{ '' | absolute_url }}"><span class="icon fa-home">&nbsp;Homepage</span></a></li>
+            <li><a href="{{ '' | absolute_url }}"><span class="icon fa-home">&nbsp;Home page</span></a></li>
             <!--<li><a href="https://www.adityaraman.ml/personalwebsite/about.html"><span class="icon fa-user">&nbsp;Portfolio</span></a></li>-->
             <li><a href="{{ 'portfolio' | absolute_url }}"><span class="icon fa-user">&nbsp;Portfolio</span></a></li>
             <li><a href="{{ '/assets/download/aditya_resume.pdf' | absolute_url }}"><span class="icon fa-download">&nbsp;Resume</span></a></li>
             <li>
-              <span class="opener">Category</span>
+              <span class="opener"><span class="icon fa-list-alt">&nbsp;Category</span></span>
               <ul>
-                <li><a href="#">Blogs</a></li>
-                <li><a href="#">Project</a></li>
+                {% for category in site.categories %}
+                <li><a href="#">{{ category[0] }}</a></li>
+                {% endfor %}
               </ul>
             </li>
             <!--<li><a href="#">Etiam Dolore</a></li>
             <li><a href="#">Adipiscing</a></li>-->
             <li>
-              <span class="opener">Tags</span>
+              <span class="opener"><span class="icon fa-tags">&nbsp;Tags</span></span>
               <ul>
-                <li><a href="#">Web</a></li>
-                <li><a href="#">Project</a></li>
+                {% for tag in site.tags %}
+                <li><a href="#">{{ tag[0] }}</a></li>
+                {% endfor %}
               </ul>
             </li>
           </ul>

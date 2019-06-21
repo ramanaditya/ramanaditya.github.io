@@ -31,14 +31,19 @@
                 <br>
                 	<header class="main">
                 		<h1>{{ page.title | upcase }}</h1>
-                    <p>{{ page.categories[1] | upcase }} - {{ page.date | date: "%b %-d %Y" }} <a class="a2a_dd" href="https://www.addtoany.com/share" style="float:right;"><i class="icon fa-share-alt fa-lg"></i></a></p>
+                    <p>{{ page.categories[1] | upcase }} - {{ page.date | date: "%b %-d %Y" }} 
+                    <!--
+                    <a class="a2a_dd" href="https://www.addtoany.com/share" style="float:right;"><i class="icon fa-share-alt fa-lg"></i></a></p>
+                    -->
                     <!-- AddToAny BEGIN -->
+                    <!--
                     <script>
                       var a2a_config = a2a_config || {};
                       a2a_config.onclick = 1;
                       </script>
                       <script async src="https://static.addtoany.com/menu/page.js">
                     </script>
+                    -->
                       <!-- AddToAny END -->
                       
                 	  </header>
@@ -49,9 +54,8 @@
 
                 {{ content }}
                 <hr>
-                <span class="icon fa-tags">&nbsp;
                 {% for tag in page.tags %}
-                <small><span class="icon fa-hashtag">{{ tag | upcase }} &nbsp;</span></small>
+                <small><span class="icon fa-tag">&nbsp;{{ tag | upcase }} &nbsp;</span></small>
                 {% endfor %}
                 </span>
                 <small style="float:right;">{{ page.content | number_of_words }} &nbsp; Words</small>
