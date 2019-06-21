@@ -31,7 +31,7 @@
                 <br>
                 	<header class="main">
                 		<h1>{{ page.title | upcase }}</h1>
-                    <p>{{ page.categories[1] | upcase }} - {{ page.date | date: "%b %-d %Y" }} 
+                    <p><a href="{{ site.baseurl }}/blogs#{{ page.categories[1] }}" style="color:#7f888f;">{{ page.categories[1] | upcase }} </a>- {{ page.date | date: "%b %-d %Y" }} 
                     <!--
                     <a class="a2a_dd" href="https://www.addtoany.com/share" style="float:right;"><i class="icon fa-share-alt fa-lg"></i></a></p>
                     -->
@@ -51,11 +51,12 @@
                   {% if page.image %}
                 	<span class="image main"><img src="{{ page.image | absolute_url }}" alt="" /></span>
                   {% endif %}
-
+                <div style="color:black;">
                 {{ content }}
+                </div>
                 <hr>
                 {% for tag in page.tags %}
-                <small><span class="icon fa-tag">&nbsp;{{ tag | upcase }} &nbsp;</span></small>
+                <small><a href="{{ site.baseurl }}/tags#{{ tag }}" style="text-decoration:none !important;color:#7f888f;"><span class="icon fa-tag">&nbsp;{{ tag | upcase }} &nbsp;</span></a></small>
                 {% endfor %}
                 </span>
                 <small style="float:right;">{{ page.content | number_of_words }} &nbsp; Words</small>

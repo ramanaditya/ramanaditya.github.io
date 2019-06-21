@@ -39,7 +39,7 @@
               <span class="opener"><span class="icon fa-list-alt">&nbsp;Category</span></span>
               <ul>
                 {% for category in site.categories %}
-                <li><a href="#">{{ category[0] }}</a></li>
+                <li><a href="{{ site.baseurl }}/blogs#{{ category[0] }}">{{ category[0] }}</a></li>
                 {% endfor %}
               </ul>
             </li>
@@ -49,7 +49,7 @@
               <span class="opener"><span class="icon fa-tags">&nbsp;Tags</span></span>
               <ul>
                 {% for tag in site.tags %}
-                <li><a href="#">{{ tag[0] }}</a></li>
+                <li><a href="{{ site.baseurl }}/tags#{{ tag[0] }}">{{ tag[0] }}</a></li>
                 {% endfor %}
               </ul>
             </li>
