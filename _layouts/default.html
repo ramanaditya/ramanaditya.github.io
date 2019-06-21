@@ -12,6 +12,7 @@
 
 </style>
 <body>
+	<button onclick="topFunction()" class="special big" id="topBtn" title="Go to top">Top</button>
 
     <!-- Wrapper -->
     <div id="wrapper">
@@ -101,7 +102,17 @@
 		<article>
 			<a href="{{ post.url | relative_url }}" class="image"><img src="{{ post.image | absolute_url }}" alt="" /></a>
 			<h3>{{ post.title | upcase }}</h3>
-            <p>{{ post.categories[1] | upcase }} - {{ post.date | date: "%b %-d %Y" }} <!--<a class="a2a_dd" href="https://www.addtoany.com/share" style="float:right;"><i class="icon fa-share-alt fa-lg"></i></a>-->
+            <p>{{ post.categories[1] | upcase }} - {{ post.date | date: "%b %-d %Y" }}
+			<span style="float:right;">
+				
+				{% assign words = content | number_of_words %}
+				{% if words < 360 %}
+					1 min Read
+				{% else %}
+					{{ words | divided_by:180 }} mins Read
+				{% endif %}
+			</span>
+			 <!--<a class="a2a_dd" href="https://www.addtoany.com/share" style="float:right;"><i class="icon fa-share-alt fa-lg"></i></a>-->
 				<!--
 				<script>
                       var a2a_config = a2a_config || {};
@@ -173,7 +184,7 @@
     </div>
 
     {% include javascript.html %}
-
+	
 </body>
 
 </html>
