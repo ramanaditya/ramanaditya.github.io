@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+{% include head.html %}
+<style>
+@media only screen and (max-device-width: 480px) {
+      .show-mobile {
+        display: block;
+      }
+      .hide-mobile {
+        display: none;
+      }
+    }
+
+ @media only screen and (min-device-width: 481px) {
+      .show-mobile {
+        display: none;
+      }
+      .hide-mobile {
+        display: block;
+      }
+    }
+</style>
+<body>
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Main -->
+        <div id="main">
+        <div class="inner">
+
+                {% include header.html %}
+        </div>
+        <div class="inner">
+            <br><br>
+            {% if page.image %}<span class="image main"><img src="{{ site.baseurl }}/{{ page.image }}" alt="" style="border-radius: 50%;display: block;margin-left: auto;margin-right: auto;max-width:35%;" /></span>
+            {% endif %}
+            <header class="major" style="margin-left: auto;margin-right: auto;text-align:center;display:block;"> 
+                <h1>&nbsp;&nbsp;&nbsp;Aditya Raman</h1>
+            </header>
+            <div class="show-mobile">
+            <ul class="actions" style="margin-top:-30px;;text-align:center;">
+                <li><a href="{{ '/assets/download/aditya_resume.pdf' | absolute_url }}" class="button special fit big" download><span class="icon fa-download">&nbsp;Resume</span></a></li>
+            </ul>
+            <ul class="actions" style="margin-top:-30px;;text-align:center;">
+                <li><a href="{{ '/assets/download/aditya_resume.pdf' | absolute_url }}" class="button fit small"><span class="icon fa-github">&nbsp;GitHub</span></a></li>                
+                <li><a href="{{ '/assets/download/aditya_resume.pdf' | absolute_url }}" class="button fit small"><span class="icon fa-linkedin">&nbsp;Linkedin</span></a></li>
+            </ul>
+            </div>
+            <ul class="actions hide-mobile" style="margin-top:-30px;;text-align:center;">
+                <li><a href="{{ '/assets/download/aditya_resume.pdf' | absolute_url }}" class="button fit medium"><span class="icon fa-github">&nbsp;GitHub</span></a></li>                
+                <li><a href="{{ '/assets/download/aditya_resume.pdf' | absolute_url }}" class="button special fit big" download><span class="icon fa-download">&nbsp;Resume</span></a></li>
+                <li><a href="{{ '/assets/download/aditya_resume.pdf' | absolute_url }}" class="button fit medium"><span class="icon fa-linkedin">&nbsp;Linkedin</span></a></li>
+            </ul>
+            <div class="row">
+            
+            </div>
+        </div>
+          <div class="inner">
+
+                {% include footer.html %}
+        </div>
+        </div>
+          {% include sidebar.html %}
+
+      </div>
+
+      {% include javascript.html %}
+
+</body>
+
+</html>
