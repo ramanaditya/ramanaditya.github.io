@@ -101,13 +101,15 @@
 		<article>
 			<a href="{{ post.url | relative_url }}" class="image"><img src="{{ post.image | absolute_url }}" alt="" /></a>
 			<h3>{{ post.title | upcase }}</h3>
-            <p>{{ post.categories[1] | upcase }} - {{ post.date | date: "%b %-d %Y" }} <a class="a2a_dd" href="https://www.addtoany.com/share" style="float:right;"><i class="icon fa-share-alt fa-lg"></i></a>
-<script>
+            <p>{{ post.categories[1] | upcase }} - {{ post.date | date: "%b %-d %Y" }} <!--<a class="a2a_dd" href="https://www.addtoany.com/share" style="float:right;"><i class="icon fa-share-alt fa-lg"></i></a>-->
+				<!--
+				<script>
                       var a2a_config = a2a_config || {};
                       a2a_config.onclick = 1;
-                      </script>
-                      <script async src="https://static.addtoany.com/menu/page.js"></script>
-                      <!-- AddToAny END -->
+				</script>
+				<script async src="https://static.addtoany.com/menu/page.js"></script>
+				-->
+				<!-- AddToAny END -->
                       
                 	  </header></p>
 			<p>{{ post.excerpt }}</p>
