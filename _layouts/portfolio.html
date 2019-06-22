@@ -167,28 +167,36 @@
             </div><br>
 
             
-            <h2>Courses and Certification</h2><hr>
+            <header class="major">
+                <h2>Courses and Certification</h2>
+            </header>
             {% for skill in site.data.professional_skills.skills %}
+           
+            <header class="major">
+                <h3>{{ skill.skill_name | upcase }}</h3>
+            </header>
             {% for item in skill.sub_skills %}
+            
             <div class="certifiates">
                 <div class="row">
                     <div class="6u 12u$(small)" style="float:left;">
                         <span class="image left"  style="max-width:30%;"><img src="{{ site.url }}/{{ item.img_issued_by }}" alt="" /></span>
-                        <strong><a href="#" style="font-size:1.3em">{{ item.course_name }}</a></strong><br>
+                        <strong><span style="font-size:1.3em;font-weight:900;">{{ item.course_name }}</span></strong><br>
                         {{ item.issued_by }}<br>
-                        
-                            {% if item.pdf %}
-                            <span style="text-align:center;"><a href="{{ site.url }}/{{ item.pdf }}" download style="text-decoration: none;"><i class="fa fa-download" ></i></a></span>
-                            {% endif %}
-                            {{ item.grades }}<br>
-
+                        {% if item.grades %}
+                        Grade : {{ item.grades }}
+                        {% endif %}
+                        {% if item.pdf %}
+                            <span class="show-mobile"><a href="{{ site.url }}/{{ item.pdf }}" download style="text-decoration: none;"><i class="fa fa-download" ></i>Download</a></span>
+                        {% endif %}
+                            
                     </div>
                     <div class="3u 12u$(small)" style="float:right;">
                        <div></div> 
                     </div>
-                    <div class="3u 12u$(small)" style="float:right;display:block;">
+                    <div class="3u 12u$(small)" style="float:right;">
                         {% if item.img_add %}
-                        <div class="thumb" style="width:100%;padding:0px; margin-bottom:-100%;background-image: -moz-linear-gradient(to top, rgba(0,0,0,0.0) 0%, rgba(0,0,0,0) 0%);
+                        <!--<div class="thumb" style="width:100%;padding:0px; margin-bottom:-100%;background-image: -moz-linear-gradient(to top, rgba(0,0,0,0.0) 0%, rgba(0,0,0,0) 0%);
 				background-image: -webkit-linear-gradient(to top, rgba(0,0,0,0.0) 0%, rgba(0,0,0,0) 0%);
 				background-image: -ms-linear-gradient(to top, rgba(0,0,0,0.0) 0%, rgba(0,0,0,0) 0%);
 				background-image: linear-gradient(to top, rgba(0,0,0,0.0) 0%, rgba(0,0,0,0) 0%);">
@@ -196,81 +204,22 @@
 							<h3 style="font-size: 0.8em !important;font-weight: normal;float:right;" class="button small">View Certificate</h3>
 							<p>{{ item.course_name }}&nbsp;:&nbsp;{{ item.issued_by }}</p>
                             <p style="margin-top:-40px;"><a href="{{ item.certificate_link }}" class="button small" style="">Validate</a>&nbsp;&nbsp;<a href="{{ item.pdf }}" class="button special small icon fa-download" style="background-color:teal;color:white;">Download</a></p>
-						</div><br>
+						</div><br>-->
+                        <article class="thumb hide-mobile" style="margin-bottom:-100%;">
+							<a href="{{ site.url }}/{{ item.img_add }}" class="image" style=""><img src="/assets/images/certificate logo.png" alt="" style="max-width:100%;" /></a>
+							<h2>{{ item.course_name }}&nbsp;:&nbsp;{{ item.issued_by }}</h2>
+							<p><a href="{{ item.certificate_link }}" class="button special small" style="">Validate</a>&nbsp;&nbsp;<a href="{{ item.pdf }}" class="button special small icon fa-download" style="background-color:teal;color:white;">Download</a></p>
+						</article>
+                        <article class="thumb show-mobile" style="margin-bottom:-100%;">
+							<a href="{{ site.url }}/{{ item.img_add }}" class="image button medium" style="">View Certificate</a>
+							<a href="{{ item.certificate_link }}" class="button special medium" style="float:right;">Validate</a>
+						</article>
                         {% endif %}
                     </div>
                 </div>
             </div><hr>
             {% endfor %}
             {% endfor %}
-            <div class="table-wrapper">
-                <table class="alt">
-                    
-                    <thead>
-                        <th></th>
-                        <th>Courses </th>
-                        <th>Issued By</th>
-                        <th>Certification</th>
-                        <th></th>
-                        <th>Grades</th>
-                    </thead>
-                    <thead>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </thead>
-                    {% for skill in site.data.professional_skills.skills %}
-                    <thead>
-                        <th colspan="2">{{ skill.skill_name | upcase }}</th>
-                        <th></th>
-                        <th></th>
-                    </thead>
-                    <tbody>
-                    {% for item in skill.sub_skills %}
-                        <tr>
-                            <td>{{ item.slno }}</td>
-                            <td>{{ item.course_name | truncate: 30 }}</td>
-                            <td><div class="tooltip">{{ item.issued_by | truncate: 30 }}
-                            <span class="tooltiptext">{{ item.issued_by }}</span>
-                            </div></td>
-                            <!--<td><a href="{{ item.certificate_link }}">View Certificate</a></td>-->
-                            {% if item.img_add %}
-                            <td class="thumb" style="height: 1em; width:20%;padding:0px; margin:0px;background-image: -moz-linear-gradient(to top, rgba(0,0,0,0.0) 0%, rgba(0,0,0,0) 0%);
-                    background-image: -webkit-linear-gradient(to top, rgba(0,0,0,0.0) 0%, rgba(0,0,0,0) 0%);
-                    background-image: -ms-linear-gradient(to top, rgba(0,0,0,0.0) 0%, rgba(0,0,0,0) 0%);
-                    background-image: linear-gradient(to top, rgba(0,0,0,0.0) 0%, rgba(0,0,0,0) 0%);">
-                                <a href="{{ site.url }}/{{ item.img_add }}" class="image"></a>
-                                <h3 style="font-size: 1em !important;font-weight:400;padding-left:15px;">View Certificate</h3>
-                                <p>{{ item.course_name }}&nbsp;:&nbsp;{{ item.issued_by }}</p>
-                                <p style=""><a href="{{ item.certificate_link }}" class="button special small" style="">Validate</a>&nbsp;&nbsp;<a href="{{ item.pdf }}" class="button special small icon fa-download" style="background-color:teal;color:white;">Download</a></p>
-                            </td>
-                            {% else %}
-                            <td></td>
-                            {% endif %}
-                            {% if item.pdf %}
-                            <td style="text-align:center;"><a href="{{ site.url }}/{{ item.pdf }}" download style="text-decoration: none;"><i class="fa fa-download" ></i></a></td>
-
-                            {% else %}
-                            <td></td>
-                            {% endif %}
-                            <td>{{ item.grades }}</td>
-                        </tr>
-                    {% endfor %}
-                    </tbody>
-                    <thead>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </thead>
-                    {% endfor %}
-                    <tfoot>
-                        <tr>
-                            <td colspan="2"></td>
-                            <td></td>
-                        </tr>
-                    </tfoot>
-                </table>
-            </div>
 
             <header class="major">
                 <h2>Languages</h2>
