@@ -176,9 +176,11 @@
                 <h3>{{ skill.skill_name | upcase }}</h3>
             </header>
             {% for item in skill.sub_skills %}
-            
             <div class="certifiates">
                 <div class="row">
+                    <div class="1u 12u$(small)" style="float:left;">
+                       <p></p> 
+                    </div>
                     <div class="6u 12u$(small)" style="float:left;">
                         <span class="image left"  style="max-width:30%;"><img src="{{ site.url }}/{{ item.img_issued_by }}" alt="" /></span>
                         <strong><span style="font-size:1.3em;font-weight:900;">{{ item.course_name }}</span></strong><br>
@@ -191,7 +193,7 @@
                         {% endif %}
                             
                     </div>
-                    <div class="3u 12u$(small)" style="float:right;">
+                    <div class="2u 12u$(small)" style="float:right;">
                        <div></div> 
                     </div>
                     <div class="3u 12u$(small)" style="float:right;">
@@ -205,8 +207,8 @@
 							<p>{{ item.course_name }}&nbsp;:&nbsp;{{ item.issued_by }}</p>
                             <p style="margin-top:-40px;"><a href="{{ item.certificate_link }}" class="button small" style="">Validate</a>&nbsp;&nbsp;<a href="{{ item.pdf }}" class="button special small icon fa-download" style="background-color:teal;color:white;">Download</a></p>
 						</div><br>-->
-                        <article class="thumb hide-mobile" style="margin-bottom:-100%;">
-							<a href="{{ site.url }}/{{ item.img_add }}" class="image" style=""><img src="/assets/images/certificate logo.png" alt="" style="max-width:100%;" /></a>
+                        <article class="thumb hide-mobile" style="margin-bottom:-100%;min-width:50%;">
+							<a href="{{ site.url }}/{{ item.img_add }}" class="image" style=""><img src="/assets/images/certificate logo.png" alt="" style="max-width:100%;" />View Certificate</a>
 							<h2>{{ item.course_name }}&nbsp;:&nbsp;{{ item.issued_by }}</h2>
 							<p><a href="{{ item.certificate_link }}" class="button special small" style="">Validate</a>&nbsp;&nbsp;<a href="{{ item.pdf }}" class="button special small icon fa-download" style="background-color:teal;color:white;">Download</a></p>
 						</article>
@@ -217,7 +219,8 @@
                         {% endif %}
                     </div>
                 </div>
-            </div><hr>
+            </div>
+            <div class="show-mobile"><br></div><hr>
             {% endfor %}
             {% endfor %}
 
