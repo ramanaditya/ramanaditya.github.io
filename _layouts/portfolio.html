@@ -28,10 +28,10 @@
     }
 </style>
 <body>
-    <a id="back2Top" title="Back to top" href="#" style="color:white;">&#10148;</a>
+    
     <!-- Wrapper -->
     <div id="wrapper">
-
+    <a id="back2Top" title="Back to top" href="#" style="color:white;">&#10148;</a>
         <!-- Main -->
         <div id="main">
         <div class="inner">
@@ -208,13 +208,13 @@
                             <p style="margin-top:-40px;"><a href="{{ item.certificate_link }}" class="button small" style="">Validate</a>&nbsp;&nbsp;<a href="{{ item.pdf }}" class="button special small icon fa-download" style="background-color:teal;color:white;">Download</a></p>
 						</div><br>-->
                         <article class="thumb hide-mobile" style="margin-bottom:-100%;min-width:50%;">
-							<a href="{{ site.url }}/{{ item.img_add }}" class="image" style=""><img src="/assets/images/certificate logo.png" alt="" style="max-width:100%;" />View Certificate</a>
+							<a href="{{ site.url }}/{{ item.img_add }}" class="image" style=""><img src="/assets/images/certificate logo.png" alt="" style="max-width:100%;" />View Credentials</a>
 							<h2>{{ item.course_name }}&nbsp;:&nbsp;{{ item.issued_by }}</h2>
-							<p><a href="{{ item.certificate_link }}" class="button special small" style="">Validate</a>&nbsp;&nbsp;<a href="{{ item.pdf }}" class="button special small icon fa-download" style="background-color:teal;color:white;">Download</a></p>
+							<p><a href="{{ item.certificate_link }}" class="button special medium" style=""><span class="icon fa-check">&nbsp;Validate</span></a>&nbsp;&nbsp;<a href="{{ item.pdf }}" class="button special medium icon fa-download" style="background-color:teal;color:white;">Download</a></p>
 						</article>
                         <article class="thumb show-mobile" style="margin-bottom:-100%;">
-							<a href="{{ site.url }}/{{ item.img_add }}" class="image button medium" style="">View Certificate</a>
-							<a href="{{ item.certificate_link }}" class="button special medium" style="float:right;">Validate</a>
+							<a href="{{ site.url }}/{{ item.img_add }}" class="image button medium" style=""><span class="icon fa-eye">&nbsp;View Credentials</span></a>
+							<a href="{{ item.certificate_link }}" class="button special medium" style="float:right;"><span class="icon fa-check">&nbsp;Validate</span></a>
 						</article>
                         {% endif %}
                     </div>
