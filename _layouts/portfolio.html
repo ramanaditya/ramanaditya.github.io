@@ -46,8 +46,25 @@
                 <li><a href="{{ '/assets/download/aditya_resume.pdf' | absolute_url }}" class="button special fit big" download><span class="icon fa-download">&nbsp;Resume</span></a></li>
                 <li><a href="{{ '/assets/download/aditya_resume.pdf' | absolute_url }}" class="button fit medium"><span class="icon fa-linkedin">&nbsp;Linkedin</span></a></li>
             </ul>
+            <div class="row uniform">
+                <div class="3u 12u$(xsmall)">
+                    <nav id="menu" class="box" style="padding-top:5px;padding-bottom:5px;color:black;border: 1px solid #ef6969">
+                        <ul>
+                            <li><span class="opener"><strong>Quick Navigation</strong></span>
+                                <ul style="color:black;font-size:1em;">
+                                    <li><a href="{{ site.baseurl }}/portfolio#Experience">Experience</a></li>
+                                    <li><a href="{{ site.baseurl }}/portfolio#Education">Education</a></li>
+                                    <li><a href="{{ site.baseurl }}/portfolio#Courses">Courses</a></li>
+                                    <li><a href="{{ site.baseurl }}/portfolio#Languages">Languages</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div><hr>
+
             <header class="major">
-                <h2>Experience</h2>
+                <h2 id="Experience">Experience</h2>
             </header>
             <div class="internship">
                 <div class="row">
@@ -82,7 +99,7 @@
                 </div>
             </div><br />
             <header class="major">
-                <h2>Education</h2>
+                <h2 id="Education">Education</h2>
             </header>
             <div class="college">
                 <div class="row">
@@ -149,7 +166,7 @@
 
             
             <header class="major">
-                <h2>Courses and Certification</h2>
+                <h2 id="Courses">Courses and Certification</h2>
             </header>
             {% for skill in site.data.professional_skills.skills %}
            
@@ -205,7 +222,7 @@
             {% endfor %}
             {% endfor %}
             <header class="major">
-                <h2>Languages</h2>
+                <h2 id="Languages">Languages</h2>
             </header>
             <div class="table-wrapper">
                 <table>
