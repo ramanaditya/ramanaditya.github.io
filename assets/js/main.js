@@ -280,6 +280,30 @@
 
 				});
 
+				var $menu1 = $('#menu1'),
+				$menu1_openers = $menu1.children('ul').find('.opener');
+
+			// Openers.
+				$menu1_openers.each(function() {
+
+					var $this = $(this);
+
+					$this.on('click', function(event) {
+
+						// Prevent default.
+							event.preventDefault();
+
+						// Toggle.
+							$menu1_openers.not($this).removeClass('active');
+							$this.toggleClass('active');
+
+						// Trigger resize (sidebar lock).
+							$window.triggerHandler('resize.sidebar-lock');
+
+					});
+
+				});
+
 	});
 
 })(jQuery);
