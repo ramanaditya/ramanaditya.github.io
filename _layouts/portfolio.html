@@ -8,6 +8,39 @@
 
 {% include head.html %}
 <link rel="stylesheet" href="{{ "assets/modal/assets/css/main.css" | relative_url }}"  />
+<style>
+.accordion {
+  cursor: pointer;
+ 
+  border: none;
+  width:100%;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+ 
+}
+
+.accordion:after {
+  content: '\002B';
+  
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+</style>
 <body>
     
     <!-- Wrapper -->
@@ -55,6 +88,7 @@
                                     <li><a href="#Experience">Experience</a></li>
                                     <li><a href="#Education">Education</a></li>
                                     <li><a href="#Courses">Courses</a></li>
+                                    <li><a href="#volunteer">Volunteer Exp.</a></li>
                                     <li><a href="#Languages">Languages</a></li>
                                 </ul>
                             </li>
@@ -62,7 +96,6 @@
                     </div>
                 </div>
             </div><hr>
-
             <header class="major">
                 <h2 id="Experience">Experience</h2>
             </header>
@@ -81,20 +114,39 @@
                         <p>Oct 2018 - Present</p>
                     </div>
                 </div>
-            </div><hr>
-            <div class="internship">
-                <div class="row">
-                    <div class="6u 12u$(small)" style="float:left;">
-                        <span class="image left"  style="max-width:30%;"><img src="{{ 'assets/images/trending_skill logo.jpeg' | absolute_url }}" alt="" /></span>
-                        <strong><a href="https://www.trendingskill.com" style="font-size:1.3em">Trending Skill</a></strong>
-                        <p>Full Stack Developer Intern</p>
+            </div><br>
+            <button class="accordion button special medium" onclick="changeText(this)" style="opacity:0.7">SHOW MORE</button>
+            <div class="panel"><br>
+                <div class="internship">
+                    <div class="row">
+                        <div class="6u 12u$(small)" style="float:left;">
+                            <span class="image left"  style="max-width:30%;"><img src="{{ 'assets/images/internshala logo.png' | absolute_url }}" alt="" /></span>
+                            <strong><a href="#" style="font-size:1.3em">Internshala</a></strong>
+                            <p>Internshala Student Partner 12.0</p>
+                        </div>
+                        <div class="3u 12u$(small)" style="float:right;">
+                            
+                        </div>
+                        <div class="3u 12u$(small)" style="float:right;">
+                            <strong>Bengaluru, Karnataka, INDIA</strong>
+                            <p>Dec 2018 - Feb 2019</p>
+                        </div>
                     </div>
-                    <div class="3u 12u$(small)" style="float:right;">
-                        
-                    </div>
-                    <div class="3u 12u$(small)" style="float:right;">
-                        <strong>Mumbai, Maharashtra, INDIA</strong>
-                        <p>Oct 2018 - Nov 2018</p>
+                </div><hr>
+                <div class="internship">
+                    <div class="row">
+                        <div class="6u 12u$(small)" style="float:left;">
+                            <span class="image left"  style="max-width:30%;"><img src="{{ 'assets/images/trending_skill logo.jpeg' | absolute_url }}" alt="" /></span>
+                            <strong><a href="https://www.trendingskill.com" style="font-size:1.3em">Trending Skill</a></strong>
+                            <p>Full Stack Developer Intern</p>
+                        </div>
+                        <div class="3u 12u$(small)" style="float:right;">
+                            
+                        </div>
+                        <div class="3u 12u$(small)" style="float:right;">
+                            <strong>Mumbai, Maharashtra, INDIA</strong>
+                            <p>Oct 2018 - Nov 2018</p>
+                        </div>
                     </div>
                 </div>
             </div><br />
@@ -119,51 +171,53 @@
                     <div>Part of Technical Club : <a href="https://www.glugmvit.com">GLUG MVIT</a></div>
                     <p>Part of Debating Society : DEBSOC</p>
                 </div>
-            </div><hr>
-            <div class="high_school">
-                <div class="row">
-                    <div class="6u 12u$(small)" style="float:left;">
-                        <span class="image left"  style="max-width:30%;"><img src="{{ 'assets/images/dps logo.jpeg' | absolute_url }}" alt="" /></span>
-                        <strong style="font-size:1.3em"><a href="http://dpsbokaro.com">Delhi Public School</a>, Bokaro Steel City</strong>
-                        <p>High School, Intermediate, Mathematics, Physics and Chemistry</p>
+            </div>
+            <button class="accordion special" onclick="changeText(this)"  style="opacity:0.7">Show More</button>
+            <div class="panel"><br>
+                <div class="high_school">
+                    <div class="row">
+                        <div class="6u 12u$(small)" style="float:left;">
+                            <span class="image left"  style="max-width:30%;"><img src="{{ 'assets/images/dps logo.jpeg' | absolute_url }}" alt="" /></span>
+                            <strong style="font-size:1.3em"><a href="http://dpsbokaro.com">Delhi Public School</a>, Bokaro Steel City</strong>
+                            <p>High School, Intermediate, Mathematics, Physics and Chemistry</p>
+                        </div>
+                        <div class="3u 12u$(small)" style="float:right;">
+                            
+                        </div>
+                        <div class="3u 12u$(small)" style="float:right;">
+                            <strong>Bokaro Steel City, Jharkhand, INDIA</strong>
+                            <p>Graduated May,2016</p>
+                        </div>
                     </div>
-                    <div class="3u 12u$(small)" style="float:right;">
-                        
+                    <div class="main">
+                        <div>Part of Debating Club</div>
+                        <div>Ranked 3<sup>rd</sup> in inter house Volleyball Competition</div>
                     </div>
-                    <div class="3u 12u$(small)" style="float:right;">
-                        <strong>Bokaro Steel City, Jharkhand, INDIA</strong>
-                        <p>Graduated May,2016</p>
+                </div><hr>
+                <div class="high_school">
+                    <div class="row">
+                        <div class="6u 12u$(small)" style="float:left;">
+                            <span class="image left"  style="max-width:30%;"><img src="{{ 'assets/images/dav logo.png' | absolute_url }}" alt="" /></span>
+                            <strong><a href="http://sldavpsrngrkh.com" style="font-size:1.3em">SL DAV Public School</a></strong>
+                            <p>High School, Class-10 , Mathematics, Science and Social Science</p>
+                        </div>
+                        <div class="3u 12u$(small)" style="float:right;">
+                            
+                        </div>
+                        <div class="3u 12u$(small)" style="float:right;">
+                            <strong>Khagaria, Bihar, INDIA</strong>
+                            <p>Graduated May,2014</p>
+                        </div>
                     </div>
-                </div>
-                <div class="main">
-                    <div>Part of Debating Club</div>
-                    <div>Ranked 3<sup>rd</sup> in inter house Volleyball Competition</div>
-                </div>
-            </div><hr>
-            <div class="high_school">
-                <div class="row">
-                    <div class="6u 12u$(small)" style="float:left;">
-                        <span class="image left"  style="max-width:30%;"><img src="{{ 'assets/images/dav logo.png' | absolute_url }}" alt="" /></span>
-                        <strong><a href="http://sldavpsrngrkh.com" style="font-size:1.3em">SL DAV Public School</a></strong>
-                        <p>High School, Class-10 , Mathematics, Science and Social Science</p>
+                    <div class="main">
+                        <div>Winner of Junior Scientist Talent Hunt in which I made a powerpoint presentation on <a href="https://www.slideshare.net/adityaraman908/jsth-e-waste-powerpoint-presentation">E-Waste Management System</a></div>
+                        <div>Ranked 3<sup>rd</sup> in English Debate Competition in 9<sup>th</sup> Mahatma Hansraj Zonal Youth Festival,2012</div>
+                        <div>Ranked 3<sup>rd</sup> in Zonal Quiz Competition, Vedic Chetna Shivir,2012</div>
+                        <div>Lead Aurobindo House as a House Captain</div>
+                        <div>Anchored several programs for the School</div>
                     </div>
-                    <div class="3u 12u$(small)" style="float:right;">
-                        
-                    </div>
-                    <div class="3u 12u$(small)" style="float:right;">
-                        <strong>Khagaria, Bihar, INDIA</strong>
-                        <p>Graduated May,2014</p>
-                    </div>
-                </div>
-                <div class="main">
-                    <div>Winner of Junior Scientist Talent Hunt in which I made a powerpoint presentation on <a href="https://www.slideshare.net/adityaraman908/jsth-e-waste-powerpoint-presentation">E-Waste Management System</a></div>
-                    <div>Ranked 3<sup>rd</sup> in English Debate Competition in 9<sup>th</sup> Mahatma Hansraj Zonal Youth Festival,2012</div>
-                    <div>Ranked 3<sup>rd</sup> in Zonal Quiz Competition, Vedic Chetna Shivir,2012</div>
-                    <div>Lead Aurobindo House as a House Captain</div>
-                    <div>Anchored several programs for the School</div>
                 </div>
             </div><br>
-
             
             <header class="major">
                 <h2 id="Courses">Courses and Certification</h2>
@@ -222,6 +276,87 @@
             {% endfor %}
             {% endfor %}
             <header class="major">
+                <h2 id="volunteer">Volunteer Experience</h2>
+            </header>
+
+            <div class="certifiates">
+                <div class="row">
+                    <div class="6u 12u$(small)" style="float:left;">
+                        <span class="image left"  style="max-width:30%;"><img src="{{ 'assets/images/unv logo.png' | absolute_url }}" alt="" /></span>
+                        <strong><span style="font-size:1.3em;font-weight:900;">Volunteer</span></strong><br>
+                        United Nations Volunteer<br>
+                        Dec 2018 - Present<br>
+                        Human Rights
+                        <span class="show-mobile"><a href="{{ 'assets/downloads/certificates/ADITYA RAMAN | IVD 2018 Certificate.pdf' | absolute_url }}" download style="text-decoration: none;"><i class="fa fa-download" ></i>Download</a></span>
+                        
+                            
+                    </div>
+                    <div class="3u 12u$(small)" style="float:right;">
+                       <div></div> 
+                    </div>
+                    <div class="3u 12u$(small)" style="float:right;">
+                        <article class="thumb hide-mobile" style="margin-bottom:-100%;min-width:50%;">
+							<a href="{{ 'assets/images/ADITYA RAMAN | IVD 2018 Certificate.png' | absolute_url }}" class="image" style="text-align:center;"><img src="/assets/images/certificate logo.png" alt="" style="max-width:100%;" />View Credentials</a>
+							<h2>5 December, International Volunteer Day 2018</h2>
+							<p><a href="{{ 'assets/downloads/certificates/ADITYA RAMAN | IVD 2018 Certificate.pdf' | absolute_url }}" class="button special medium icon fa-download" style="background-color:teal;color:white;">Download</a></p>
+						</article>
+                        <article class="thumb show-mobile" style="margin-bottom:-100%;">
+							<a href="{{ 'assets/images/ADITYA RAMAN | IVD 2018 Certificate.png' | absolute_url }}" class="image button medium" style=""><span class="icon fa-eye">&nbsp;View Certificate</span></a>
+						</article>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="show-mobile"><br></div><hr>
+            <div class="certifiates">
+                <div class="row">
+                    <div class="6u 12u$(small)" style="float:left;">
+                        <span class="image left"  style="max-width:30%;"><img src="{{ 'assets/images/gdg logo.png' | absolute_url }}" alt="" /></span>
+                        <strong><span style="font-size:1.3em;font-weight:900;">Volunteer</span></strong><br>
+                        Google Developer Group Bangalore<br>
+                        Oct 2018 - Present<br>
+                        Technical Group 
+                    </div>
+                    <div class="3u 12u$(small)" style="float:right;">
+                       <div></div> 
+                    </div>
+                    <div class="3u 12u$(small)" style="float:right;">
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+            <div class="show-mobile"><br></div><hr>
+            <div class="certifiates">
+                <div class="row">
+                    <div class="6u 12u$(small)" style="float:left;">
+                        <span class="image left"  style="max-width:30%;"><img src="{{ 'assets/images/nasa logo.png' | absolute_url }}" alt="" /></span>
+                        <strong><span style="font-size:1.3em;font-weight:900;">Volunteer</span></strong><br>
+                        NASA International Space Apps Challenge<br>
+                        Sep 2018<br>
+                        Education
+                        <span class="show-mobile"><a href="{{ 'assets/downloads/certificates/nasa space apps.pdf' | absolute_url }}" download style="text-decoration: none;"><i class="fa fa-download" ></i>Download</a></span>
+                        
+                            
+                    </div>
+                    <div class="3u 12u$(small)" style="float:right;">
+                       <div></div> 
+                    </div>
+                    <div class="3u 12u$(small)" style="float:right;">
+                        <article class="thumb hide-mobile" style="margin-bottom:-100%;min-width:50%;">
+							<a href="{{ 'assets/images/nasa space apps.png' | absolute_url }}" class="image" style="text-align:center;"><img src="/assets/images/certificate logo.png" alt="" style="max-width:100%;" />View Credentials</a>
+							<h2>5 December, International Volunteer Day 2018</h2>
+							<p><a href="{{ 'assets/downloads/certificates/nasa space apps.pdf' | absolute_url }}" class="button special medium icon fa-download" style="background-color:teal;color:white;">Download</a></p>
+						</article>
+                        <article class="thumb show-mobile" style="margin-bottom:-100%;">
+							<a href="{{ 'assets/images/nasa space apps.png' | absolute_url }}" class="image button medium" style=""><span class="icon fa-eye">&nbsp;View Certificate</span></a>
+						</article>
+                        
+                    </div>
+                </div>
+            </div><hr>
+            <div class="show-mobile"><br></div><hr>
+
+            <header class="major">
                 <h2 id="Languages">Languages</h2>
             </header>
             <div class="table-wrapper">
@@ -259,7 +394,32 @@
       </div>
 
       {% include javascript.html %}
-    
+        <script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+<script>
+function changeText(id) {
+    if(id.innerHTML == "SHOW LESS"){
+        id.innerHTML = "SHOW MORE";
+    }
+    else{
+        id.innerHTML = "SHOW LESS";
+    }
+}
+</script>
 </body>
 
 </html>
