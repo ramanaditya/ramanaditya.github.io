@@ -126,33 +126,33 @@ Some Pictures
 	<h2>Magna feugiat lorem</h2>
 	<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
 </article>
-</div>
+</div><div class="show-mobile"><br></div>
 <div class="6u 12u$(small)">
 <article class="thumb" style="height:auto;width:auto;margin:">
 	<a href="/assets/images/2019-05-16-Build-a-thon/IMG_20190516_113703829.jpg" class="image main"><img src="/assets/images/2019-05-16-Build-a-thon/IMG_20190516_113703829.jpg" alt="Pic01" /></a>
 	<h2>Magna feugiat lorem</h2>
 	<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
 </article>
-</div>
+</div><div class="show-mobile"><br></div>
 <div class="6u 12u$(small)">
 <article class="thumb" style="height:auto;width:auto;margin:">
 	<a href="/assets/images/2019-05-16-Build-a-thon/IMG_20190516_113730567_HDR.jpg" class="image main"><img src="/assets/images/2019-05-16-Build-a-thon/IMG_20190516_113730567_HDR.jpg" alt="Pic01" /></a>
 	<h2>Magna feugiat lorem</h2>
 	<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
 </article>
-</div>
+</div><div class="show-mobile"><br></div>
 <div class="6u 12u$(small)">
 <article class="thumb" style="height:auto;width:auto;margin:">
 	<a href="/assets/images/2019-05-16-Build-a-thon/IMG_20190516_115727498_HDR.jpg" class="image main"><img src="/assets/images/2019-05-16-Build-a-thon/IMG_20190516_115727498_HDR.jpg" alt="Pic01" /></a>
 	<h2>Magna feugiat lorem</h2>
 	<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
 </article>
-</div>
+</div><div class="show-mobile"><br></div>
 <div class="12u 12u$(small)">
 <article class="thumb" style="height:auto;width:auto;margin:">
 	<a href="/assets/images/2019-05-16-Build-a-thon/WhatsApp Image 2019-05-16 at 12.42.31 PM.jpeg" class="image main"><img src="/assets/images/2019-05-16-Build-a-thon/WhatsApp Image 2019-05-16 at 12.42.31 PM.jpeg" alt="Pic01" /></a>
 	<h2>Magna feugiat lorem</h2>
 	<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
 </article>
-</div>
+</div><div class="show-mobile"><br></div>
 </div>
