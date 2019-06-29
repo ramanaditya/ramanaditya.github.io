@@ -1,9 +1,4 @@
 <!DOCTYPE HTML>
-<!--
-	Editorial by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
 
 {% include head.html %}
@@ -12,44 +7,36 @@
     <!--<button onclick="topFunction()" class="special big" id="topBtn" title="Go to top">Top</button>-->
     <a id="back2Top" title="Back to top" href="#" style="color:white;">&#10148;</a>
 
-    <!-- Wrapper -->
-    <div id="wrapper">
+      <!-- Wrapper -->
+      <div id="wrapper">
 
         <!-- Main -->
         <div id="main">
-        <div class="inner">
+          <div class="inner">
 
                 {% include header.html %}
-        </div>
+          </div>
           <div class="row">
             <div class="1u 12u$(small)">
             <p></p>
             </div>
             <div class="7u 12u$(small)">
-            <div class="inner box" style="border:0;">
+              <div class="inner box" style="border:0;">
                 <!-- Content -->
                 <br>
                 	<header class="main">
                 		<h1>{{ page.title | upcase }}</h1>
-                    <p><a href="{{ site.baseurl }}/blogs#{{ page.categories[1] }}" style="color:#7f888f;">{{ page.categories[1] | upcase }} </a>- {{ page.date | date: "%b %-d %Y" }} 
-                    <!--
-                    <a class="a2a_dd" href="https://www.addtoany.com/share" style="float:right;"><i class="icon fa-share-alt fa-lg"></i></a></p>
-                    -->
-                    <!-- AddToAny BEGIN -->
-                    <!--
-                    <script>
-                      var a2a_config = a2a_config || {};
-                      a2a_config.onclick = 1;
-                      </script>
-                      <script async src="https://static.addtoany.com/menu/page.js">
-                    </script>
-                    -->
-                      <!-- AddToAny END -->
-                      
+                    <h3 style="float:left;">{{ page.subtitle }}</h3>
+                    <p style="float:right;">
+                      <a href="{{ site.baseurl }}/blogs#{{ page.categories[1] }}" style="color:#7f888f;">
+                        {{ page.categories[1] | upcase }} 
+                      </a> - {{ page.date | date: "%b %-d %Y" }}
+                    </p>
                 	  </header>
 
                   {% if page.image %}
-                	<span class="image main"><img src="{{ page.image | absolute_url }}" alt="" /></span>
+                  <span class="image main"><img src="{{ page.image | absolute_url }}" alt="" /></span>
+                  
                   {% endif %}
                 <div style="color:black;">
                 {{ content }}

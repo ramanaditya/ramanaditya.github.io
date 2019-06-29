@@ -60,9 +60,10 @@
           <header class="major">
             <h2>Featured</h2>
           </header>
-          <div class="mini-posts">
+          
           {% for post in site.posts %}
           {% if post.featured == true %}
+          <div class="mini-posts">
             <article>
               <a href="{{ post.url | relative_url }}" class="image"><img src="{{ post.image | absolute_url }}" alt="" /></a>
               <a href="{{ post.url | relative_url }}"><div><strong>{{ post.title }}</strong></div></a>
