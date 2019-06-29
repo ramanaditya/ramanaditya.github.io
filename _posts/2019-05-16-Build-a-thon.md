@@ -85,7 +85,7 @@ The panel of mentors include a team of senior students who together have won dif
 <blockquote style="padding: 5px 20px 5px 15px;"><span class="icon fa-quote-left" style="font-size:2.4em;"></span><br>
 <span class="begin">G</span>reat opportunity for the students who got a platform to exhibit their innovative ideas and go beyond their regular academia. The overall involvement of student organizers along with the faculty led to the grand success of this event. &nbsp;
 <br><br>
-<span class="icon fa-minus"></span> <span style="font-weight: bold;">Sarita Kumari</span> , Team Phoenix<br>
+<span class="icon fa-minus"></span> <span style="font-weight: bold;"></span><br>
 <span class="icon fa-quote-right" style="position: absolute;font-size:2.4em;right:15px;bottom:0;"></span>
 <br>
 </blockquote>
