@@ -107,7 +107,7 @@ Linkedin: [aswin-gopinathan-69556716a](https://www.linkedin.com/in/aswin-gopinat
 - [Original Document](https://docs.google.com/document/d/1ysaeEnVaQwyH02FS9XgBOQ8yhk7w7IzKsjTEpI7dmbU/edit?usp=sharing)
 - [Teams Registered](https://docs.google.com/spreadsheets/d/1iKFGWpkVjJmRlkBlmT0P3Lk6Z1IwL0tQbWyPrgXDT20/edit?usp=sharing)
 
-## Some Pictures
+## Pictures From the Day
 <div class="row">
 <div class="6u 12u$(small)">
 <article class="thumb" style="height:auto;width:auto;margin:">
