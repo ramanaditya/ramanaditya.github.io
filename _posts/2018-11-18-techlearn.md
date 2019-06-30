@@ -3,7 +3,7 @@ layout: page
 title: "TechLearn"
 subtitle: 
 description: 
-author: aditya
+author: "aditya"
 comments: true
 image: /assets/images/2018-11-18-techlearn/table.jpg
 categories: [blogs,project]

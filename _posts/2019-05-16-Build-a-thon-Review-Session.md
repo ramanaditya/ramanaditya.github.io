@@ -3,7 +3,7 @@ layout: page
 title: "Build-a-thon : Review Session"
 subtitle: A little effort towards success
 description: 
-author: aditya
+author: "aditya"
 comments: true
 image: assets/images/2019-05-16-Build-a-thon/2019-05-16-Build-a-thon.png
 categories: [blogs,events]

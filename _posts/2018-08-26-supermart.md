@@ -3,7 +3,7 @@ layout: page
 title: "Supermart : Billing System"
 subtitle: 
 description: 
-author: aditya
+author: "aditya"
 comments: true
 image: 
 categories: [blogs,project]
