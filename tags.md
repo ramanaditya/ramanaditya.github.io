@@ -22,7 +22,7 @@ permalink: '/tags/'
 <div class="tags" >
   {% for item in (0..site.tags.size) %}{% unless forloop.last %}
     {% capture this_word %}{{ tag_words[item] | strip_newlines }}{% endcapture %}
-    <a href="#{{ this_word | cgi_escape }}" class="tags-link button medium"><span class="icon fa-tag">&nbsp;{{ this_word | upcase }} <span>{{ site.tags[this_word].size }}</span></span></a>&nbsp;&nbsp;
+    <a href="#{{ this_word | cgi_escape }}" class="tags-link button small" style="margin-bottom:5px;"><span class="icon fa-tag">&nbsp;{{ this_word | upcase }} <span>{{ site.tags[this_word].size }}</span></span></a>&nbsp;&nbsp;
   {% endunless %}{% endfor %}
 
   <hr>
@@ -54,12 +54,14 @@ permalink: '/tags/'
                 {% endfor %}
                 <span style="float:right;">
                     {% assign words = post.content | number_of_words %}
-                    {% if words < 180 %}
+                    {% if words < 360 %}
+                      {% if words < 180 %}
                         Less than 1 min Read
-                    {% else if words < 360 %}
+                      {% else %}
                         1 min Read
+                      {% endif %}
                     {% else %}
-                        {{ words | divided_by:180 }} mins Read
+                      {{ words | divided_by:180 }} mins Read
                     {% endif %}
                 </span>
                 </article>
