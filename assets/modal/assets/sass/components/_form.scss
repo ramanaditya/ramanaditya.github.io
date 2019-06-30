@@ -154,7 +154,7 @@
 		z-index: -1;
 
 		& + label {
-			@include icon(false, solid);
+			@include icon;
 			color: _palette(fg);
 			cursor: pointer;
 			display: inline-block;
@@ -168,14 +168,13 @@
 				background: _palette(border-bg);
 				content: '';
 				display: inline-block;
-				font-size: 0.8em;
-				height: (_size(element-height) * 0.75);
+				height: (_size(element-height) * 0.6);
 				left: 0;
-				line-height: (_size(element-height) * 0.75);
+				line-height: (_size(element-height) * 0.575);
 				position: absolute;
 				text-align: center;
 				top: 0;
-				width: (_size(element-height) * 0.75);
+				width: (_size(element-height) * 0.6);
 			}
 		}
 
