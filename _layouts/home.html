@@ -101,11 +101,13 @@
             <p><a href="{{ site.baseurl }}/blogs#{{ post.categories[1] }}" style="color:#7f888f;">{{ post.categories[1] | upcase }}</a> - {{ post.date | date: "%b %-d %Y" }}
 			<span style="float:right;">
 				
-				{% assign words = content | number_of_words %}
-				{% if words < 180 %}
-					Less than 1 min Read
-				{% else if words < 360 %}
-					1 min Read
+				{% assign words = post.content | number_of_words %}
+				{% if words < 360 %}
+					{% if words < 180 %}
+						Less than 1 min Read
+					{% else %}
+						1 min Read
+					{% endif %}
 				{% else %}
 					{{ words | divided_by:180 }} mins Read
 				{% endif %}

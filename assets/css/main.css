@@ -2123,8 +2123,9 @@
 			}
 
 	strong, b {
-		color: #3d4449;
-		font-weight: 600;
+		color: #304050;
+		/*color:black;*/
+		font-weight: 900;
 	}
 
 	em, i {
@@ -2216,7 +2217,7 @@
 	}
 
 	blockquote {
-		border-left: solid 3px rgba(210, 215, 217, 0.75);
+		border-left: solid 5px rgba(104, 109, 112, 0.75);
 		font-style: italic;
 		margin: 0 0 2em 0;
 		padding: 0.5em 0 0.5em 2em;

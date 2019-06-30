@@ -15,24 +15,34 @@ excerpt: ""
 ## REVIEW SESSION
 
 <div style="background-color:#f5f6f7;position:relative;">
-<blockquote style="padding: 5px 20px 5px 15px;"><span class="icon fa-quote-left" style="font-size:2.4em;"></span><br>
-<span class="begin">It</span> was really nice and we got to learn a lot. Mentors and judges gave good suggestions to improve the project. And we are eagerly waiting for the main event. &nbsp;
+<blockquote style="padding: 5px 20px 5px 15px;"><span class="icon fa-quote-left" style="font-size:2.4em;color:#7f888f;"></span><br>
+<span class="begin">It</span> was really fun, of course learnt a lot about the new technologies. Department/college did a great job and we are looking forward to more such opportunities. &nbsp;
 <br><br>
-<span class="icon fa-minus"></span> <span style="font-weight: bold;">Sarita Kumari</span> , Team Phoenix<br>
-<span class="icon fa-quote-right" style="position: absolute;font-size:2.4em;right:15px;bottom:0;"></span>
+<span class="icon fa-minus"></span>&nbsp;<span style="font-weight: bold;">Masoomi Saxena</span> , Team ma.ai<br>
+<span class="icon fa-quote-right" style="position: absolute;font-size:2.4em;right:15px;bottom:0;color:#7f888f;"></span>
 <br>
 </blockquote>
 </div>
 
 ## Concept
 
-<p><span class="begin">B</span>uild-a-thon is an intra college hackathon. The goal of this Build-a-thon is to prototype ideas, products and services that are able to create social and economic value for the community by hacking everyday objects and using open data, open-source libraries, public APIs, frameworks for fast prototyping and software development, microcontrollers, sensors, and other hardware (e.g. 3D printers, beacons, wearables, etc.).</p> 
-The first review session of this Build-a-thon was organised as per the details furnished below : 
+<span class="begin">B</span>uild-a-thon is an intra college hackathon. The goal of this **Build-a-thon** is to **prototype ideas**, **products** and **services** that are able to create **social** and **economic value** for the community by hacking everyday objects and using **open data**, **open-source libraries**, **public APIs**, **frameworks** for **fast prototyping** and **software development**, **microcontrollers**, **sensors**, and other **hardware** (e.g. **3D printers**, **beacons**, **wearables**, etc.).
+The first **review session** of this **Build-a-thon** was organised as per the details furnished below : 
 
-Date : May 16, 2019<br>
-Time : 9:00 AM - 12:00 Noon<br>
-Venue: CS Seminar Hall, New Block
+Date : **May 16, 2019**<br>
+Time : **9:00 AM - 12:00 Noon**<br>
+Venue: **CS Seminar Hall, New Block**
  
+<div style="background-color:#f5f6f7;position:relative;">
+<blockquote style="padding: 5px 20px 5px 15px;"><span class="icon fa-quote-left" style="font-size:2.4em;color:#7f888f;"></span><br>
+<span class="begin">It</span> was really nice and we got to learn a lot. Mentors and judges gave good suggestions to improve the project. And we are eagerly waiting for the main event. &nbsp;
+<br><br>
+<span class="icon fa-minus"></span>&nbsp;<span style="font-weight: bold;">Sarita Kumari</span> , Team Phoenix<br>
+<span class="icon fa-quote-right" style="position: absolute;font-size:2.4em;right:15px;bottom:0;color:#7f888f;"></span>
+<br>
+</blockquote>
+</div>
+
 ## Event
 
 <p><span class="begin">I</span>n this review session all the participants were judged by a team of expert judges and a team of mentors who further advised the participants and gave positive feedback that can be implemented in the final round of their project exhibition.</p>
@@ -48,6 +58,16 @@ Venue: CS Seminar Hall, New Block
 <p>The turning up of participants and audience were overwhelming. More than 15 teams participated in the project review session. They seemed to be quite enthusiastic and were eager to know about the projects’ ideas of different teams. At the end of the session they looked confident and assured to participate in the upcoming events. 
 The panel of jury selected them all for the exhibition on the final day of Build-a-thon.</p>
 
+<div style="background-color:#f5f6f7;position:relative;">
+<blockquote style="padding: 5px 20px 5px 15px;"><span class="icon fa-quote-left" style="font-size:2.4em;color:#7f888f;"></span><br>
+<span class="begin">We</span> had this Build-a-Thon review session and it was quite helpful and informative . We showed our projects to the judges and got really great inputs on how we can make it better. Looking forward to the final session of the same where we will try to improvize and present a better version of our project.. &nbsp;
+<br><br>
+<span class="icon fa-minus"></span>&nbsp;<span style="font-weight: bold;">Simran Saxena</span> , Team Hustle Tech<br>
+<span class="icon fa-quote-right" style="position: absolute;font-size:2.4em;right:15px;bottom:0;color:#7f888f;"></span>
+<br>
+</blockquote>
+</div>
+
 ## Expert Judges
 
 <div class="12u 12u$(small)">
@@ -60,10 +80,10 @@ The panel of jury selected them all for the exhibition on the final day of Build
 
 The panel of expert judges include a team of highly qualified faculty members of Sir M Visvesvaraya Institute of Technology
 
-Dr Savita Chaudhary 
-Mrs Pallavi
-Mrs Sushila
-Mrs Rekha BN
+- Dr Savita Chaudhary <br>
+- Mrs Pallavi<br>
+- Mrs Sushila<br>
+- Mrs Rekha BN
 
 ## Mentors
 
@@ -82,15 +102,14 @@ The panel of mentors include a team of senior students who together have won dif
 - Mr. Tushar Sharma
 
 <div style="background-color:#f5f6f7;position:relative;">
-<blockquote style="padding: 5px 20px 5px 15px;"><span class="icon fa-quote-left" style="font-size:2.4em;"></span><br>
-<span class="begin">G</span>reat opportunity for the students who got a platform to exhibit their innovative ideas and go beyond their regular academia. The overall involvement of student organizers along with the faculty led to the grand success of this event. &nbsp;
+<blockquote style="padding: 5px 20px 5px 15px;"><span class="icon fa-quote-left" style="font-size:2.4em;color:#7f888f;"></span><br>
+<span class="begin">T</span>he review Session of  Build-a-thon was a very wholesome experience. The student and teacher mentors gave us some valuable feedback and ideas on how to improve our project. With all that feedback and ideas, we were able to make some great changes to our project. Apart from that, the plethora of projects on display there gave us a lot of ideas about what we can do in the future. &nbsp;
 <br><br>
-<span class="icon fa-minus"></span> <span style="font-weight: bold;"></span><br>
-<span class="icon fa-quote-right" style="position: absolute;font-size:2.4em;right:15px;bottom:0;"></span>
+<span class="icon fa-minus"></span>&nbsp;<span style="font-weight: bold;">Abhishek Bhalotia</span> , Team RunTime Terror<br>
+<span class="icon fa-quote-right" style="position: absolute;font-size:2.4em;right:15px;bottom:0;color:#7f888f;"></span>
 <br>
 </blockquote>
 </div>
-
 ## Organizers
 
 [Mr. Aditya Raman](https://ramanaditya.github.io)<br>
