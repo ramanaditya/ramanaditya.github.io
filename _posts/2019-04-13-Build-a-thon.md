@@ -150,6 +150,7 @@ The final decisions of the judges are to be based on the parameters mentioned ab
 ## Event Organizers
 
 <span class="image left"><img src="{{ '/assets/images/aditya.png' | absolute_url }}" /></span>
+
 Mr. Aditya Raman<br>
 Contact No: 9472166358 (whatsapp)<br>
 		9901561092<br>
