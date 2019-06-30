@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Build-a-thon
+title: "Build-a-thon : Review Session"
 subtitle: A little effort towards success
 description: 
 author: aditya
@@ -62,7 +62,7 @@ The panel of jury selected them all for the exhibition on the final day of Build
 <blockquote style="padding: 5px 20px 5px 15px;"><span class="icon fa-quote-left" style="font-size:2.4em;color:#7f888f;"></span><br>
 <span class="begin">We</span> had this Build-a-Thon review session and it was quite helpful and informative . We showed our projects to the judges and got really great inputs on how we can make it better. Looking forward to the final session of the same where we will try to improvize and present a better version of our project.. &nbsp;
 <br><br>
-<span class="icon fa-minus"></span>&nbsp;<span style="font-weight: bold;">Simran Saxena</span> , Team Hustle Tech<br>
+<span class="icon fa-minus"></span>&nbsp;<span style="font-weight: bold;">Simran</span> , Team Hustle Tech<br>
 <span class="icon fa-quote-right" style="position: absolute;font-size:2.4em;right:15px;bottom:0;color:#7f888f;"></span>
 <br>
 </blockquote>
@@ -110,6 +110,7 @@ The panel of mentors include a team of senior students who together have won dif
 <br>
 </blockquote>
 </div>
+
 ## Organizers
 
 [Mr. Aditya Raman](https://ramanaditya.github.io)<br>
@@ -123,7 +124,7 @@ Email Id :  aswingopinathan1871@gmail.com <br>
 Linkedin: [aswin-gopinathan-69556716a](https://www.linkedin.com/in/aswin-gopinathan-69556716a)<br>
 
 ## Important Documents
-- [Original Document](https://docs.google.com/document/d/1ysaeEnVaQwyH02FS9XgBOQ8yhk7w7IzKsjTEpI7dmbU/edit?usp=sharing)
+- [Original Document](http://ramanaditya.github.io/blogs/events/Build-a-thon)
 - [Teams Registered](https://docs.google.com/spreadsheets/d/1iKFGWpkVjJmRlkBlmT0P3Lk6Z1IwL0tQbWyPrgXDT20/edit?usp=sharing)
 
 ## Pictures From the Day
