@@ -32,7 +32,7 @@ The date and time is for the presentation of the projects/ideas before the judge
 
 |||
 |:--:|:--:|
-|Date|**May 11,2019**|
+|Date|TBD|
 |Time|TBD|
 |Venue|TBD|
 
@@ -51,19 +51,19 @@ You can choose one or multiple from the list below
 
 ## Evaluation Criteria
 
-|-|-|
+|--|--|
 |Ambition​ ​of​ ​Problem | 15 |
 |Innovation​ ​of​ ​Solution | 20|
 |Quality​ ​of​ ​Implementation|20|
 |People​ ​Impact|15|
 |Quality​ ​of​ ​Presentation|10|
 |Future Applications|20|
-|--|--|		
+|--|--|
 |**Total**|**100**|
 
 ## EVENT SCHEDULE
 
-|-|-|
+|--|--|
 |Announcement of Build-a-thon|April 13, 2019|
 |Virtual Registration Start|April 13, 2019|
 |Virtual Registration End|April 14, 2019|
@@ -149,19 +149,27 @@ The final decisions of the judges are to be based on the parameters mentioned ab
 
 ## Event Organizers
 
-<span class="image left"><img src="{{ '/assets/images/aditya.png' | absolute_url }}" /></span>
+<div class="box alt">
+	<div class="row 50% uniform">
+<article>
+<span class="image left"><img src="{{ '/assets/images/aditya_r.jpeg' | absolute_url }}" /></span>
 
-Mr. Aditya Raman<br>
-Contact No: 9472166358 (whatsapp)<br>
-		9901561092<br>
+<a href="https://ramanaditya.github.io/">Mr. Aditya Raman</a><br>
+Contact No: 9901561092<br>
 Email Id : adityaraman96@gmail.com<br>
-Linkedin : [ramanaditya](https://www.linkedin.com/in/ramanaditya/)<br>
+Linkedin : <a href="https://www.linkedin.com/in/ramanaditya/">ramanaditya</a><br>
+</article>
+<article>
+<span class="image left"><img src="https://media.licdn.com/dms/image/C5103AQHJ9f8xxsKwcA/profile-displayphoto-shrink_800_800/0?e=1567641600&v=beta&t=ZIuWgB_VyVF0fBty2zq2OA32cgVcja8o3ERfomVGJb4" /></span>
 
-<span class="image left"><img src="{{ '/assets/images/2019-05-16-Build-a-thon/2019-05-16-Build-a-thon.png' | absolute_url }}" /></span>
-Mr. Aswin Gopinathan<br>
+<a>Mr. Aswin Gopinathan</a><br>
 Contact No.: 9900167683<br>
 Email Id :  aswingopinathan1871@gmail.com <br>
-Linkedin: [aswin-gopinathan-69556716a](https://www.linkedin.com/in/aswin-gopinathan-69556716a)<br>
+Linkedin: <a href="https://www.linkedin.com/in/aswin-gopinathan-69556716a">aswin-gopinathan-69556716a</a>
+</article>
+</div>
+</div>
+<br>
 
 <div class="row">
 <div class="5u 12u$(small)">

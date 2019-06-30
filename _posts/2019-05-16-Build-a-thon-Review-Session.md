@@ -113,15 +113,26 @@ The panel of mentors include a team of senior students who together have won dif
 
 ## Organizers
 
-[Mr. Aditya Raman](https://ramanaditya.github.io)<br>
-Contact No: 9472166358 (whatsapp)<br>
-Email Id : adityaraman96@gmail.com<br>
-Linkedin : [ramanaditya](https://www.linkedin.com/in/ramanaditya/)<br>
+<div class="box alt">
+	<div class="row 50% uniform">
+<article>
+<span class="image left"><img src="{{ '/assets/images/aditya_r.jpeg' | absolute_url }}" /></span>
 
-Mr. Aswin Gopinathan<br>
+<a href="https://ramanaditya.github.io/">Mr. Aditya Raman</a><br>
+Contact No: 9901561092<br>
+Email Id : adityaraman96@gmail.com<br>
+Linkedin : <a href="https://www.linkedin.com/in/ramanaditya/">ramanaditya</a><br>
+</article>
+<article>
+<span class="image left"><img src="https://media.licdn.com/dms/image/C5103AQHJ9f8xxsKwcA/profile-displayphoto-shrink_800_800/0?e=1567641600&v=beta&t=ZIuWgB_VyVF0fBty2zq2OA32cgVcja8o3ERfomVGJb4" /></span>
+
+<a>Mr. Aswin Gopinathan</a><br>
 Contact No.: 9900167683<br>
 Email Id :  aswingopinathan1871@gmail.com <br>
-Linkedin: [aswin-gopinathan-69556716a](https://www.linkedin.com/in/aswin-gopinathan-69556716a)<br>
+Linkedin: <a href="https://www.linkedin.com/in/aswin-gopinathan-69556716a">aswin-gopinathan-69556716a</a>
+</article>
+</div>
+</div><br>
 
 ## Important Documents
 - [Original Document](http://ramanaditya.github.io/blogs/events/Build-a-thon)
