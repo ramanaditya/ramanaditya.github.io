@@ -35,7 +35,7 @@
                 	  </header>
 
                   {% if page.image %}
-                  <span class="image main"><img src="{{ page.image | absolute_url }}" alt="" /></span>
+                  <span class="image main" style="z-index:-1"><img src="{{ page.image | absolute_url }}" alt="" /></span>
                   
                   {% endif %}
                 <div style="color:#3d4449;">
@@ -46,7 +46,7 @@
                 <small><a href="{{ site.baseurl }}/tags#{{ tag }}" style="text-decoration:none !important;color:#7f888f;"><span class="icon fa-tag">&nbsp;{{ tag | upcase }} &nbsp;</span></a></small>
                 {% endfor %}
                 </span>
-                <small style="float:right;">{{ page.content | number_of_words }} &nbsp; Words</small>
+                <small style="float:right;">{{ page.content | strip_html | number_of_words }} &nbsp; Words</small>
                 <!--<br><br>
                 <div class="sharethis-inline-share-buttons"></div>-->
                 <hr>

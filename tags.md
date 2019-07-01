@@ -53,7 +53,7 @@ permalink: '/tags/'
                 <a href="#{{ tag }}" style="color:#7f888f"><span class="icon fa-tag">{{ tag }}</span></a>
                 {% endfor %}
                 <span style="float:right;">
-                    {% assign words = post.content | number_of_words %}
+                    {% assign words = post.content | strip_html | number_of_words %}
                     {% if words < 360 %}
                       {% if words < 180 %}
                         Less than 1 min Read
