@@ -1,6 +1,6 @@
 ---
 layout: default
-permalink: '/blogs'
+permalink: '/blogs/'
 ---
 
 <div id="main" class="alt" style="text-align: center;">
