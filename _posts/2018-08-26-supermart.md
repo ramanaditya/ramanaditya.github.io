@@ -5,7 +5,7 @@ subtitle:
 description: 
 author: "aditya"
 comments: true
-image: 
+image: /assets/images/no-image-available.jpg
 categories: [blogs,project]
 tags: [C]
 featured: false
