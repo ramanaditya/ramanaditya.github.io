@@ -2,14 +2,14 @@
 layout: page
 title: "Supermart : Billing System"
 subtitle: 
-description: 
+description: "Real Life implementation of C langugae in printing bills in supermarkets"
 author: "aditya"
 comments: true
 image: /assets/images/no-image-available.jpg
 categories: [blogs,project]
 tags: [C]
 featured: false
-excerpt: ""
+excerpt: "The efficient Billing System based on Object codes and it will print the bill with all the items and tax percentages."
 ---
 
 # SuperMart
