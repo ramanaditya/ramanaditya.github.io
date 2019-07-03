@@ -131,8 +131,8 @@
 			<a href="{{ site.baseurl }}/tags#{{ tag }}" style="color:#7f888f;text-decoration: none !important">&nbsp;<span class="icon fa-tag">{{ tag }}</span></a>
 			{% endfor %}<br>
 			<span style="float:right">
-			{% for lang in post.languages %}
-			<a href="" style="color:#7f888f;text-decoration: none !important">&nbsp;<span class="icon fa-hashtag">{{ lang }}</span></a>
+			{% for prog_lang in post.prog_languages %}
+			<a href="{{ site.baseurl }}/prog_lang#{{ prog_lang }}" style="color:#7f888f;text-decoration: none !important">&nbsp;<span class="icon fa-hashtag">{{ prog_lang }}</span></a>
 			{% endfor %}
 			</div>
 		</article>

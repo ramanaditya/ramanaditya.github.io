@@ -2,15 +2,15 @@
 layout: page
 title: "Build-a-thon : Review Session"
 subtitle: A little effort towards success
-description: 
+description: "Review session of an intra college hackathon, Build-a-thon"
 author: "aditya"
 comments: true
 image: assets/images/2019-05-16-Build-a-thon/2019-05-16-Build-a-thon.png
 categories: [blogs,events]
 tags: [technical,event]
-languages: 
+prog_languages: 
 featured: true
-excerpt: ""
+excerpt: "An intra-college hackathon to provide an opportunity for brilliant young talents to create their works with the help of mentors and experts."
 ---
 
 ## REVIEW SESSION

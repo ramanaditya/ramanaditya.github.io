@@ -8,9 +8,9 @@ comments: true
 image: assets/images/2019-05-16-Build-a-thon/2019-05-16-Build-a-thon.png
 categories: [blogs,events]
 tags: [technical,event]
-languages: 
+prog_languages: 
 featured: false
-excerpt: ""
+excerpt: "An intra-college hackathon to provide an opportunity for brilliant young talents to create their works with the help of mentors and experts."
 ---
 
 ## About
@@ -84,40 +84,49 @@ You can choose one or multiple from the list below
 * All the final timings of the day for online submission and receiving confirmation is by 12 midnight.
 
 ## Mentors
-<span class="image left"><img src="{{ '/assets/images/2019-05-16-Build-a-thon/2019-05-16-Build-a-thon.png' | absolute_url }}" /></span>
-[Mr Sushen Kumar](https://www.sushen.in/)<br>
+
+<div class="box alt">
+	<div class="row 50% uniform">
+<article>
+<span class="image left"><img src="{{ 'https://media.licdn.com/dms/image/C5103AQHJTT_zSpWqBQ/profile-displayphoto-shrink_800_800/0?e=1567641600&v=beta&t=MJolL_4jSG1fWtmo-Vsx2CLwGSLr7A-GTRqyG2jDWbA' | absolute_url }}" /></span>
+<a href="https://www.sushen.in/">Mr Sushen Kumar</a><br>
 Founder & CTO startosphere.io <br>
 Former Intern at GISCLE Systems,Game Developer and over 5 apps on Playstore<br>
-Linkedin : [sushenk](https://linkedin.com/in/sushenk)<br>
+Linkedin : <a href="https://linkedin.com/in/sushenk">sushenk</a><br>
 Published : An Effective Approach to Discern Leaders in Wireless Sensor Networks<br>
 Winner of Valuepitch Hackathon,Ideathon,runner up IESA Makeathon and many more
-
-<span class="image left"><img src="{{ '/assets/images/2019-05-16-Build-a-thon/2019-05-16-Build-a-thon.png' | absolute_url }}" /></span>
-[Mr. Abhijeet Singh](http://absingh.com)<br>
+</article>
+<article>
+<span class="image left"><img src="{{ 'https://avatars2.githubusercontent.com/u/29686866?s=460&v=4' | absolute_url }}" /></span>
+<a href="http://absingh.com">Mr. Abhijeet Singh</a><br>
 Artificial Intelligence Intern | Microsoft Student Partner | Google Scholar		<br>
 Email Id : contact.abhijeetsingh@gmail.com <br>
-Linkedin : [thatniceman](https://www.linkedin.com/in/thatniceman/) <br> Winner of Innovation and FutureSkills Hackathon, Ideathon, NASA Space Apps 2018 India and many more
-
-<span class="image left"><img src="{{ '/assets/images/2019-05-16-Build-a-thon/2019-05-16-Build-a-thon.png' | absolute_url }}" /></span>
+Linkedin : <a href="https://www.linkedin.com/in/thatniceman/">thatniceman</a> <br> Winner of Innovation and FutureSkills Hackathon, Ideathon, NASA Space Apps 2018 India and many more
+</article>
+<article>
+<span class="image left"><img src="{{ 'https://avatars1.githubusercontent.com/u/30434974?s=460&v=4' | absolute_url }}" /></span>
 Mr. Vipul Gaurav<br>
 Email Id : vgaurav3011@gmail.com <br>
-Linkedin : [vipul-gaurav](https://www.linkedin.com/in/vipul-gaurav/)<br>
+Linkedin : <a href="https://www.linkedin.com/in/vipul-gaurav/">vipul-gaurav</a><br>
 Winner of Smart India Hackathon, goldman Sachs  2019, Ideathon Incubate, Futureskills Hackathon, Makeathon Mvit, Incubateind Scholar Recipient and many more
-
-<span class="image left"><img src="{{ '/assets/images/2019-05-16-Build-a-thon/2019-05-16-Build-a-thon.png' | absolute_url }}" /></span>
+</article>
+<article>
+<span class="image left"><img src="{{ 'https://media.licdn.com/dms/image/C5103AQFQUDgTcjraBg/profile-displayphoto-shrink_800_800/0?e=1567641600&v=beta&t=oo82Ia561GbK4hP7vvwEQHrqZ9H2vMLXmGKw9qB8Joo' | absolute_url }}" /></span>
 Mr. Susmit Agarwal<br>
 Deep Learning Intern<br>
 Email Id : susmit600@gmail.com<br>
-Linkedin : [susmit-agrawal-9b6443149](https://www.linkedin.com/in/susmit-agrawal-9b6443149/) <br>
+Linkedin : <a href="https://www.linkedin.com/in/susmit-agrawal-9b6443149/">susmit-agrawal-9b6443149</a> <br>
 Winner of Innovation and FutureSkills Hackathon, Ideathon, NASA Space Apps 2018 India, MSHACK Finalist and many more
-
-<span class="image left"><img src="{{ '/assets/images/2019-05-16-Build-a-thon/2019-05-16-Build-a-thon.png' | absolute_url }}" /></span>
+</article>
+<article>
+<span class="image left"><img src="{{ 'https://avatars3.githubusercontent.com/u/38475583?s=460&v=4' | absolute_url }}" /></span>
 Mr. Tushar Sharma	<br>				
 Machine Learning Enthusiast<br>
 Email Id : ts16sharma@gmail.com <br>
-Linkedin: [tusharsharma16](https://www.linkedin.com/in/tusharsharma16/ )
+Linkedin: <a href="https://www.linkedin.com/in/tusharsharma16/">tusharsharma16</a>
+</article>
+</div></div>
 
-<br>
 ## EVENT PARTICIPATION
 ### REGISTRATION
 Registration for participation in the Build-a-thon is to take place online by providing all necessary information using the form that can be found at https://forms.gle/9o3YFYEyuJyHDBEr6. Registration will begin on April 19, 2019.
@@ -157,7 +166,7 @@ The final decisions of the judges are to be based on the parameters mentioned ab
 <div class="box alt">
 	<div class="row 50% uniform">
 <article>
-<span class="image left"><img src="{{ '/assets/images/aditya_r.jpeg' | absolute_url }}" /></span>
+<span class="image left"><img src="{{ 'https://avatars3.githubusercontent.com/u/32497523?s=460&v=4' | absolute_url }}" /></span>
 
 <a href="https://ramanaditya.github.io/">Mr. Aditya Raman</a><br>
 Contact No: 9901561092<br>
@@ -177,6 +186,17 @@ Linkedin: <a href="https://www.linkedin.com/in/aswin-gopinathan-69556716a">aswin
 <br>
 
 <div class="row">
+<div class="4u 12u$(small)">
+<h3>Faculty Coordinators</h3>
+<li>Dr Savita Chaudhary </li>
+<li>Mrs. Pallavi</li>
+<li>Mrs Sushila</li>
+<li>Mrs. Rekha BN</li>
+</div>
+<div class="3u 12u$(small)">
+<p></p>
+</div>
+
 <div class="5u 12u$(small)">
 <h3>Organized By</h3>	
 
@@ -184,17 +204,7 @@ The Department of
 <strong>Computer	Science	
 and Engineering</strong>
 <br><br>
-<h4>Sir M. Visvesvaraya
-Institute Of Technology</h4>
-</div>
-<div class="3u 12u$(small)">
-<p></p>
-</div>
-<div class="4u 12u$(small)">
-<h3>Faculty Coordinators</h3>
-<li>Dr Savita Chaudhary </li>
-<li>Mrs. Pallavi</li>
-<li>Mrs Sushila</li>
-<li>Mrs. Rekha BN</li>
+<h4><a href="https://www.sirmvit.edu/">Sir M. Visvesvaraya
+Institute Of Technology</a></h4>
 </div>
 </div>

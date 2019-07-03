@@ -7,8 +7,8 @@ author: "aditya"
 comments: true
 image: /assets/images/2018-11-18-techlearn/table.jpg
 categories: [blogs,project]
-tags: [django,e-learning]
-languages: [Django,Python]
+tags: [e-learning]
+prog_languages: [django,python]
 featured: false
 excerpt: "An e-learning portal developed using Django framework. Our primary aim is to provide free and efficient information and it is accessible for everyone."
 ---

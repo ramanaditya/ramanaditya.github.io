@@ -43,11 +43,14 @@
                 </div>
                 <hr>
                 {% for tag in page.tags %}
-                <small><a href="{{ site.baseurl }}/tags#{{ tag }}" style="text-decoration:none !important;color:#7f888f;"><span class="icon fa-tag">&nbsp;{{ tag | upcase }} &nbsp;</span></a></small>
+                <small><a href="{{ site.baseurl }}/tags#{{ tag }}" style="text-decoration:none !important;color:#7f888f;"><span class="icon fa-tag">{{ tag | upcase }} &nbsp;</span></a></small>
+                {% endfor %}
+                {% for prog_lang in page.prog_languages %}
+                  <small><a href="" style="color:#7f888f;float:right;text-decoration: none !important"><span class="icon fa-hashtag">{{ prog_lang | upcase }}&nbsp;</span></a>
                 {% endfor %}
                 </span>
-                <small style="float:right;">{{ page.content | strip_html | number_of_words }} &nbsp; Words</small>
-                <!--<br><br>
+                <!--<small style="float:right;">{{ page.content | strip_html | number_of_words }} &nbsp; Words</small>
+                <br><br>
                 <div class="sharethis-inline-share-buttons"></div>-->
                 <hr>
                 {% include author.html %}
