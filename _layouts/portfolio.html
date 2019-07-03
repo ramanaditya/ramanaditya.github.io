@@ -2,6 +2,334 @@
 <html>
 {% include head.html %}
 <link rel="stylesheet" href="{{ 'assets/skills/css/default.css' | relative_url }}" />
+<script>
+window.onload = function () {
+
+var totalVisitors1 = 500;
+var visitorsData1 = {
+	"Programming Languages": [{
+		click: visitorsChartDrilldownHandler1,
+		cursor: "pointer",
+		explodeOnClick: false,
+		innerRadius: "75%",
+		legendMarkerType: "square",
+		name: "Programming Languages",
+		radius: "100%",
+		showInLegend: true,
+		startAngle: 90,
+		type: "doughnut",
+		dataPoints: [
+			{ y: 80, name: "Python", color: "#E7823A" },
+			{ y: 90, name: "C", color: "#546BC1" },
+            { y: 100, name: "C++", color: "#62d467" },
+            { y: 100, name: "Java", color: "#245e7b" }
+
+		]
+	}],
+	"Python": [{
+		color: "#E7823A",
+		name: "Python",
+		type: "column",
+		dataPoints: [
+			{ x: new Date("1 Jan 2015"), y: 33000 },
+			{ x: new Date("1 Feb 2015"), y: 35960 },
+			{ x: new Date("1 Mar 2015"), y: 42160 },
+			{ x: new Date("1 Apr 2015"), y: 42240 },
+			{ x: new Date("1 May 2015"), y: 43200 },
+			{ x: new Date("1 Jun 2015"), y: 40600 },
+			{ x: new Date("1 Jul 2015"), y: 42560 },
+			{ x: new Date("1 Aug 2015"), y: 44280 },
+			{ x: new Date("1 Sep 2015"), y: 44800 },
+			{ x: new Date("1 Oct 2015"), y: 48720 },
+			{ x: new Date("1 Nov 2015"), y: 50840 },
+			{ x: new Date("1 Dec 2015"), y: 51600 }
+		]
+	}],
+	"C": [{
+		color: "#546BC1",
+		name: "C",
+		type: "column",
+		dataPoints: [
+			{ x: new Date("1 Jan 2015"), y: 22000 },
+			{ x: new Date("1 Feb 2015"), y: 26040 },
+			{ x: new Date("1 Mar 2015"), y: 25840 },
+			{ x: new Date("1 Apr 2015"), y: 23760 },
+			{ x: new Date("1 May 2015"), y: 28800 },
+			{ x: new Date("1 Jun 2015"), y: 29400 },
+			{ x: new Date("1 Jul 2015"), y: 33440 },
+			{ x: new Date("1 Aug 2015"), y: 37720 },
+			{ x: new Date("1 Sep 2015"), y: 35200 },
+			{ x: new Date("1 Oct 2015"), y: 35280 },
+			{ x: new Date("1 Nov 2015"), y: 31160 },
+			{ x: new Date("1 Dec 2015"), y: 34400 }
+		]
+	}],
+    "C++": [{
+		color: "#62d467",
+		name: "C++",
+		type: "column",
+		dataPoints: [
+			{ x: new Date("1 Jan 2015"), y: 22000 },
+			{ x: new Date("1 Feb 2015"), y: 26040 },
+			{ x: new Date("1 Mar 2015"), y: 25840 },
+			{ x: new Date("1 Apr 2015"), y: 23760 },
+			{ x: new Date("1 May 2015"), y: 28800 },
+			{ x: new Date("1 Jun 2015"), y: 29400 },
+			{ x: new Date("1 Jul 2015"), y: 33440 },
+			{ x: new Date("1 Aug 2015"), y: 37720 },
+			{ x: new Date("1 Sep 2015"), y: 35200 },
+			{ x: new Date("1 Oct 2015"), y: 35280 },
+			{ x: new Date("1 Nov 2015"), y: 31160 },
+			{ x: new Date("1 Dec 2015"), y: 34400 }
+		]
+	}],
+    "Java": [{
+		color: "#245e7b",
+		name: "Java",
+		type: "column",
+		dataPoints: [
+			{ x: new Date("1 Jan 2015"), y: 100 },
+			{ x: new Date("1 Feb 2015"), y: 90 },
+			{ x: new Date("1 Mar 2015"), y: 100 },
+			{ x: new Date("1 Apr 2015"), y: 80 },
+			{ x: new Date("1 May 2015"), y: 60 },
+			{ x: new Date("1 Jun 2015"), y: 50 },
+			{ x: new Date("1 Jul 2015"), y: 90 },
+			{ x: new Date("1 Aug 2015"), y: 100 },
+			{ x: new Date("1 Sep 2015"), y: 30 },
+			{ x: new Date("1 Oct 2015"), y: 10 },
+			{ x: new Date("1 Nov 2015"), y: 30 },
+			{ x: new Date("1 Dec 2015"), y: 20 }
+		]
+	}]
+};
+
+var newVSReturningVisitorsOptions1 = {
+	animationEnabled: true,
+	theme: "light2",
+	title: {
+		text: "Programming Languages"
+	},
+	subtitles: [{
+		text: "Click on Any Segment to Drilldown",
+		backgroundColor: "#ef6b6b",
+		fontSize: 16,
+		fontColor: "white",
+		padding: 10
+	}],
+	legend: {
+		fontFamily: "calibri",
+		fontSize: 14,
+		itemTextFormatter: function (e) {
+			return e.dataPoint.name + ": " + Math.round(e.dataPoint.y / totalVisitors1 * 100) + "%";  
+		}  
+	}
+};
+var visitorsDrilldownedChartOptions1 = {
+	animationEnabled: true,
+	theme: "light2",
+	axisX: {
+		labelFontColor: "#717171",
+		lineColor: "#a2a2a2",
+		tickColor: "#a2a2a2"
+	},
+	axisY: {
+		gridThickness: 0,
+		includeZero: false,
+		labelFontColor: "#717171",
+		lineColor: "#a2a2a2",
+		tickColor: "#a2a2a2",
+		lineThickness: 1
+	},
+	data: []
+};
+
+var chart1 = new CanvasJS.Chart("chartContainer1", newVSReturningVisitorsOptions1);
+chart1.options.data = visitorsData1["Programming Languages"];
+chart1.render();
+
+function visitorsChartDrilldownHandler1(e) {
+	chart1 = new CanvasJS.Chart("chartContainer1", visitorsDrilldownedChartOptions1);
+	chart1.options.data = visitorsData1[e.dataPoint.name];
+	chart1.options.title = { text: e.dataPoint.name }
+	chart1.render();
+	$("#backButton1").toggleClass("invisible");
+}
+
+$("#backButton1").click(function() { 
+	$(this).toggleClass("invisible");
+	chart1 = new CanvasJS.Chart("chartContainer1", newVSReturningVisitorsOptions1);
+	chart1.options.data = visitorsData1["Programming Languages"];
+	chart1.render();
+});
+
+
+
+var totalVisitors2 = 500;
+var visitorsData2 = {
+	"Programming": [{
+		click: visitorsChartDrilldownHandler2,
+		cursor: "pointer",
+		explodeOnClick: false,
+		innerRadius: "75%",
+		legendMarkerType: "square",
+		name: "Programming",
+		radius: "100%",
+		showInLegend: true,
+		startAngle: 90,
+		type: "doughnut",
+		dataPoints: [
+			{ y: 80, name: "Python", color: "#E7823A" },
+			{ y: 90, name: "C", color: "#546BC1" },
+            { y: 100, name: "C++", color: "#62d467" },
+            { y: 100, name: "Java", color: "#245e7b" }
+
+		]
+	}],
+	"Python": [{
+		color: "#E7823A",
+		name: "Python",
+		type: "column",
+		dataPoints: [
+			{ x: new Date("1 Jan 2015"), y: 33000 },
+			{ x: new Date("1 Feb 2015"), y: 35960 },
+			{ x: new Date("1 Mar 2015"), y: 42160 },
+			{ x: new Date("1 Apr 2015"), y: 42240 },
+			{ x: new Date("1 May 2015"), y: 43200 },
+			{ x: new Date("1 Jun 2015"), y: 40600 },
+			{ x: new Date("1 Jul 2015"), y: 42560 },
+			{ x: new Date("1 Aug 2015"), y: 44280 },
+			{ x: new Date("1 Sep 2015"), y: 44800 },
+			{ x: new Date("1 Oct 2015"), y: 48720 },
+			{ x: new Date("1 Nov 2015"), y: 50840 },
+			{ x: new Date("1 Dec 2015"), y: 51600 }
+		]
+	}],
+	"C": [{
+		color: "#546BC1",
+		name: "C",
+		type: "column",
+		dataPoints: [
+			{ x: new Date("1 Jan 2015"), y: 22000 },
+			{ x: new Date("1 Feb 2015"), y: 26040 },
+			{ x: new Date("1 Mar 2015"), y: 25840 },
+			{ x: new Date("1 Apr 2015"), y: 23760 },
+			{ x: new Date("1 May 2015"), y: 28800 },
+			{ x: new Date("1 Jun 2015"), y: 29400 },
+			{ x: new Date("1 Jul 2015"), y: 33440 },
+			{ x: new Date("1 Aug 2015"), y: 37720 },
+			{ x: new Date("1 Sep 2015"), y: 35200 },
+			{ x: new Date("1 Oct 2015"), y: 35280 },
+			{ x: new Date("1 Nov 2015"), y: 31160 },
+			{ x: new Date("1 Dec 2015"), y: 34400 }
+		]
+	}],
+    "C++": [{
+		color: "#62d467",
+		name: "C++",
+		type: "column",
+		dataPoints: [
+			{ x: new Date("1 Jan 2015"), y: 22000 },
+			{ x: new Date("1 Feb 2015"), y: 26040 },
+			{ x: new Date("1 Mar 2015"), y: 25840 },
+			{ x: new Date("1 Apr 2015"), y: 23760 },
+			{ x: new Date("1 May 2015"), y: 28800 },
+			{ x: new Date("1 Jun 2015"), y: 29400 },
+			{ x: new Date("1 Jul 2015"), y: 33440 },
+			{ x: new Date("1 Aug 2015"), y: 37720 },
+			{ x: new Date("1 Sep 2015"), y: 35200 },
+			{ x: new Date("1 Oct 2015"), y: 35280 },
+			{ x: new Date("1 Nov 2015"), y: 31160 },
+			{ x: new Date("1 Dec 2015"), y: 34400 }
+		]
+	}],
+    "Java": [{
+		color: "#245e7b",
+		name: "Java",
+		type: "column",
+		dataPoints: [
+			{ x: new Date("1 Jan 2015"), y: 100 },
+			{ x: new Date("1 Feb 2015"), y: 90 },
+			{ x: new Date("1 Mar 2015"), y: 100 },
+			{ x: new Date("1 Apr 2015"), y: 80 },
+			{ x: new Date("1 May 2015"), y: 60 },
+			{ x: new Date("1 Jun 2015"), y: 50 },
+			{ x: new Date("1 Jul 2015"), y: 90 },
+			{ x: new Date("1 Aug 2015"), y: 100 },
+			{ x: new Date("1 Sep 2015"), y: 30 },
+			{ x: new Date("1 Oct 2015"), y: 10 },
+			{ x: new Date("1 Nov 2015"), y: 30 },
+			{ x: new Date("1 Dec 2015"), y: 20 }
+		]
+	}]
+};
+
+var newVSReturningVisitorsOptions2 = {
+	animationEnabled: true,
+	theme: "light2",
+	title: {
+		text: "Programming"
+	},
+	subtitles: [{
+		text: "Click on Any Segment to Drilldown",
+		backgroundColor: "#ef6b6b",
+		fontSize: 16,
+		fontColor: "white",
+		padding: 10
+	}],
+	legend: {
+		fontFamily: "calibri",
+		fontSize: 14,
+		itemTextFormatter: function (e) {
+			return e.dataPoint.name + ": " + Math.round(e.dataPoint.y / totalVisitors2 * 100) + "%";  
+		}  
+	}
+};
+var visitorsDrilldownedChartOptions2 = {
+	animationEnabled: true,
+	theme: "light2",
+	axisX: {
+		labelFontColor: "#717171",
+		lineColor: "#a2a2a2",
+		tickColor: "#a2a2a2"
+	},
+	axisY: {
+		gridThickness: 0,
+		includeZero: false,
+		labelFontColor: "#717171",
+		lineColor: "#a2a2a2",
+		tickColor: "#a2a2a2",
+		lineThickness: 1
+	},
+	data: []
+};
+
+var chart2 = new CanvasJS.Chart("chartContainer2", newVSReturningVisitorsOptions2);
+chart2.options.data = visitorsData2["Programming"];
+chart2.render();
+
+function visitorsChartDrilldownHandler2(e) {
+	chart2 = new CanvasJS.Chart("chartContainer2", visitorsDrilldownedChartOptions2);
+	chart2.options.data = visitorsData2[e.dataPoint.name];
+	chart2.options.title = { text: e.dataPoint.name }
+	chart2.render();
+	$("#backButton2").toggleClass("invisible");
+}
+
+$("#backButton2").click(function() { 
+	$(this).toggleClass("invisible");
+	chart2 = new CanvasJS.Chart("chartContainer2", newVSReturningVisitorsOptions2);
+	chart2.options.data = visitorsData2["Programming"];
+	chart2.render();
+});
+}
+</script>
+<style>
+
+  .invisible {
+    display: none;
+  }
+</style>
 <body>
     
     <!-- Wrapper -->
@@ -60,6 +388,20 @@
             <header class="major hide-mobile">
                 <h2 id="Top Skills">Top Skills</h2>
             </header>
+            <div class="row" class="hide-mobile">
+            <div class="6u 12u$(small)" class="hide-mobile">
+                <a class="button special small invisible" id="backButton1">< Back</a>
+                <div id="chartContainer1" style="height: 300px; width: 100%;"><p></p></div>
+                <script src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+                </div>
+                <div class="6u 12u$(small)" class="hide-mobile">
+                    <a class="button special small invisible" id="backButton2">< Back</a>
+                    <div id="chartContainer2" style="height: 300px; width: 100%;"><p></p></div>
+                        <script src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+                </div>
+            </div>
         <div class="row" class="hide-mobile">
             <div class="3u 12u$(small)" class="hide-mobile">
                 <p></p>
@@ -434,6 +776,8 @@ function changeText(id) {
     }
 }
 </script>
+<script src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
 </body>
 
 </html>
