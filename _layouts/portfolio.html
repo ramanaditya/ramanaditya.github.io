@@ -108,13 +108,13 @@ var newVSReturningVisitorsOptions1 = {
 	animationEnabled: true,
 	theme: "light2",
 	title: {
-		text: "Programming Languages"
+		text: ""
 	},
 	subtitles: [{
 		text: "Click on Any Segment to Drilldown",
-		backgroundColor: "#ef6b6b",
+		//backgroundColor: "#ef6b6b",
 		fontSize: 16,
-		fontColor: "white",
+		fontColor: "black",
 		padding: 10
 	}],
 	legend: {
@@ -268,13 +268,13 @@ var newVSReturningVisitorsOptions2 = {
 	animationEnabled: true,
 	theme: "light2",
 	title: {
-		text: "Programming"
+		text: ""
 	},
 	subtitles: [{
 		text: "Click on Any Segment to Drilldown",
-		backgroundColor: "#ef6b6b",
+		//backgroundColor: "#ef6b6b",
 		fontSize: 16,
-		fontColor: "white",
+		fontColor: "black",
 		padding: 10
 	}],
 	legend: {
@@ -329,6 +329,33 @@ $("#backButton2").click(function() {
   .invisible {
     display: none;
   }
+.card {
+				border: 0rem;
+				border-radius: 0rem;
+			}
+			
+			.card-header {
+				background-color: #37474F;
+				border-radius: 0 !important;
+				color:	white;
+				margin-bottom: 0;
+				padding:	1rem;
+                
+			}
+			
+			.card-block {
+				border: 1px solid #cccccc;	
+			}
+			
+			.shadow {
+				box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14),
+										0 1px 18px 0 rgba(0, 0, 0, 0.12),
+										0 3px 5px -1px rgba(0, 0, 0, 0.2);
+			}
+            #chartContainer2, #chartContainer1, #orders-spline-chart {
+				height: 300px;
+				width: 100%;
+			}	
 </style>
 <body>
     
@@ -388,18 +415,26 @@ $("#backButton2").click(function() {
             <header class="major hide-mobile">
                 <h2 id="Top Skills">Top Skills</h2>
             </header>
-            <div class="row" class="hide-mobile">
-            <div class="6u 12u$(small)" class="hide-mobile">
-                <a class="button special small invisible" id="backButton1">< Back</a>
-                <div id="chartContainer1" style="height: 300px; width: 100%;"><p></p></div>
-                <script src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
-<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+            <div class="row">
+            <div class="6u 12u$(small)">
+                <div class="card shadow">
+						<h4 class="card-header">Programming Languages<span class="invisible" id="backButton1" style="float:right;cursor:pointer;">&#x3C; Back</span></h4>
+						<div class="card-block">
+							<div id="chartContainer1"></div>
+						</div>
+					</div>
                 </div>
-                <div class="6u 12u$(small)" class="hide-mobile">
-                    <a class="button special small invisible" id="backButton2">< Back</a>
-                    <div id="chartContainer2" style="height: 300px; width: 100%;"><p></p></div>
-                        <script src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
-<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+                <div class="6u 12u$(small)">
+                    <div class="card shadow">
+						<h4 class="card-header">Programming Languages<span class="invisible" id="backButton2" style="float:right;cursor:pointer;">&#x3C; Back</span></h4>
+						<div class="card-block">
+							<div id="chartContainer2"></div>
+						</div>
+					</div>
+                
+                    <!--<a class="button special small invisible" id="backButton2">< Back</a>
+                    <div id="chartContainer2" style="height: 300px; width: 100%;"><p></p></div>-->
+                        
                 </div>
             </div>
         <div class="row" class="hide-mobile">
@@ -750,6 +785,8 @@ $("#backButton2").click(function() {
       <script src="{{ "assets/skills/js/init.js" | absolute_url }}"></script>
       <script src="{{ "assets/skills/js/jquery.js" | absolute_url }}"></script>
       <script src="{{ "assets/skills/js/raphael.js" | absolute_url }}"></script>
+      <script src="{{ "assets/graphs/js/jquery-1.11.1.min.js" | absolute_url }}"></script>
+      <script src="{{ "assets/graphs/js/canvasjs.min.js" | absolute_url }}"></script>
         <script>
 var acc = document.getElementsByClassName("accordion");
 var i;
@@ -776,8 +813,8 @@ function changeText(id) {
     }
 }
 </script>
-<script src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
-<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+
+
 </body>
 
 </html>
