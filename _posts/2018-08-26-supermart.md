@@ -8,6 +8,7 @@ comments: true
 image: /assets/images/no-image-available.jpg
 categories: [blogs,project]
 tags: [C]
+languages: [C]
 featured: false
 excerpt: "The efficient Billing System based on Object codes and it will print the bill with all the items and tax percentages."
 ---

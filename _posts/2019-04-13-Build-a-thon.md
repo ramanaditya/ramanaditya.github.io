@@ -8,6 +8,7 @@ comments: true
 image: assets/images/2019-05-16-Build-a-thon/2019-05-16-Build-a-thon.png
 categories: [blogs,events]
 tags: [technical,event]
+languages: 
 featured: false
 excerpt: ""
 ---
