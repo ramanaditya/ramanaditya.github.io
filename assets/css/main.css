@@ -4257,7 +4257,7 @@ body .gist .blob-code {
   transition: 0.4s;
 }
 
-.active, .accordion:hover {
+.active_acc, .accordion:hover {
  
 }
 
@@ -4269,7 +4269,7 @@ body .gist .blob-code {
   margin-left: 5px;
 }
 
-.active:after {
+.active_acc:after {
   content: "\2212";
 }
 
