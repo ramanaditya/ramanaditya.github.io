@@ -217,7 +217,8 @@
         userId: '1603713456',
         accessToken: '1603713456.1677ed0.f0991c2e6b5f49a6bcfa0bc963c19d43', 
 		sortBy: "most-recent",
-		template: '<span class=\"image left\"><a href=\"\{\{link\}\}\"><img src=\"\{\{image\}\}\" alt="" /></a></span>'
+		orientation: "square",
+		template: '<span class=\"image left\" style="min-width:50%;max-width:50%;"><a href=\"\{\{link\}\}\"><img src=\"\{\{image\}\}\" alt="" /><span class=\"icon fa-heart\" style="float:left;margin-left:10%;color:red;font-size:18px;">&nbsp;\{\{likes\}\}</span><span class=\"icon fa-comments\" style="float:right;margin-right:10%;color:black;font-size:18px;">&nbsp;\{\{comments\}\}</span></a></span>'
     });
     userFeed.run();
 </script>
