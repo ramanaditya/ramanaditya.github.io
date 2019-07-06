@@ -211,10 +211,10 @@
 	var loadButton = document.getElementById('load-more');
     var userFeed = new Instafeed({
         get: 'user',
-		limit:6,
         userId: '1603713456',
         accessToken: '1603713456.1677ed0.f0991c2e6b5f49a6bcfa0bc963c19d43', 
-		sortBy: "random",
+		sortBy: "most-recent",
+		limit:6,
 		orientation: "square",
 		template: '<span class=\"image left\" style="min-width:50%;max-width:50%;margin-bottom:-10px;"><a href=\"\{\{link\}\}\"><img src=\"\{\{image\}\}\" alt="" /><span class=\"icon fa-heart\" style="float:left;margin-left:10%;color:red;font-size:13px;">&nbsp;\{\{likes\}\}</span><span class=\"icon fa-comments\" style="float:right;margin-right:10%;color:black;font-size:13px;">&nbsp;\{\{comments\}\}</span></a></span>'
     });
