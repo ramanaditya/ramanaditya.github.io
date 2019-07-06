@@ -221,7 +221,7 @@ var newVSReturningVisitorsOptions2 = {
 		fontFamily: "calibri",
 		fontSize: 14,
 		itemTextFormatter: function (e) {
-			return e.dataPoint.name + ": " + Math.round(e.dataPoint.y / totalVisitors2 * 100) + "%";  
+			return e.dataPoint.name + ": " + Math.round(e.dataPoint.y);  
 		}  
 	}
 };
@@ -373,7 +373,6 @@ $("#backButton2").click(function() {
                     <div id="chartContainer2"></div>
                 </article>
             </div>
-            <br>
             <!--
             <div class="posts">
 <article>
@@ -699,11 +698,6 @@ $("#backButton2").click(function() {
       </div>
 
       {% include javascript.html %}
-      <script src="{{ "assets/skills/js/init.js" | absolute_url }}"></script>
-      <script src="{{ "assets/skills/js/jquery.js" | absolute_url }}"></script>
-      <script src="{{ "assets/skills/js/raphael.js" | absolute_url }}"></script>
-      <script src="{{ "assets/graphs/js/jquery-1.11.1.min.js" | absolute_url }}"></script>
-      <script src="{{ "assets/graphs/js/canvasjs.min.js" | absolute_url }}"></script>
         <script>
 var acc = document.getElementsByClassName("accordion");
 var i;

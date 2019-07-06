@@ -1,25 +1,4 @@
-body {
-    background-image: url("images/paper-texture.png");
-}
-blockquote {
-    border-left: 2px solid #065f66;
-    margin-left: 5px;
-    padding-left: 10px;
-}
-blockquote p {
-    display: inline;
-}
-.author {
-    color: #8793A4;
-    font-family: 'Bookman Old Style', serif;
-    font-size: 20px;
-}
-.author::before {
-        content: '\2014 \00A0';
-}
-.header {
-    padding-top: 15px;
-}
+
 .heading {
     color: #065f66;
     font-family: Garamond, serif;

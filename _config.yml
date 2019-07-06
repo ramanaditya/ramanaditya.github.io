@@ -21,6 +21,9 @@ github_url: https://github.com/ramanaditya
 gitlab_url: https://gitlab.com/ramanaditya
 googleplus_url: 
 instagram_url: https://instagram.com/_adityaraman
+INSTAGRAM_USER_ID: 1603713456
+INSTAGRAM_CLIENT_ID: ed06ece6ad2b40b184c0fafa994a84af
+#access_token: 1603713456.1677ed0.f0991c2e6b5f49a6bcfa0bc963c19d43
 linkedin_url: https://www.linkedin.com/in/ramanaditya
 pinterest_url:
 slack_url:
@@ -34,12 +37,17 @@ sass:
   style: compressed
 
 highlighter: rouge
+plugins_dir: _plugins
 plugins:
   - jekyll-gist
   - jekyll-paginate
+  - jekyll-twitter-plugin
 gist:
   noscript: false
 
 permalink: /:categories/:title
 paginate: 6
 paginate_path: /page:num/
+
+
+instafeed: true
