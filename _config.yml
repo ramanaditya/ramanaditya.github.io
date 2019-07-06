@@ -37,11 +37,12 @@ sass:
   style: compressed
 
 highlighter: rouge
-plugins_dir: _plugins
+
 plugins:
   - jekyll-gist
   - jekyll-paginate
   - jekyll-twitter-plugin
+  
 gist:
   noscript: false
 
