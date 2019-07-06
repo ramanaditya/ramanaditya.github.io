@@ -7,80 +7,55 @@ window.onload = function () {
 
 var totalVisitors1 = 500;
 var visitorsData1 = {
-	"Programming Languages": [{
+	"Skills": [{
 		click: visitorsChartDrilldownHandler1,
 		cursor: "pointer",
-		explodeOnClick: false,
-		innerRadius: "75%",
-		legendMarkerType: "square",
-		name: "Programming Languages",
+		explodeOnClick: true,
+		innerRadius: "0%",
+		legendMarkerType: "circle",
+		name: "Skills",
 		radius: "100%",
 		showInLegend: true,
 		startAngle: 90,
+        indexLabel: " {name} : {y} ",
 		type: "doughnut",
 		dataPoints: [
-			{ y: 80, name: "Python", color: "#E7823A" },
-			{ y: 90, name: "C", color: "#546BC1" },
-            { y: 100, name: "C++", color: "#62d467" },
-            { y: 100, name: "Java", color: "#245e7b" }
-
+			{ y: 7, name: "Languages", color: "#ef6a6a" },
+			{ y: 2, name: "Databases", color: "#546BC1" },
+            { y: 3, name: "Operating System", color: "#2d445f" }
 		]
 	}],
-	"Python": [{
-		color: "#E7823A",
-		name: "Python",
+	"Languages": [{
+		color: "#ef6a6a",
+		name: "Languages",
 		type: "column",
 		dataPoints: [
-			{ x: new Date("1 Jan 2015"), y: 33000 },
-			{ x: new Date("1 Feb 2015"), y: 35960 },
-			{ x: new Date("1 Mar 2015"), y: 42160 },
-			{ x: new Date("1 Apr 2015"), y: 42240 },
-			{ x: new Date("1 May 2015"), y: 43200 },
-			{ x: new Date("1 Jun 2015"), y: 40600 },
-			{ x: new Date("1 Jul 2015"), y: 42560 },
-			{ x: new Date("1 Aug 2015"), y: 44280 },
-			{ x: new Date("1 Sep 2015"), y: 44800 },
-			{ x: new Date("1 Oct 2015"), y: 48720 },
-			{ x: new Date("1 Nov 2015"), y: 50840 },
-			{ x: new Date("1 Dec 2015"), y: 51600 }
+			{y: 80, label:"Python" },
+			{y: 75, label:"C" },
+			{y: 40, label:"C++" },
+			{y: 45, label:"Java" },
+            {y: 95, label:"HTML 5" },
+            {y: 90, label:"CSS" },
+            {y: 40, label:"JavaScript" }
 		]
 	}],
-	"C": [{
+	"Databases": [{
 		color: "#546BC1",
-		name: "C",
+		name: "Databases",
 		type: "column",
 		dataPoints: [
-			{ x: new Date("1 Jan 2015"), y: 22000 },
-			{ x: new Date("1 Feb 2015"), y: 26040 },
-			{ x: new Date("1 Mar 2015"), y: 25840 },
-			{ x: new Date("1 Apr 2015"), y: 23760 },
-			{ x: new Date("1 May 2015"), y: 28800 },
-			{ x: new Date("1 Jun 2015"), y: 29400 },
-			{ x: new Date("1 Jul 2015"), y: 33440 },
-			{ x: new Date("1 Aug 2015"), y: 37720 },
-			{ x: new Date("1 Sep 2015"), y: 35200 },
-			{ x: new Date("1 Oct 2015"), y: 35280 },
-			{ x: new Date("1 Nov 2015"), y: 31160 },
-			{ x: new Date("1 Dec 2015"), y: 34400 }
+			{y: 80, label:"MySQL" },
+			{y: 75, label:"MongoDB" }
 		]
 	}],
-    "C++": [{
-		color: "#62d467",
-		name: "C++",
+    "Operating System": [{
+		color: "#2d445f",
+		name: "Operating System",
 		type: "column",
 		dataPoints: [
-			{ x: new Date("1 Jan 2015"), y: 22000 },
-			{ x: new Date("1 Feb 2015"), y: 26040 },
-			{ x: new Date("1 Mar 2015"), y: 25840 },
-			{ x: new Date("1 Apr 2015"), y: 23760 },
-			{ x: new Date("1 May 2015"), y: 28800 },
-			{ x: new Date("1 Jun 2015"), y: 29400 },
-			{ x: new Date("1 Jul 2015"), y: 33440 },
-			{ x: new Date("1 Aug 2015"), y: 37720 },
-			{ x: new Date("1 Sep 2015"), y: 35200 },
-			{ x: new Date("1 Oct 2015"), y: 35280 },
-			{ x: new Date("1 Nov 2015"), y: 31160 },
-			{ x: new Date("1 Dec 2015"), y: 34400 }
+			{y: 80, label:"Linux" },
+			{y: 90, label:"MacOS" },
+            {y: 85, label:"Windows" },
 		]
 	}],
     "Java": [{
@@ -112,16 +87,16 @@ var newVSReturningVisitorsOptions1 = {
 	},
 	subtitles: [{
 		text: "Click on Any Segment to Drilldown",
-		//backgroundColor: "#ef6b6b",
+		backgroundColor: "#ef6b6b",
 		fontSize: 16,
-		fontColor: "black",
+		fontColor: "white",
 		padding: 10
 	}],
 	legend: {
 		fontFamily: "calibri",
 		fontSize: 14,
 		itemTextFormatter: function (e) {
-			return e.dataPoint.name + ": " + Math.round(e.dataPoint.y / totalVisitors1 * 100) + "%";  
+			return e.dataPoint.name + ": " + Math.round(e.dataPoint.y);  
 		}  
 	}
 };
@@ -134,8 +109,9 @@ var visitorsDrilldownedChartOptions1 = {
 		tickColor: "#a2a2a2"
 	},
 	axisY: {
+        suffix: "%",
 		gridThickness: 0,
-		includeZero: false,
+		includeZero: true,
 		labelFontColor: "#717171",
 		lineColor: "#a2a2a2",
 		tickColor: "#a2a2a2",
@@ -145,7 +121,7 @@ var visitorsDrilldownedChartOptions1 = {
 };
 
 var chart1 = new CanvasJS.Chart("chartContainer1", newVSReturningVisitorsOptions1);
-chart1.options.data = visitorsData1["Programming Languages"];
+chart1.options.data = visitorsData1["Skills"];
 chart1.render();
 
 function visitorsChartDrilldownHandler1(e) {
@@ -159,12 +135,12 @@ function visitorsChartDrilldownHandler1(e) {
 $("#backButton1").click(function() { 
 	$(this).toggleClass("invisible");
 	chart1 = new CanvasJS.Chart("chartContainer1", newVSReturningVisitorsOptions1);
-	chart1.options.data = visitorsData1["Programming Languages"];
+	chart1.options.data = visitorsData1["Skills"];
 	chart1.render();
 });
 
 
-
+/*
 var totalVisitors2 = 500;
 var visitorsData2 = {
 	"Programming": [{
@@ -321,7 +297,7 @@ $("#backButton2").click(function() {
 	chart2 = new CanvasJS.Chart("chartContainer2", newVSReturningVisitorsOptions2);
 	chart2.options.data = visitorsData2["Programming"];
 	chart2.render();
-});
+});*/
 }
 </script>
 <style>
@@ -422,6 +398,13 @@ $("#backButton2").click(function() {
             <header class="major hide-mobile">
                 <h2 id="Top Skills">Top Skills</h2>
             </header>
+            <div class="row">
+                <div class="6u 12u$(small)">
+                    <div style="text-align:right;cursor:pointer;"><a class="button special medium invisible" id="backButton1" >&#x3C; Back</a></div>
+                    <div id="chartContainer1"></div>
+                </div>
+            </div><br>
+            <!--
             <div class="posts">
 <article>
             
@@ -439,49 +422,15 @@ $("#backButton2").click(function() {
 						<h4 class="card-header">Programming Languages<span class="invisible" id="backButton2" style="float:right;cursor:pointer;">&#x3C; Back</span></h4>
 						<div class="card-block">
 							<div id="chartContainer2"></div>
-						</div>
+						</div>-->
 					
                     <!--<a class="button special small invisible" id="backButton2">< Back</a>
-                    <div id="chartContainer2" style="height: 300px; width: 100%;"><p></p></div>-->
+                    <div id="chartContainer2" style="height: 300px; width: 100%;"><p></p></div>
                         
                 </div>
                 </article>
             </div>
-
-
-		<div class="get">
-			<div class="arc">
-				<span class="text">Python</span>
-				<input type="hidden" class="percent" value="90" />
-				<input type="hidden" class="color" value="#97BE0D" />
-			</div>
-			<div class="arc">
-				<span class="text">Data Structures</span>
-				<input type="hidden" class="percent" value="70" />
-				<input type="hidden" class="color" value="#D84F5F" />
-			</div>
-			<div class="arc">
-				<span class="text">Algorithms</span>
-				<input type="hidden" class="percent" value="60" />
-				<input type="hidden" class="color" value="#88B8E6" />
-			</div>
-			<div class="arc">
-				<span class="text">MongoDB</span>
-				<input type="hidden" class="percent" value="80" />
-				<input type="hidden" class="color" value="#62d467" />
-			</div>
-			<div class="arc">
-				<span class="text">Django</span>
-				<input type="hidden" class="percent" value="90" />
-				<input type="hidden" class="color" value="#ef6869" />
-			</div>
-            <div class="arc">
-				<span class="text">Machine Learning</span>
-				<input type="hidden" class="percent" value="40" />
-				<input type="hidden" class="color" value="#245f7c" />
-			</div>
-		</div>
-
+-->
             <header class="major">
                 <h2 id="Experience">Experience</h2>
             </header>
