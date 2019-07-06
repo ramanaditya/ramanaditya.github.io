@@ -191,7 +191,9 @@
 			<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 		</article>
 		<article>
-
+		
+			<span id="instafeed"></span>
+			
 		</article>
 	</div>
 </section>
@@ -207,6 +209,19 @@
     </div>
 
     {% include javascript.html %}
+<script type="text/javascript">
+	var loadButton = document.getElementById('load-more');
+    var userFeed = new Instafeed({
+        get: 'user',
+		limit:6,
+        userId: '1603713456',
+        accessToken: '1603713456.1677ed0.f0991c2e6b5f49a6bcfa0bc963c19d43', 
+		sortBy: "most-recent",
+		template: '<span class=\"image left\"><a href=\"\{\{link\}\}\"><img src=\"\{\{image\}\}\" alt="" /></a></span>'
+    });
+    userFeed.run();
+</script>
+
 </body>
 
 </html>
