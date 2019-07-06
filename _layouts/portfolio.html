@@ -10,19 +10,22 @@ var visitorsData1 = {
 	"Skills": [{
 		click: visitorsChartDrilldownHandler1,
 		cursor: "pointer",
-		explodeOnClick: true,
-		innerRadius: "0%",
+		explodeOnClick: false,
+		innerRadius: "75%",
 		legendMarkerType: "circle",
 		name: "Skills",
 		radius: "100%",
 		showInLegend: true,
 		startAngle: 90,
-        indexLabel: " {name} : {y} ",
+        indexLabel: "{name}",
+        indexlabelposition: "outside",
 		type: "doughnut",
 		dataPoints: [
 			{ y: 7, name: "Languages", color: "#ef6a6a" },
 			{ y: 2, name: "Databases", color: "#546BC1" },
-            { y: 3, name: "Operating System", color: "#2d445f" }
+            { y: 3, name: "Operating System", color: "#2d445f" },
+            { y: 7, name: "Soft Skills", color: "#4f81bc" },
+            { y: 1, name: "Others", color: "#9a2334" }
 		]
 	}],
 	"Languages": [{
@@ -58,23 +61,30 @@ var visitorsData1 = {
             {y: 85, label:"Windows" },
 		]
 	}],
-    "Java": [{
-		color: "#245e7b",
-		name: "Java",
+    "Soft Skills": [{
+		color: "#4f81bc",
+		name: "Soft Skills",
+		type: "bar",
+        axisYType: "secondary",
+        indexLabel: "{label}",
+        indexlabelposition: "inside",
+        indexLabelFontColor: "white",
+		dataPoints: [
+			{y: 80,label:"Leadership" },
+			{y: 90,label:"Communication" },
+            {y: 85,label:"Collaboration" },
+            {y: 85,label:"Interpersonal Skills" },
+            {y: 85,label:"Creative Thinking" },
+            {y: 85,label:"Critical Thinking" },
+            {y: 85,label:"Problem Solving" }
+		]
+	}],
+    "Others": [{
+		color: "#9a2334",
+		name: "Languages",
 		type: "column",
 		dataPoints: [
-			{ x: new Date("1 Jan 2015"), y: 100 },
-			{ x: new Date("1 Feb 2015"), y: 90 },
-			{ x: new Date("1 Mar 2015"), y: 100 },
-			{ x: new Date("1 Apr 2015"), y: 80 },
-			{ x: new Date("1 May 2015"), y: 60 },
-			{ x: new Date("1 Jun 2015"), y: 50 },
-			{ x: new Date("1 Jul 2015"), y: 90 },
-			{ x: new Date("1 Aug 2015"), y: 100 },
-			{ x: new Date("1 Sep 2015"), y: 30 },
-			{ x: new Date("1 Oct 2015"), y: 10 },
-			{ x: new Date("1 Nov 2015"), y: 30 },
-			{ x: new Date("1 Dec 2015"), y: 20 }
+			{y: 90,label:"Mathematics" }
 		]
 	}]
 };
@@ -83,7 +93,7 @@ var newVSReturningVisitorsOptions1 = {
 	animationEnabled: true,
 	theme: "light2",
 	title: {
-		text: ""
+		text: "General Skills"
 	},
 	subtitles: [{
 		text: "Click on Any Segment to Drilldown",
@@ -106,7 +116,8 @@ var visitorsDrilldownedChartOptions1 = {
 	axisX: {
 		labelFontColor: "#717171",
 		lineColor: "#a2a2a2",
-		tickColor: "#a2a2a2"
+		tickColor: "#a2a2a2",
+		lineThickness: 1
 	},
 	axisY: {
         suffix: "%",
@@ -140,31 +151,31 @@ $("#backButton1").click(function() {
 });
 
 
-/*
+
 var totalVisitors2 = 500;
 var visitorsData2 = {
-	"Programming": [{
+	"Advanced Skills": [{
 		click: visitorsChartDrilldownHandler2,
 		cursor: "pointer",
-		explodeOnClick: false,
+		explodeOnClick: true,
 		innerRadius: "75%",
-		legendMarkerType: "square",
-		name: "Programming",
+		legendMarkerType: "circle",
+		name: "Advanced Skills",
 		radius: "100%",
 		showInLegend: true,
 		startAngle: 90,
+        indexLabel: "{name}",
+        indexlabelposition: "outside",
 		type: "doughnut",
 		dataPoints: [
-			{ y: 80, name: "Python", color: "#E7823A" },
-			{ y: 90, name: "C", color: "#546BC1" },
-            { y: 100, name: "C++", color: "#62d467" },
-            { y: 100, name: "Java", color: "#245e7b" }
-
+			{ y: 7, name: "ML Libraries", color: "#E7823A" },
+			{ y: 2, name: "Tools", color: "#546BC1" },
+            { y: 3, name: "Operating System", color: "#2d445f" }
 		]
 	}],
-	"Python": [{
+	"ML Libraries": [{
 		color: "#E7823A",
-		name: "Python",
+		name: "ML Libraries",
 		type: "column",
 		dataPoints: [
 			{ x: new Date("1 Jan 2015"), y: 33000 },
@@ -181,23 +192,13 @@ var visitorsData2 = {
 			{ x: new Date("1 Dec 2015"), y: 51600 }
 		]
 	}],
-	"C": [{
+	"Tools": [{
 		color: "#546BC1",
-		name: "C",
+		name: "Tools",
 		type: "column",
 		dataPoints: [
-			{ x: new Date("1 Jan 2015"), y: 22000 },
-			{ x: new Date("1 Feb 2015"), y: 26040 },
-			{ x: new Date("1 Mar 2015"), y: 25840 },
-			{ x: new Date("1 Apr 2015"), y: 23760 },
-			{ x: new Date("1 May 2015"), y: 28800 },
-			{ x: new Date("1 Jun 2015"), y: 29400 },
-			{ x: new Date("1 Jul 2015"), y: 33440 },
-			{ x: new Date("1 Aug 2015"), y: 37720 },
-			{ x: new Date("1 Sep 2015"), y: 35200 },
-			{ x: new Date("1 Oct 2015"), y: 35280 },
-			{ x: new Date("1 Nov 2015"), y: 31160 },
-			{ x: new Date("1 Dec 2015"), y: 34400 }
+			{y: 75,label:"Django" },
+			{y: 90,label:"Jupyter Notebook" }
 		]
 	}],
     "C++": [{
@@ -244,13 +245,13 @@ var newVSReturningVisitorsOptions2 = {
 	animationEnabled: true,
 	theme: "light2",
 	title: {
-		text: ""
+		text: "Advanced Skills"
 	},
 	subtitles: [{
 		text: "Click on Any Segment to Drilldown",
-		//backgroundColor: "#ef6b6b",
+		backgroundColor: "#ef6b6b",
 		fontSize: 16,
-		fontColor: "black",
+		fontColor: "white",
 		padding: 10
 	}],
 	legend: {
@@ -270,8 +271,9 @@ var visitorsDrilldownedChartOptions2 = {
 		tickColor: "#a2a2a2"
 	},
 	axisY: {
+        suffix: "%",
 		gridThickness: 0,
-		includeZero: false,
+		includeZero: true,
 		labelFontColor: "#717171",
 		lineColor: "#a2a2a2",
 		tickColor: "#a2a2a2",
@@ -281,7 +283,7 @@ var visitorsDrilldownedChartOptions2 = {
 };
 
 var chart2 = new CanvasJS.Chart("chartContainer2", newVSReturningVisitorsOptions2);
-chart2.options.data = visitorsData2["Programming"];
+chart2.options.data = visitorsData2["Advanced Skills"];
 chart2.render();
 
 function visitorsChartDrilldownHandler2(e) {
@@ -295,9 +297,9 @@ function visitorsChartDrilldownHandler2(e) {
 $("#backButton2").click(function() { 
 	$(this).toggleClass("invisible");
 	chart2 = new CanvasJS.Chart("chartContainer2", newVSReturningVisitorsOptions2);
-	chart2.options.data = visitorsData2["Programming"];
+	chart2.options.data = visitorsData2["Advanced Skills"];
 	chart2.render();
-});*/
+});
 }
 </script>
 <style>
@@ -398,12 +400,17 @@ $("#backButton2").click(function() {
             <header class="major hide-mobile">
                 <h2 id="Top Skills">Top Skills</h2>
             </header>
-            <div class="row">
-                <div class="6u 12u$(small)">
+            <div class="posts">
+                <article>
                     <div style="text-align:right;cursor:pointer;"><a class="button special medium invisible" id="backButton1" >&#x3C; Back</a></div>
                     <div id="chartContainer1"></div>
-                </div>
-            </div><br>
+                </article>
+                <article>
+                    <div style="text-align:right;cursor:pointer;"><a class="button special medium invisible" id="backButton2" >&#x3C; Back</a></div>
+                    <div id="chartContainer2"></div>
+                </article>
+            </div>
+            <br>
             <!--
             <div class="posts">
 <article>
