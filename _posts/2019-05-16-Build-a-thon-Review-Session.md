@@ -125,7 +125,7 @@ Email Id : adityaraman96@gmail.com<br>
 Linkedin : <a href="https://www.linkedin.com/in/ramanaditya/">ramanaditya</a><br>
 </article>
 <article>
-<span class="image left"><img src="https://media.licdn.com/dms/image/C5103AQHJ9f8xxsKwcA/profile-displayphoto-shrink_800_800/0?e=1567641600&v=beta&t=ZIuWgB_VyVF0fBty2zq2OA32cgVcja8o3ERfomVGJb4" /></span>
+<span class="image left"><img src="https://avatars0.githubusercontent.com/u/40236624?s=400&v=4" /></span>
 
 <a>Mr. Aswin Gopinathan</a><br>
 Contact No.: 9900167683<br>
