@@ -9,7 +9,7 @@ image: /assets/images/code-pic.png
 categories: [code,leetcode]
 tags: [python,array,easy]
 extra_tags: 
-leetcode_slno: 26
+leetcode_slno: 9
 featured: false
 excerpt: ""
 ---
