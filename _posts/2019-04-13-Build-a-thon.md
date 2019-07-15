@@ -2,7 +2,7 @@
 layout: page
 title: "Build-a-thon"
 subtitle: A little effort towards success
-description: 
+description: "An intra-college hackathon to provide an opportunity for brilliant young talents to create their works with the help of mentors and experts."
 author: "aditya"
 comments: true
 image: assets/images/2019-05-16-Build-a-thon/2019-05-16-Build-a-thon.png
