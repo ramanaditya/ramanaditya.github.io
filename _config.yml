@@ -42,6 +42,7 @@ plugins:
   - jekyll-gist
   - jekyll-paginate
   - jekyll-twitter-plugin
+  - jekyll-last-modified-at
   
 gist:
   noscript: false

@@ -34,7 +34,7 @@
                     <p style="float:right;">
                       <a href="{{ site.baseurl }}/blogs#{{ page.categories[1] }}" style="color:#7f888f;">
                         {{ page.categories[1] | upcase }} 
-                      </a> - {{ page.date | date: "%b %-d %Y" }}
+                      </a> -{% if page.last_modified_at %} Updated : {{ page.last_modified_at | date: "%b %-d %Y" }}{% else %}{{ page.date | date: "%b %-d %Y" }}{% endif %}
                     </p>
                 	  </header>
 
@@ -112,13 +112,13 @@
                 <a href="{{ post.url | relative_url }}"><div><strong>{{ post.title }}</strong></div></a>
                 <p>{{ post.description }}</p>
                 
-              </article>
+              </article><hr>
               
             {% endif %}
             {% endfor %}
             {% endif %}
             {% endfor %}
-            <hr>
+            
 
             </div>
             </div>
