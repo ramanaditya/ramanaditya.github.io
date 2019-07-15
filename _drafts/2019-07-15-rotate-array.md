@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Rotate Array"
+title: "189. Rotate Array"
 subtitle: 
 description: ""
 author: "aditya"
@@ -9,11 +9,14 @@ image: /assets/images/code-pic.png
 categories: [code,leetcode]
 tags: [python,array,easy]
 extra_tags: 
+leetcode_slno: 189
 featured: false
 excerpt: ""
 ---
 
 ## Questions
+
+### [189. Rotate Array](https://leetcode.com/problems/rotate-array/)
 
 Given an array, rotate the array to the right by k steps, where k is non-negative.
 
@@ -60,7 +63,6 @@ class Solution:
             nums.append(nums.pop(0))
             k = k - 1
         nums.reverse()
-        
 
 # Runtime: 80 ms
 # Memory Usage: 13.4 MB

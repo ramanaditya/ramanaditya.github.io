@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Remove an element"
+title: "27. Remove element"
 subtitle: 
 description: ""
 author: "aditya"
@@ -9,11 +9,14 @@ image: /assets/images/code-pic.png
 categories: [code,leetcode]
 tags: [python,array,easy]
 extra_tags: 
+leetcode_slno: 27
 featured: false
 excerpt: ""
 ---
 
 ## Question
+
+### 27. Remove Element
 
 Given an array nums and a value val, remove all instances of that value in-place and return the new length.
 

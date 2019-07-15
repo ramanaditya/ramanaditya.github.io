@@ -19,6 +19,9 @@
 		font: inherit;
 		vertical-align: baseline;
 	}
+	html, body,div {
+		overflow-x: hidden;
+	}
 
 	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 		display: block;
