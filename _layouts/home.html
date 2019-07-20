@@ -101,7 +101,7 @@
 		<article>
 			<a href="{{ post.url | relative_url }}" class="image"><img src="{{ post.image | absolute_url }}" alt="" /></a>
 			<span style="float:right;"><a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-url="https://ramanaditya.github.io{{post.url}}" data-via="_adityaraman" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></span>
-			<span style="top:-4px;float:right;margin-right:2px;"class="fb-share-button" data-href="https://ramanaditya.github.io/{{ post.url | relative_url }}" data-layout="button_count" data-size="small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Framanaditya.github.io%2F{{ post.url | relative_url }}&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></span>
+			<span style="float:right;margin-right:2px;"class="fb-share-button" data-href="https://ramanaditya.github.io/{{ post.url | relative_url }}" data-layout="button_count" data-size="small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Framanaditya.github.io%2F{{ post.url | relative_url }}&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></span>
 			<h3>{{ post.title | upcase }}</h3>
             <p><a href="{{ site.baseurl }}/blogs#{{ post.categories[1] }}" style="color:#7f888f;">{{ post.categories[1] | upcase }}</a> - {{ post.date | date: "%b %-d %Y" }}
 			<span style="float:right;">
