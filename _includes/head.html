@@ -15,4 +15,11 @@
   <!--[if lte IE 9]><link rel="stylesheet" href="{{ 'assets/css/ie9.css' | relative_url }}" /><![endif]-->
   <!--[if lte IE 8]><link rel="stylesheet" href="{{ 'assets/css/ie8.css' | relative_url }}" /><![endif]-->
   {% include analytics.html %}
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v3.3&appId=822230731477194&autoLogAppEvents=1"></script>
+  <meta property="og:url"           content="https://ramanadity.github.io/{{ page.url |relative_url }}" />
+  <meta property="og:type"          content="website" />
+  <meta property="og:title"         content="Portfolio Website" />
+  <meta property="og:description"   content="{{ site.description }}" />
+  <meta property="og:image"         content="{{ '/assets/images/aditya copy.png' | absolute_url }}" />
 </head>
