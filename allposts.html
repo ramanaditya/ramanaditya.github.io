@@ -5,11 +5,15 @@ permalink: /allposts/
 
 {% assign postsByYear = site.posts | group_by_exp: 'post', 'post.date | date: "%Y"' %}
 
+
 <section id="blog_posts">
+   <header class="major">
+		<h2>All Posts</h2>
+  </header>
   <div class="row" style="text-align:center;">
     <div class="12u 12u$(small)">
   {% for year in postsByYear %}
-    <a class="button special large" href="#{{ year.name }}" style="margin:5px;">{{ year.name }}</a>
+    <a class="button special large" href="#{{ year.name }}" style="margin:5px;font-size:1.1em;">{{ year.name }} &nbsp; {{" - "}}&nbsp; {{ year.size }}</a>
   {%endfor %}
     </div>
   </div>
