@@ -66,15 +66,13 @@ permalink: '/categories/'
                 </span>
                 </article>
             </div>
-           
         </div>
-               
         {% endif %}
         {% endfor %}
         </div>
     {% endunless %}
     {% endfor %}
-</div> <!-- /.Blogs -->
+</div> <!-- /.Categories -->
     <div class="1u 12u$(medium)">
         <p></p>
     </div>
