@@ -10,12 +10,29 @@ permalink: /allposts/
 			<a href="{{ post.url | relative_url }}" class="image">
         <img src="{{ post.image | absolute_url }}" alt="" />
       </a>
-			<span class="box" style="float:right;height:10px;width:10px;border-radius:50%;margin-top:-10px;z-index:-1;">
+			<span class="box share-link " style="float:right;height:10px;width:10px;border-radius:50%;margin-top:-10px;z-index:-1;background-color:#f7f7f7;">
         <!--<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-url="https://ramanaditya.github.io{{post.url}}" data-via="_adityaraman" data-show-count="false">Tweet</a>
         <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>-->
-        <span class="icon fa-link" style="font-size:1.2em;top:-13px;left:-7px;"></span>
+        <input id="share_url" value="{{ post.url | absolute_url }}" hidden/>
+        <b><span class="icon fa-link hide-mobile" style="font-size:1.2em;top:-13px;left:-8px;color:black;" onclick="myFunction()" onmouseout="outFunc()"></span></b>
+        <b><span class="icon fa-link show-mobile" style="font-size:1.2em;top:-12px;left:-7px;" onclick="myFunction()" onmouseout="outFunc()"></span></b>
       </span>
-      
+      <script>
+        function myFunction() {
+          var copyText = document.getElementById("share_url");
+          copyText.select();
+          document.execCommand("copy");
+          
+          var tooltip = document.getElementById("myTooltip");
+          tooltip.innerHTML = "Copied: " + copyText.value;
+        }
+
+        function outFunc() {
+          var tooltip = document.getElementById("myTooltip");
+          tooltip.innerHTML = "Copy to clipboard";
+        }
+      </script>
+
 			<h3>{{ post.title | upcase }}</h3>
       <p>
         <a href="{{ site.baseurl }}/blogs#{{ post.categories[1] }}" style="color:#7f888f;">{{ post.categories[1] | upcase }}</a>
