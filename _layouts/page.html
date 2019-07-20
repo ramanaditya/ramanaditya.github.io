@@ -50,15 +50,15 @@ pre{
                   <span class="image main" style="z-index:-1"><img src="{{ page.image | absolute_url }}" alt="" /></span>
                   
                   {% endif %}
-                <div style="color:#3d4449;">
+                <div fb-quotable style="color:#3d4449;">
                   <div id="fb-root"></div>
-  <script>(function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s); js.id = id;
-    js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6";
-    fjs.parentNode.insertBefore(js, fjs);
-  }(document, 'script', 'facebook-jssdk'));</script>
+                    <script>(function(d, s, id) {
+                      var js, fjs = d.getElementsByTagName(s)[0];
+                      if (d.getElementById(id)) return;
+                      js = d.createElement(s); js.id = id;
+                      js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6";
+                      fjs.parentNode.insertBefore(js, fjs);
+                    }(document, 'script', 'facebook-jssdk'));</script>
                 {{ content }}
                 <div class="fb-quote" data-href="https://ramanaditya.github.io/{{ page.url | relative_url }}" data-layout="quote"></div>
                 </div>
