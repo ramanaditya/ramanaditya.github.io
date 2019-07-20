@@ -98,6 +98,7 @@
 	</header>
 	<div class="posts">
 		{% for post in paginator.posts %}
+		{% unless post.categories == 'blogs' %}
 		<article>
 			<a href="{{ post.url | relative_url }}" class="image"><img src="{{ post.image | absolute_url }}" alt="" /></a>
 			<span style="float:right;"><a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-url="https://ramanaditya.github.io{{post.url}}" data-via="_adityaraman" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></span>
@@ -141,6 +142,7 @@
 			<br>
 			</div>
 		</article>
+		{% endunless %}
 		{% endfor %}
     </div><br><br>
     <div style="text-align:center;">
@@ -158,7 +160,7 @@
 
                 {% for page in (1..paginator.total_pages) %}
                     {% if page == paginator.page %}
-                    <li><span class="page active"">{{ page }}</span></li>
+                    <li><span class="page active">{{ page }}</span></li>
                     {% elsif page == 1 %}
                     <li><a href="/#blog_posts" class="page">{{ page }}</a></li>
                     {% else %}
@@ -169,7 +171,8 @@
                 {% if paginator.next_page %}
                     <li><a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}#blog_posts" class="button">Next</a></li>
                 {% else %}
-                    <li><span class="button disabled">Next<li>
+					&nbsp;&nbsp;
+                    <li><span class="button disabled">Next</span><li>
                 {% endif %}
                 </ul>
                 {% endif %}
