@@ -79,8 +79,16 @@ pre{
 			          <a href="https://twitter.com/_adityaraman?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="medium" data-url="https://ramanaditya.github.io{{post.url}}" data-via="_adityaraman" data-show-count="false">Follow @_adityaraman</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></span>
                 <span style="float:right !important;"><a href="https://twitter.com/intent/tweet?screen_name=_adityaraman&ref_src=twsrc%5Etfw" class="twitter-mention-button" data-size="medium" data-url="https://ramanaditya.github.io{{post.url}}" data-via="_adityaraman" data-show-count="false">Tweet to @_adityaraman</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></span>
                 </div>
-                <div class="fb-save" data-uri="https://ramanaditya.github.io/{{ page.url | relative_url }}" data-size="large"></div>
-                
+                <hr>
+                <div class="hide-mobile">
+                <div style="float:right;" class="fb-save" data-uri="https://ramanaditya.github.io/{{ page.url | relative_url }}" data-size="large"></div>
+                <div  class="fb-like" data-href="https://ramanaditya.github.io/{{ page.url | relative_url }}" data-width="" data-layout="standard" data-action="like" data-size="large" data-show-faces="true" data-share="true" data-show-faces="true"></div>
+                </div>
+                <div class="show-mobile">
+                <div class="fb-save" data-uri="https://ramanaditya.github.io/{{ page.url | relative_url }}" data-size="small"></div>
+                <div class="fb-like" data-href="https://ramanaditya.github.io/{{ page.url | relative_url }}" data-width="" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+                </div>
+                <hr>
                 <br>
                 {% include author.html %}
                 <div class="sharethis-inline-reaction-buttons"></div>
