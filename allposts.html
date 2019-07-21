@@ -7,9 +7,19 @@ permalink: /allposts/
 
 
 <section id="blog_posts">
-   <header class="major">
+     <header class="major">
 		<h2>All Posts</h2>
   </header>
+  <div class="box">
+  <div id="calendar" style="margin:auto;">
+	<div id="cal-heatmap" style=""></div>
+	
+</div>
+<div style="padding-top: 10px;text-align:center;">
+		<a href="#" style="" id="cal-heatmap-PreviousDomain-selector" class="button small"><i class="fa fa-chevron-left"></i> &nbsp; PREV</a>
+		<a href="#" style="" id="cal-heatmap-NextDomain-selector" class="button small">NEXT &nbsp; <i class="fa fa-chevron-right"></i></a>
+	</div>
+  </div>
   <div class="row" style="text-align:center;">
     <div class="12u 12u$(small)">
   {% for year in postsByYear %}
