@@ -5,8 +5,8 @@ subtitle:
 description: "An E-learning Portal for creating notes and reading blogs using Django web framework"
 author: "aditya"
 comments: true
-image: /assets/images/20181118techlearn/table.jpg
-meta_image: /assets/images/0181118techlearn_table.jpg
+image: assets/images/20181118techlearn/table.jpg
+meta_image: assets/images/0181118techlearn_table.jpg
 categories: [blogs,project]
 tags: [e-learning,django]
 extra_tags: 

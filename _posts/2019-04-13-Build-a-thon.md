@@ -6,7 +6,7 @@ description: "An intra-college hackathon to provide an opportunity for brilliant
 author: "aditya"
 comments: true
 image: assets/images/20190516Buildathon/20190516Buildathon.png
-meta_image: /assets/images/20190516Buildathon.png
+meta_image: assets/images/20190516Buildathon.png
 categories: [blogs,events]
 tags: [technical,event]
 extra_tags: 
