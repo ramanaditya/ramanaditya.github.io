@@ -51,5 +51,6 @@ gist:
 paginate: 6
 paginate_path: /page:num/
 
+permalink: /:categories/:title
 
 instafeed: true
