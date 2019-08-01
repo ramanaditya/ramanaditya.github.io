@@ -6,6 +6,7 @@ description: ""
 author: "aditya"
 comments: true
 image: assets/images/code_pic.png
+meta_image: assets/images/code_pic.png
 categories: [code,leetcode]
 tags: [python,array,easy]
 extra_tags: 
