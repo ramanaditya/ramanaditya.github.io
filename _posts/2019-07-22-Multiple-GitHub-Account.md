@@ -13,6 +13,10 @@ featured: true
 excerpt: "Using Multiple GitHub Account on the same system to push and pull"
 ---
 
+Many a times you need to work with two different Github Accounts. If you are using macOs or windows, they save your account information and don't give permissions to operate other accounts.
+
+In order to run git commands for two different github accounts you need to follow the following step by step procedure.
+
 ### Generating SSH Key for the account
 
 {% highlight bash %}
@@ -48,17 +52,22 @@ The key's randomart image is:
 
 {% endhighlight %}
 
-### Copy your SSH key using below command
+### Copy your SSH key using the command given below
 
 {% highlight bash %}
 pbcopy < ~/.ssh/id_rsa_example.pub
 
 {% endhighlight %}
 
+
+Now you need to add this key in your Github Account
+
 {% highlight bash %}
 Open GitHub -> Settings -> SSH and GPG keys -> New SSH Keys -> Copy the key -> Add SSH Key
 
 {% endhighlight %}
+
+Repeat the above steps for the second github account.
 
 ### Setup Github Host
 

@@ -19,12 +19,13 @@ permalink: '/tags/'
 {% capture site_tags %}{% for tag in site.tags %}{{ tag | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
 {% assign tag_words = site_tags | split:',' | sort %}
 
-<div class="tags" >
+<div class="tags">
+<div style="text-align:center;">
   {% for item in (0..site.tags.size) %}{% unless forloop.last %}
     {% capture this_word %}{{ tag_words[item] | strip_newlines }}{% endcapture %}
     <a href="#{{ this_word | cgi_escape }}" class="tags-link button small" style="margin-bottom:5px;"><span class="icon fa-tag">&nbsp;{{ this_word | upcase }} <span>{{ site.tags[this_word].size }}</span></span></a>&nbsp;&nbsp;
   {% endunless %}{% endfor %}
-
+</div>
   <hr>
 
   {% for item in (0..site.tags.size) %}{% unless forloop.last %}

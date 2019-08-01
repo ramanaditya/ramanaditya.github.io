@@ -20,11 +20,12 @@ permalink: '/categories/'
 {% assign category_words = site_categories | split:',' | sort %}
 
 <div class="categories" >
+<div style="text-align:center;">
   {% for item in (0..site.categories.size) %}{% unless forloop.last %}
     {% capture this_word %}{{ category_words[item] | strip_newlines }}{% endcapture %}
     <a href="#{{ this_word | cgi_escape }}" class="categories-link button small" style="margin-bottom:5px;">{{ this_word | upcase }} <span>{{ site.categories[this_word].size }}</span></a>&nbsp;&nbsp;
   {% endunless %}{% endfor %}
-
+</div>
   <hr>
 
   {% for item in (0..site.categories.size) %}{% unless forloop.last %}
