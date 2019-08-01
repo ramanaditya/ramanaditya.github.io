@@ -14,6 +14,7 @@ leetcode_slno: 13
 featured: false
 excerpt: ""
 hidden: true
+permalink: /:categories/:title
 ---
 
 ## Question

@@ -12,6 +12,8 @@ tags: [github,git]
 extra_tags: 
 featured: true
 excerpt: "Using Multiple GitHub Account on the same system to push and pull"
+permalink: /:title
+
 ---
 
 Many a times you need to work with two different Github Accounts. If you are using macOs or windows, they save your account information and don't give permissions to operate other accounts.
@@ -37,18 +39,18 @@ Enter same passphrase again:
 Your identification has been saved in /Users/aditya/.ssh/id_rsa_aditya.
 Your public key has been saved in /Users/aditya/.ssh/id_rsa_aditya.pub.
 The key fingerprint is:
-SHA256:SPfrZGNVJ+djE6rUrCoOvLcnfDPqn9gRZ3L7cBoAiyE aditya@gmail.com
+SHA256:SPfrZGNVJ+gHaidkUrCoOvLcnfDPqn9gRZ3L7cBoAiyE aditya@gmail.com
 The key's randomart image is:
 +---[RSA 2048]----+
 |                 |
 |                 |
 |   E ....     o.o|
-|    ..ooo.  o..=.|
-|     ...S+.=.+ +.|
-|    .     Oo+ . o|
+|    ..o*o.  o..=.|
+|     .+oS+.=.+ +.|
+|    .     Oo+ . O|
 |     o.  .** .   |
 |      o=oX+.*    |
-|     .+*O=+. .   |
+|     .=*O=+. .   |
 +----[SHA256]-----+
 
 {% endhighlight %}

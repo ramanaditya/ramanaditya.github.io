@@ -12,6 +12,7 @@ tags: [e-learning,django]
 extra_tags: 
 featured: false
 excerpt: "An e-learning portal developed using Django framework. Our primary aim is to provide free and efficient information and it is accessible for everyone."
+permalink: /:title
 ---
 
 # Techlearn

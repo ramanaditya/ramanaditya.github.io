@@ -12,6 +12,7 @@ tags: [technical,event]
 extra_tags: 
 featured: true
 excerpt: "An intra-college hackathon to provide an opportunity for brilliant young talents to create their works with the help of mentors and experts."
+permalink: /:title
 ---
 
 ## REVIEW SESSION

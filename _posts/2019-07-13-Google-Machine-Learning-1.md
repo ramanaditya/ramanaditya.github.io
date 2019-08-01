@@ -13,5 +13,7 @@ extra_tags:
 featured: false
 excerpt: ""
 hidden: true
+permalink: /:categories/:title
+
 ---
 
