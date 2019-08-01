@@ -6,6 +6,7 @@ description: "Real Life implementation of C langugae in printing bills in superm
 author: "aditya"
 comments: true
 image: /assets/images/20180826supermart/img_head.png
+meta_image: /assets/images/20180826supermart_img_head.png
 categories: [blogs,project]
 tags: [C]
 extra_tags:

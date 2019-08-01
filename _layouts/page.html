@@ -2,16 +2,6 @@
 <html>
 
 {% include head.html %}
-<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v3.3&appId=822230731477194&autoLogAppEvents=1"></script>
-  <meta property="og:url"           content="{{ page.url | absolute_url }}" />
-  <meta property="og:type"          content="website" />
-  <meta property="og:title"         content="{{ page.title }}" />
-  <meta property="og:description"   content="{{ page.excerpt }}" />
-  {% if page.image %}
-  <meta property="og:image"         content="{{ page.image | absolute_url }}" />
-  {% else %}
-  <meta property="og:image"         content={{ '/assets/images/aditya copy.png' | absolute_url }}" />
-  {% endif %}
 <style>
 .highlight{
   font-size: 1.1em;
