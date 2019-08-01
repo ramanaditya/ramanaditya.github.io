@@ -5,7 +5,7 @@ subtitle: A little effort towards success
 description: "An intra-college hackathon to provide an opportunity for brilliant young talents to create their works with the help of mentors and experts."
 author: "aditya"
 comments: true
-image: assets/images/20190516Buildathon/2019-05-16-Build-a-thon.png
+image: assets/images/20190516Buildathon/20190516Buildathon.png
 categories: [blogs,events]
 tags: [technical,event]
 extra_tags: 

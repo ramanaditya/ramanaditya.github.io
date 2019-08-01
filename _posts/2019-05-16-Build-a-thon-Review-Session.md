@@ -5,7 +5,7 @@ subtitle: A little effort towards success
 description: "Review session of an intra college hackathon, Build-a-thon"
 author: "aditya"
 comments: true
-image: assets/images/20190516Buildathon/2019-05-16-Build-a-thon.png
+image: assets/images/20190516Buildathon/20190516Buildathon.png
 categories: [blogs,events]
 tags: [technical,event]
 extra_tags: 
