@@ -5,7 +5,7 @@ subtitle: A little effort towards success
 description: "Review session of an intra college hackathon, Build-a-thon"
 author: "aditya"
 comments: true
-image: assets/images/2019-05-16-Build-a-thon/2019-05-16-Build-a-thon.png
+image: assets/images/20190516Buildathon/2019-05-16-Build-a-thon.png
 categories: [blogs,events]
 tags: [technical,event]
 extra_tags: 
@@ -50,7 +50,7 @@ Venue: **CS Seminar Hall, New Block**
 
 <div class="12u 12u$(small)">
 <article class="thumb" style="height:auto;width:auto;margin:">
-	<a href="/assets/images/2019-05-16-Build-a-thon/IMG_20190516_101641465_HDR.jpg" class="image main"><img src="/assets/images/2019-05-16-Build-a-thon/IMG_20190516_101641465_HDR.jpg" alt="Pic01" /></a>
+	<a href="/assets/images/20190516Buildathon/IMG_20190516_101641465_HDR.jpg" class="image main"><img src="/assets/images/20190516Buildathon/IMG_20190516_101641465_HDR.jpg" alt="Pic01" /></a>
 	<h2></h2>
 	<p></p>
 </article>
@@ -73,7 +73,7 @@ The panel of jury selected them all for the exhibition on the final day of Build
 
 <div class="12u 12u$(small)">
 <article class="thumb" style="height:auto;width:auto;margin:">
-	<a href="/assets/images/2019-05-16-Build-a-thon/WhatsApp Image 2019-05-17 at 11.50.37 AM.jpeg" class="image main"><img src="/assets/images/2019-05-16-Build-a-thon/WhatsApp Image 2019-05-17 at 11.50.37 AM.jpeg" alt="Pic01" /></a>
+	<a href="/assets/images/20190516Buildathon/WhatsApp Image 2019-05-17 at 11.50.37 AM.jpeg" class="image main"><img src="/assets/images/20190516Buildathon/WhatsApp Image 2019-05-17 at 11.50.37 AM.jpeg" alt="Pic01" /></a>
 	<h2></h2>
 	<p></p>
 </article>
@@ -90,7 +90,7 @@ The panel of expert judges include a team of highly qualified faculty members of
 
 <div class="12u 12u$(small)">
 <article class="thumb" style="height:auto;width:auto;margin:">
-	<a href="/assets/images/2019-05-16-Build-a-thon/IMG_20190516_110437845_HDR.jpg" class="image main"><img src="/assets/images/2019-05-16-Build-a-thon/IMG_20190516_110437845_HDR.jpg" alt="Pic01" /></a>
+	<a href="/assets/images/20190516Buildathon/IMG_20190516_110437845_HDR.jpg" class="image main"><img src="/assets/images/20190516Buildathon/IMG_20190516_110437845_HDR.jpg" alt="Pic01" /></a>
 	<h2></h2>
 	<p></p>
 </article>
@@ -143,35 +143,35 @@ Linkedin: <a href="https://www.linkedin.com/in/aswin-gopinathan-69556716a">aswin
 <div class="row">
 <div class="6u 12u$(small)">
 <article class="thumb" style="height:auto;width:auto;margin:">
-	<a href="/assets/images/2019-05-16-Build-a-thon/IMG_20190516_104158206_HDR.jpg" class="image main"><img src="/assets/images/2019-05-16-Build-a-thon/IMG_20190516_104158206_HDR.jpg" alt="Pic01" /></a>
+	<a href="/assets/images/20190516Buildathon/IMG_20190516_104158206_HDR.jpg" class="image main"><img src="/assets/images/20190516Buildathon/IMG_20190516_104158206_HDR.jpg" alt="Pic01" /></a>
 	<h2></h2>
 	<p></p>
 </article>
 </div><div class="show-mobile"><br></div>
 <div class="6u 12u$(small)">
 <article class="thumb" style="height:auto;width:auto;margin:">
-	<a href="/assets/images/2019-05-16-Build-a-thon/IMG_20190516_113703829.jpg" class="image main"><img src="/assets/images/2019-05-16-Build-a-thon/IMG_20190516_113703829.jpg" alt="Pic01" /></a>
+	<a href="/assets/images/20190516Buildathon/IMG_20190516_113703829.jpg" class="image main"><img src="/assets/images/20190516Buildathon/IMG_20190516_113703829.jpg" alt="Pic01" /></a>
 	<h2></h2>
 	<p></p>
 </article>
 </div><div class="show-mobile"><br></div>
 <div class="6u 12u$(small)">
 <article class="thumb" style="height:auto;width:auto;margin:">
-	<a href="/assets/images/2019-05-16-Build-a-thon/IMG_20190516_113730567_HDR.jpg" class="image main"><img src="/assets/images/2019-05-16-Build-a-thon/IMG_20190516_113730567_HDR.jpg" alt="Pic01" /></a>
+	<a href="/assets/images/20190516Buildathon/IMG_20190516_113730567_HDR.jpg" class="image main"><img src="/assets/images/20190516Buildathon/IMG_20190516_113730567_HDR.jpg" alt="Pic01" /></a>
 	<h2></h2>
 	<p></p>
 </article>
 </div><div class="show-mobile"><br></div>
 <div class="6u 12u$(small)">
 <article class="thumb" style="height:auto;width:auto;margin:">
-	<a href="/assets/images/2019-05-16-Build-a-thon/IMG_20190516_115727498_HDR.jpg" class="image main"><img src="/assets/images/2019-05-16-Build-a-thon/IMG_20190516_115727498_HDR.jpg" alt="Pic01" /></a>
+	<a href="/assets/images/20190516Buildathon/IMG_20190516_115727498_HDR.jpg" class="image main"><img src="/assets/images/20190516Buildathon/IMG_20190516_115727498_HDR.jpg" alt="Pic01" /></a>
 	<h2></h2>
 	<p></p>
 </article>
 </div><div class="show-mobile"><br></div>
 <div class="12u 12u$(small)">
 <article class="thumb" style="height:auto;width:auto;margin:">
-	<a href="/assets/images/2019-05-16-Build-a-thon/WhatsApp Image 2019-05-16 at 12.42.31 PM.jpeg" class="image main"><img src="/assets/images/2019-05-16-Build-a-thon/WhatsApp Image 2019-05-16 at 12.42.31 PM.jpeg" alt="Pic01" /></a>
+	<a href="/assets/images/20190516Buildathon/WhatsApp Image 2019-05-16 at 12.42.31 PM.jpeg" class="image main"><img src="/assets/images/20190516Buildathon/WhatsApp Image 2019-05-16 at 12.42.31 PM.jpeg" alt="Pic01" /></a>
 	<h2></h2>
 	<p></p>
 </article>

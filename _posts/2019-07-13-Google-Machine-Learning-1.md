@@ -5,7 +5,7 @@ subtitle:
 description: ""
 author: "aditya"
 comments: true
-image: /assets/images/code-pic.png
+image: /assets/images/code_pic.png
 categories: [ml,google]
 tags: [python,easy]
 extra_tags: 

@@ -5,7 +5,7 @@ subtitle:
 description: ""
 author: "aditya"
 comments: true
-image: /assets/images/code-pic.png
+image: /assets/images/code_pic.png
 categories: [code,leetcode]
 tags: [python,array,easy]
 extra_tags: 
@@ -30,7 +30,7 @@ Explanation:
 The five points are show in the figure below. The red triangle is the largest. 
 ```
 
-<img class="image main" src="{{ '/assets/images/2019-07-16-largest-triangle-area/1027.png' | absolute_url }}">
+<img class="image main" src="{{ '/assets/images/20190716largesttrianglearea/1027.png' | absolute_url }}">
 
 Notes:
 

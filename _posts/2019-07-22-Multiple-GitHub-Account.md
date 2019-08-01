@@ -5,7 +5,7 @@ subtitle: ""
 description: "Using Multiple GitHub Account on the same system to push and pull"
 author: "aditya"
 comments: true
-image: assets/images/2019-07-22-Multiple-GitHub-Account/github.jpg
+image: assets/images/20190722MultipleGitHubAccount/github.jpg
 categories: [blogs]
 tags: [github,git]
 extra_tags: 
