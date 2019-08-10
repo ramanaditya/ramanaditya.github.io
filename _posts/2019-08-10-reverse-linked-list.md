@@ -8,7 +8,7 @@ comments: true
 image: assets/images/code_pic.png
 meta_image: assets/images/code_pic_meta.png
 categories: [code,leetcode]
-tags: [python,linkedlist,easy]
+tags: [python,linked-list,easy]
 extra_tags: 
 leetcode_slno: 206
 featured: false
@@ -24,14 +24,14 @@ permalink: /:categories/:title
 
 Reverse a singly linked list.
 
-Example:
+**Example:**
 
 ```
 Input: 1->2->3->4->5->NULL
 Output: 5->4->3->2->1->NULL
 ```
 
-Follow up:
+**Follow up:**
 
 A linked list can be reversed either iteratively or recursively. Could you implement both?
 
@@ -86,6 +86,6 @@ class Solution:
         return head
 
 # Runtime: 40 ms
-# Memory Usage: 14.7 MB
+# Memory Usage: 14**.7 MB
 
 {% endhighlight %}

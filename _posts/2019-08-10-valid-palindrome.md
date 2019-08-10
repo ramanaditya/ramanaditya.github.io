@@ -8,7 +8,7 @@ comments: true
 image: assets/images/code_pic.png
 meta_image: assets/images/code_pic_meta.png
 categories: [code,leetcode]
-tags: [python,linkedlist,easy]
+tags: [python,string,easy]
 extra_tags: 
 leetcode_slno: 125
 featured: false
@@ -27,14 +27,14 @@ Given a string, determine if it is a palindrome, considering only alphanumeric c
 **Note :** For the purpose of this problem, we define empty string as valid palindrome.
 
 
-Example 1:
+**Example 1:**
 
 ```
 Input: "A man, a plan, a canal: Panama"
 Output: true
 ```
 
-Example 2:
+**Example 2:**
 
 ```
 Input: "race a car"

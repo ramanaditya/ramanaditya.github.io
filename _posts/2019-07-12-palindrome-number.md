@@ -15,7 +15,6 @@ featured: false
 excerpt: ""
 hidden: true
 permalink: /:categories/:title
-
 ---
 
 
@@ -25,13 +24,13 @@ permalink: /:categories/:title
 
 Determine whether an integer is a palindrome. An integer is a palindrome when it reads the same backward as forward.
 
-Example 1:
+**Example 1:**
 <pre>
 Input: 121
 Output: true
 </pre>
 
-Example 2:
+**Example 2:**
 
 <pre>
 Input: -121
@@ -40,7 +39,7 @@ Explanation: From left to right, it reads -121. From right
 to left, it becomes 121-. Therefore it is not a palindrome.
 </pre>
 
-Example 3:
+**Example 3:**
 
 <pre>
 Input: 10
@@ -49,7 +48,7 @@ Explanation: Reads 01 from right to left. Therefore it is
 not a palindrome.
 </pre>
 
-Follow up:
+**Follow up:**
 
 Coud you solve it without converting the integer to a string?
 
