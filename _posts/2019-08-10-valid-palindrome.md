@@ -67,7 +67,7 @@ class Solution:
                 j -= 1
         return True
 
-# Runtime: 60 ms
-# Memory Usage: 14.1 MB
+# Runtime: 56 ms
+# Memory Usage: 14 MB
 
 {% endhighlight %}
