@@ -86,3 +86,14 @@ class Solution:
 # Memory Usage: 13.8 MB
 
 {% endhighlight %}
+
+{% highlight python %}
+
+class Solution:
+    def intersection(self, nums1: List[int], nums2: List[int]) -> List[int]:
+        return set(nums2) & set(nums1)
+
+# Runtime: 48 ms
+# Memory Usage: 14.1 MB
+
+{% endhighlight %}
