@@ -5,8 +5,8 @@ subtitle:
 description: ""
 author: "aditya"
 comments: true
-image: assets/images/code_pic.png
-meta_image: assets/images/code_pic_meta.png
+image: assets/images/code_image.jpg
+meta_image: assets/images/code_image.jpg
 categories: [code,leetcode]
 tags: [python,string,easy]
 extra_tags: 
