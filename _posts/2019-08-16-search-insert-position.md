@@ -8,7 +8,7 @@ comments: true
 image: assets/images/code_image.jpg
 meta_image: assets/images/code_image.jpg
 categories: [code,leetcode]
-tags: [python,array,easy]
+tags: [python,cpp,array,easy]
 extra_tags: 
 leetcode_slno: 35
 featured: false
