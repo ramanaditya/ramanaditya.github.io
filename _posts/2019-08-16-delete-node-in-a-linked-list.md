@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "35. Search Insert Position"
+title: "237. Delete Node in a Linked List"
 subtitle: 
 description: ""
 author: "aditya"
@@ -10,7 +10,7 @@ meta_image: assets/images/code_image.jpg
 categories: [code,leetcode]
 tags: [python,cpp,linked-list,easy]
 extra_tags: 
-leetcode_slno: 35
+leetcode_slno: 237
 featured: false
 excerpt: ""
 hidden: true
@@ -20,7 +20,7 @@ permalink: /:categories/:title
 
 ## Questions
 
-### 35. [Search Insert Position](https://leetcode.com/problems/delete-node-in-a-linked-list/)
+### 237. [Delete Node in a Linked List](https://leetcode.com/problems/delete-node-in-a-linked-list/)
 
 Write a function to delete a node (except the tail) in a singly linked list, given only access to that node.
 

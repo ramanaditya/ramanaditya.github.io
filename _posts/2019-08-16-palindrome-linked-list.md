@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "35. Search Insert Position"
+title: "234. Palindrome Linked List"
 subtitle: 
 description: ""
 author: "aditya"
@@ -10,7 +10,7 @@ meta_image: assets/images/code_image.jpg
 categories: [code,leetcode]
 tags: [python,cpp,linked-list,easy]
 extra_tags: 
-leetcode_slno: 35
+leetcode_slno: 234
 featured: false
 excerpt: ""
 hidden: true
@@ -20,7 +20,7 @@ permalink: /:categories/:title
 
 ## Questions
 
-### 35. [Search Insert Position](https://leetcode.com/problems/palindrome-linked-list/)
+### 234. [Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/)
 
 Given a singly linked list, determine if it is a palindrome.
 
