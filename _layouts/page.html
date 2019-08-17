@@ -134,7 +134,7 @@ pre{
             
             {% for category in site.categories %}
             {% if category[0] == page.categories[1] %}
-            {% for post in category[1] %}
+            {% for post in category[1] limit: 15 %}
             {% if post.title != page.title %}
               <article>
                 <a href="{{ post.url | relative_url }}" class="image main"><img src="{{ post.image | absolute_url }}" alt="" /></a>
