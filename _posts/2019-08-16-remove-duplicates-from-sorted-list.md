@@ -65,7 +65,7 @@ class Solution:
 
 {% endhighlight %}
 
-{% highlight python %}
+{% highlight cpp %}
 
 /**
  * Definition for singly-linked list.

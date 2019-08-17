@@ -51,6 +51,33 @@ Since the list has two middle nodes with values 3 and 4, we return the second on
 
 ## Solutions
 
+{% highlight python %}
+
+# Definition for singly-linked list.
+# class ListNode:
+#     def __init__(self, x):
+#         self.val = x
+#         self.next = None
+
+class Solution:
+    def middleNode(self, head: ListNode) -> ListNode:
+        count = 0
+        head_ref = head
+        while head != None:
+            count += 1
+            head = head.next
+        count = int(count/2) + 1
+        while count > 1:
+            head_ref = head_ref.next
+            count -= 1
+        return head_ref
+
+# Runtime: 40 ms
+# Memory Usage: 13.9 MB
+
+{% endhighlight %}
+
+
 
 {% highlight cpp %}
 
