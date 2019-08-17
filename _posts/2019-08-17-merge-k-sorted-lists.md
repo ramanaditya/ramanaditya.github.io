@@ -50,10 +50,8 @@ class Solution:
     def mergeKLists(self, lists: List[ListNode]) -> ListNode:
         length = len(lists)
         a = []
-        i = 0
-        for i in range(length):
-            j = 0
-            temp_head = lists[i]
+        for i in lists:
+            temp_head = i
             while temp_head:
                 a.append(temp_head.val)
                 temp_head = temp_head.next
