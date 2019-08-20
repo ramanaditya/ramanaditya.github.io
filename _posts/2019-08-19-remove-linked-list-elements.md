@@ -91,7 +91,7 @@ class Solution:
         return new_pointer.next
 
 
-# Runtime: 76 ms
+# Runtime: 72 ms
 # Memory Usage: 16.9 MB
 
 {% endhighlight %}
