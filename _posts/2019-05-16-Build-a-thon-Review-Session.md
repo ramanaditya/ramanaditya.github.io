@@ -10,7 +10,7 @@ meta_image: assets/images/20190516Buildathon.png
 categories: [blogs,events]
 tags: [technical,event]
 extra_tags: 
-featured: true
+featured: false
 excerpt: "An intra-college hackathon to provide an opportunity for brilliant young talents to create their works with the help of mentors and experts."
 permalink: /:title
 ---
