@@ -43,7 +43,28 @@ plugins:
   - jekyll-paginate
   - jekyll-twitter-plugin
   - jekyll-last-modified-at
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-archives
   
+# mimic GitHub Pages with --safe
+whitelist:
+  - jekyll-gist
+  - jekyll-paginate
+  - jekyll-twitter-plugin
+  - jekyll-last-modified-at
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-archives
+
+# Archives
+jekyll-archives:
+  enabled:
+    - categories
+  layout: page
+  permalinks:
+    category: '/category/:name/'
+
 gist:
   noscript: false
 

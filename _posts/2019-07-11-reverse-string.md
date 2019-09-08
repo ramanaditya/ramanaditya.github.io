@@ -45,8 +45,7 @@ Output: ["h","a","n","n","a","H"]
 
 ## Solutions
 
-{% highlight python %}
-
+```py
 class Solution:
     def reverseString(self, s: List[str]) -> None:
         i = 0
@@ -58,9 +57,9 @@ class Solution:
 
 # Runtime: 164 ms
 # Memory Usage: 17.6
-{% endhighlight %}
+```
 
-{% highlight python %}
+```py
 
 class Solution:
     def reverseString(self, s: List[str]) -> None:
@@ -68,4 +67,5 @@ class Solution:
 
 # Runtime: 164 ms
 # Memory Usage: 17.6
-{% endhighlight %}
+
+```
