@@ -5,8 +5,8 @@ subtitle:
 description: ""
 author: "aditya"
 comments: true
-image: assets/images/code_image.jpg
-meta_image: assets/images/code_image.jpg
+image: assets/images/code_pic1.jpg
+meta_image: assets/images/code_pic1.jpg
 categories: [code,codechef]
 tags: [python,division2]
 extra_tags: 
