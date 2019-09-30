@@ -129,6 +129,17 @@
         "grades": "100%",
         "pdf": "assets/download/certificates/Coursera DJX5U99KCNJF.pdf",
         "img_add": "assets/images/certificates/Coursera DJX5U99KCNJF.png",
-      }],
+      },
+      {
+        "id": 402,
+        "slno": 2,
+        "course_name": "MySQL",
+        "issued_by": "Sir M Visvesvaraya Institute of Technology",
+        "img_issued_by": "assets/images/sirmvit logo.jpg",
+        "certificate_link": ,
+        "grades": ,
+        "pdf": ,
+        "img_add": ,
+    }],
   }],
 }
