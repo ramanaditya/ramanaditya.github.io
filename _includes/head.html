@@ -9,9 +9,9 @@
   <link rel="stylesheet" href="{{ 'assets/css/main.css' | relative_url }}" />
   <link rel="stylesheet" href="{{ "assets/modal/assets/css/main.css" | relative_url }}"  />
   <script src="https://kit.fontawesome.com/f9c260f424.js"></script>
-  <!—- ShareThis BEGIN -—>
+  {% comment %} <!—- ShareThis BEGIN -—>
   <script type='text/javascript' src='//platform-api.sharethis.com/js/sharethis.js#property=5cfd89664351e9001264fe77&product=sticky-share-buttons' async='async'></script>
-  <!—- ShareThis END -—>
+  <!—- ShareThis END -—> {% endcomment %}
   <!--[if lte IE 9]><link rel="stylesheet" href="{{ 'assets/css/ie9.css' | relative_url }}" /><![endif]-->
   <!--[if lte IE 8]><link rel="stylesheet" href="{{ 'assets/css/ie8.css' | relative_url }}" /><![endif]-->
   {% include analytics.html %}
@@ -22,7 +22,7 @@
   <meta property="og:title"         content="{{ page.title }}" />
   <meta property="og:description"   content="{{ page.excerpt }}" />
   {% if page.meta_image %}
-  <meta property="og:image"         content="https://www.adityaraman.ml/{{ page.meta_image }}" />
+  <meta property="og:image"         content="https://www.ramanaditya.com/{{ page.meta_image }}" />
   {% else %}
   <meta property="og:image"         content={{ '/assets/images/aditya copy.png' | absolute_url }}" />
   {% endif %}

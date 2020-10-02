@@ -100,14 +100,14 @@
 		{% for post in paginator.posts %}
 		<article>
 			<a href="{{ post.url | relative_url }}" class="image"><img src="{{ post.image | absolute_url }}" alt="" /></a>
-			<span class="" style="float:right;">
+			{% comment %} <span class="" style="float:right;">
 				<span style="top:-6px;"class="fb-share-button" data-href="https://ramanaditya.github.io/{{ post.url | relative_url }}" data-layout="button_count" data-size="small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Framanaditya.github.io%2F{{ post.url | relative_url }}&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></span>
 				<span ><a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-url="https://ramanaditya.github.io{{post.url}}" data-via="_adityaraman" data-show-count="false">Tweet</a>
 				<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></span>
 				
 				<!--<b><span class="icon fa-link hide-mobile" style="font-size:1.2em;top:-13px;left:-8px;color:black;"></span></b>
 				<b><span class="icon fa-link show-mobile" style="font-size:1.2em;top:-12px;left:-7px;"></span></b>-->
-			</span>
+			</span> {% endcomment %}
 	  		<h3>{{ post.title | upcase }}</h3>
             <p><a href="{{ site.baseurl }}/blogs#{{ post.categories[1] }}" style="color:#7f888f;">{{ post.categories[1] | upcase }}</a> - {{ post.date | date: "%b %-d %Y" }}
 			<span style="float:right;">
@@ -194,8 +194,9 @@
 		</article> -->
 	</div>
 </section>
+{% comment %}
 <section>
-	<div class="posts">
+	 <div class="posts">
 		<article>
 			<a class="twitter-timeline" href="https://twitter.com/_adityaraman?ref_src=twsrc%5Etfw" data-tweet-limit="3">Tweets by _adityaraman</a> 
 			<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -203,8 +204,9 @@
 		<article>
 			<span id="instafeed"></span>
 		</article>
-	</div>
+	</div> 
 </section>
+{% endcomment %}
                
             </div>
                 <div class="inner">
@@ -217,7 +219,7 @@
     </div>
 
     {% include javascript.html %}
-<script type="text/javascript">
+{% comment %} <script type="text/javascript">
 	var loadButton = document.getElementById('load-more');
     var userFeed = new Instafeed({
         get: 'user',
@@ -229,7 +231,7 @@
 		template: '<span class=\"image left\" style="min-width:50%;max-width:50%;margin-bottom:-10px;"><a href=\"\{\{link\}\}\"><img src=\"\{\{image\}\}\" alt="" /><span class=\"icon fa-heart\" style="float:left;margin-left:10%;color:red;font-size:13px;">&nbsp;\{\{likes\}\}</span><span class=\"icon fa-comments\" style="float:right;margin-right:10%;color:black;font-size:13px;">&nbsp;\{\{comments\}\}</span></a></span>'
     });
     userFeed.run();
-</script>
+</script> {% endcomment %}
 
 </body>
 
