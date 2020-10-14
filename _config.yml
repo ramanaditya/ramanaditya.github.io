@@ -3,7 +3,7 @@ title: Aditya
 subtitle: Raman
 email: adityaraman96@gmail.com
 altemail: adityaraman_cs004@sirmvit.edu
-description: Data Science Enthusiast, Former Full Stack Developer Intern
+description: BACK END DEVELOPER | SOFTWARE ENGINEER | MLH FELLOW | DEVOPS | MICROSOFT LEARN STUDENT AMBASSADOR | MENTOR @MLH
 baseurl:  # the subpath of your site, e.g. /blog
 url:  # the base hostname & protocol for your site
 author: Aditya
@@ -21,9 +21,6 @@ github_url: https://github.com/ramanaditya
 gitlab_url: https://gitlab.com/ramanaditya
 googleplus_url: 
 instagram_url: https://instagram.com/_adityaraman
-INSTAGRAM_USER_ID: 1603713456
-INSTAGRAM_CLIENT_ID: ed06ece6ad2b40b184c0fafa994a84af
-#access_token: 1603713456.1677ed0.f0991c2e6b5f49a6bcfa0bc963c19d43
 linkedin_url: https://www.linkedin.com/in/ramanaditya
 pinterest_url:
 slack_url:
@@ -72,5 +69,3 @@ gist:
 paginate: 6
 paginate_path: /page:num/
 
-
-instafeed: true
