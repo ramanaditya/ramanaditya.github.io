@@ -1,58 +1,18 @@
-<!-- Scripts -->
-  <script src="{{ 'assets/js/jquery.min.js' | absolute_url }}"></script>
-  <script src="{{ 'assets/js/skel.min.js' | absolute_url }}"></script>
-  <script src="{{ 'assets/js/util.js' | absolute_url }}"></script>
-  <!--[if lte IE 8]><script src="{{ 'assets/js/ie/respond.min.js' | absolute_url }}"></script><![endif]-->
-  <script src="{{ 'assets/js/main.js' | absolute_url }}"></script>
-  <!--<script src="{{ 'assets/js/copy-pre.js' | absolute_url }}"></script>-->
-  <script src="{{ 'assets/js/prism.js' | absolute_url }}"></script>
-  <script src="{{ "assets/modal/assets/js/jquery.poptrox.min.js" | absolute_url }}"></script>
-	<script src="{{ "assets/modal/assets/js/browser.min.js" | absolute_url }}"></script>
-	<script src="{{ "assets/modal/assets/js/breakpoints.min.js" | absolute_url }}"></script>
-	<script src="{{ "assets/modal/assets/js/util.js" | absolute_url }}"></script>
-	<script src="{{ "assets/modal/assets/js/main.js" | absolute_url }}"></script>
-  {% comment %} <script src="{{ "assets/skills/js/init.js" | absolute_url }}"></script>
-  <script src="{{ "assets/skills/js/jquery.js" | absolute_url }}"></script>
-  <script src="{{ "assets/skills/js/raphael.js" | absolute_url }}"></script> {% endcomment %}
-  {% comment %} <script src="{{ "assets/graphs/js/jquery-1.11.1.min.js" | absolute_url }}"></script>
-  <script src="{{ "assets/graphs/js/canvasjs.min.js" | absolute_url }}"></script> {% endcomment %}
-  {% comment %} <script src="{{ "assets/js/instafeed.min.js" | absolute_url }}"></script> {% endcomment %}
-  <script src="{{ "assets/js/github-embed.min.js" | absolute_url }}"></script>
-  <script>
-    // When the user scrolls down 20px from the top of the document, show the button
-    window.onscroll = function() {scrollFunction()};
-
-    function scrollFunction() {
-      if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-        document.getElementById("topBtn").style.display = "block";
-      } else {
-        document.getElementById("topBtn").style.display = "none";
-      }
-    }
-
-    // When the user clicks on the button, scroll to the top of the document
-    function topFunction() {
-      document.body.scrollTop = 0;
-      document.documentElement.scrollTop = 0;
-    }
-  </script>
-  <script>
-  /*Scroll to top when arrow up clicked BEGIN*/
-$(window).scroll(function() {
-    var height = $(window).scrollTop();
-    if (height > 100) {
-        $('#back2Top').fadeIn();
-    } else {
-        $('#back2Top').fadeOut();
-    }
-});
-$(document).ready(function() {
-    $("#back2Top").click(function(event) {
-        event.preventDefault();
-        $("html, body").animate({ scrollTop: 0 }, "slow");
-        return false;
-    });
-
-});
- /*Scroll to top when arrow up clicked END*/
-  </script>
+<!-- SCRIPTS -->
+<script src="{{ 'assets/js/jquery-1.12.3.min.js' | relative_url }}"></script>
+<script src="{{ 'assets/js/jquery.easing.min.js' | relative_url }}"></script>
+<script src="{{ 'assets/js/jquery.waypoints.min.js' | relative_url }}"></script>
+<script src="{{ 'assets/js/jquery.counterup.min.js' | relative_url }}"></script>
+<script src="{{ 'assets/js/popper.min.js' | relative_url }}"></script>
+<script src="{{ 'assets/js/bootstrap.min.js' | relative_url }}"></script>
+<script src="{{ 'assets/js/isotope.pkgd.min.js' | relative_url }}"></script>
+<script src="{{ 'assets/js/infinite-scroll.min.js' | relative_url }}"></script>
+<script src="{{ 'assets/js/imagesloaded.pkgd.min.js' | relative_url }}"></script>
+<script src="{{ 'assets/js/slick.min.js' | relative_url }}"></script>
+<script src="{{ 'assets/js/contact.js' | relative_url }}"></script>
+<script src="{{ 'assets/js/validator.js' | relative_url }}"></script>
+<script src="{{ 'assets/js/wow.min.js' | relative_url }}"></script>
+<script src="{{ 'assets/js/morphext.min.js' | relative_url }}"></script>
+<script src="{{ 'assets/js/parallax.min.js' | relative_url }}"></script>
+<script src="{{ 'assets/js/jquery.magnific-popup.min.js' | relative_url }}"></script>
+<script src="{{ 'assets/js/custom.js' | relative_url }}"></script>

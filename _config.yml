@@ -3,9 +3,11 @@ title: Aditya
 subtitle: Raman
 email: adityaraman96@gmail.com
 altemail: adityaraman_cs004@sirmvit.edu
-description: BACK END DEVELOPER | SOFTWARE ENGINEER | MLH FELLOW | DEVOPS | MICROSOFT LEARN STUDENT AMBASSADOR | MENTOR @MLH
-baseurl:  # the subpath of your site, e.g. /blog
-url:  # the base hostname & protocol for your site
+description: >- # this means to ignore newlines until "baseurl:"
+  Backend Developer | Software Engineer | MLH Fellow | DevOps |
+  Gold Microsoft Learn Student Ambassador | Mentor @MLH
+baseurl: # the subpath of your site, e.g. /blog
+url: # the base hostname & protocol for your site
 author: Aditya
 street_address: Hunasamaranahalli
 city: Bengaluru
@@ -25,6 +27,7 @@ linkedin_url: https://www.linkedin.com/in/ramanaditya
 pinterest_url:
 slack_url:
 twitter_url: https://twitter.com/_adityaraman
+medium_url: https://medium.com/@ramanaditya
 disqus: ramanaditya
 
 # Build settings
