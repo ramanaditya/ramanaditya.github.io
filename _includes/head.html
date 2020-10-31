@@ -36,24 +36,35 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+	<meta name="twitter:card" 		  content="summary">
+	<meta name="twitter:site" 		  content="@_adityaraman">
+
 	<meta property="og:url"           content="{{ page.url | absolute_url }}" />
 	<meta property="og:type"          content="website" />
 	{% if page.title %}
+	<meta name="twitter:title" 		  content="{{ page.title }}">
 	<meta property="og:title"         content="{{ page.title }}" />
+	<meta name="twitter:image:alt" 	  content="{{ page.title }}">
 	<meta property="og:image:alt"     content="{{ page.title }}" />
 	{% else %}
+	<meta name="twitter:title" 		  content="{{ site.title }} {{ site.subtitle }}">
 	<meta property="og:title"         content="{{ site.title }} {{ site.subtitle }}" />
+	<meta name="twitter:image:alt" 	  content="{{ site.title }} {{ site.subtitle }}">
 	<meta property="og:image:alt"     content="{{ site.title }} {{ site.subtitle }}" />
 	{% endif %}
 	{% if page.excerpt %}
+	<meta name="twitter:description"  content="{{ page.excerpt }}">
  	<meta property="og:description"   content="{{ page.excerpt }}" />
 	{% else %}
+	<meta name="twitter:description"  content="{{ site.description }}">
 	<meta property="og:description"   content="{{ site.description }}" />
 	{% endif %}
 	{% if page.meta_image %}
-  	<meta property="og:image"         content="https://www.ramanaditya.com/{{ page.meta_image }}" />
+	<meta name="twitter:image" 		  content="https://www.ramanaditya.com/{{ page.meta_image }}">
+	<meta property="og:image" 		  itemprop="image" content="https://www.ramanaditya.com/{{ page.meta_image }}" />
   	{% else %}
-  	<meta property="og:image"         content="{{ '/assets/images/avatar/aditya_raman_circle_ffc5cf.png' | absolute_url }}" />
+	<meta name="twitter:image" 		  content="{{ '/assets/images/avatar/aditya_raman_circle_ffc5cf.png' | absolute_url }}">
+  	<meta property="og:image" 		  itemprop="image" content="{{ '/assets/images/avatar/aditya_raman_circle_ffc5cf.png' | absolute_url }}" />
   	{% endif %}
 
 </head>
