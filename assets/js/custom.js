@@ -101,10 +101,31 @@ $(window).on('load', function() {
             patterns: {
               youtube: {
                 index: 'youtube.com/',
+                id: function (url) {
+                    var videoId = "";
+                    var otherId = "";
+                    var urlArgs = url.split("?");
+                    if (urlArgs.length > 1) {
+                        var allArgs = urlArgs[1];
+                        var allArgsList = allArgs.split("&");
+                        for (var i = 0; i < allArgsList.length; i++) {
+                            var arg = allArgsList[i].split("=");
+                            if (arg[0] == "v") {
+                                videoId = arg[1];
+                            } else {
+                                if (otherId.length > 0){
+                                    otherId += "&";
+                                }
+                                otherId += ((arg[0] == "t" ? "start" : arg[0])+ "=" + arg[1]);
+                            }
+                        }
+                    }
+                    return videoId+"?"+otherId+"&autoplay=1";
+                },
+                // id: 'v=',
+                start: 't=',
 
-                id: 'v=',
-
-                src: 'https://www.youtube.com/embed/%id%?autoplay=1'
+                src: 'https://www.youtube.com/embed/%id%'
               },
               vimeo: {
                 index: 'vimeo.com/',
