@@ -65,7 +65,7 @@ only screen and (min-device-pixel-ratio: 1.5){
 	section.home {
 		padding: 300px 0;
 	}
-	.portfolio-filter {
+	.portfolio-filter, .blog-filter, .project-filter {
 		display: none;
 	}
 	.portfolio-item, .blog-item {

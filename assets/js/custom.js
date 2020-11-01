@@ -67,6 +67,62 @@ $(window).on('load', function() {
       });
     });
 
+    // Isotope for Blog
+    $('.blog-filter').on( 'click', 'li', function() {
+        var filterValue = $(this).attr('data-filter');
+        $blogContainer.isotope({ filter: filterValue });
+    });
+
+    // change is-checked class on buttons
+    $('.blog-filter').each( function( i, buttonGroup ) {
+        var $buttonGroup = $( buttonGroup );
+        $buttonGroup.on( 'click', 'li', function() {
+            $buttonGroup.find('.current').removeClass('current');
+            $( this ).addClass('current');
+        });
+    });
+
+    var $blogContainer = $('.blog-wrapper');
+    $blogContainer.imagesLoaded( function() {
+      $('.blog-wrapper').isotope({
+          // options
+          itemSelector: '[class*="col-"]',
+          percentPosition: true,
+          masonry: {
+              // use element for option
+              columnWidth: '[class*="col-"]'
+          }
+      });
+    });
+
+    // Isotope for Projects
+    $('.project-filter').on( 'click', 'li', function() {
+        var filterValue = $(this).attr('data-filter');
+        $projectContainer.isotope({ filter: filterValue });
+    });
+
+    // change is-checked class on buttons
+    $('.project-filter').each( function( i, buttonGroup ) {
+        var $buttonGroup = $( buttonGroup );
+        $buttonGroup.on( 'click', 'li', function() {
+            $buttonGroup.find('.current').removeClass('current');
+            $( this ).addClass('current');
+        });
+    });
+
+    var $projectContainer = $('.project-wrapper');
+    $projectContainer.imagesLoaded( function() {
+      $('.project-wrapper').isotope({
+          // options
+          itemSelector: '[class*="col-"]',
+          percentPosition: true,
+          masonry: {
+              // use element for option
+              columnWidth: '[class*="col-"]'
+          }
+      });
+    });
+
     var bolbyPopup = function(){
       /*=========================================================================
               Magnific Popup
@@ -229,6 +285,24 @@ $(window).on('load', function() {
       // use filterFn if matches value
       filterValue = filterFns[ filterValue ] || filterValue;
       $container.isotope({ filter: filterValue });
+    });
+
+    // bind filter on select change
+    $('.blog-filter-mobile').on( 'change', function() {
+      // get filter value from option value
+      var filterValue = this.value;
+      // use filterFn if matches value
+      filterValue = filterFns[ filterValue ] || filterValue;
+      $blogContainer.isotope({ filter: filterValue });
+    });
+
+    // bind filter on select change
+    $('.project-filter-mobile').on( 'change', function() {
+      // get filter value from option value
+      var filterValue = this.value;
+      // use filterFn if matches value
+      filterValue = filterFns[ filterValue ] || filterValue;
+      $projectContainer.isotope({ filter: filterValue });
     });
 
     var filterFns = {

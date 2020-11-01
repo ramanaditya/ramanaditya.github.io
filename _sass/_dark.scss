@@ -7,7 +7,7 @@ body.dark {
     .section-title {
         color: #FFF;
         &:before {
-            background: url('../images/dots-bg-light.svg');
+            background: url("{{ '/assets/images/dots-bg-light.svg' | absolute_url }}");
         }
     }
     .bg-dark {
@@ -22,13 +22,13 @@ body.dark {
     .timeline.exp .timeline-container::after, .timeline.edu .timeline-container::after {
         background: #302f4e;
     }
-    .portfolio-filter li {
+    .blog-filter li, .portfolio-filter li, .project-filter li {
         color: #FFF;
     }
     a:hover {
         color: #FFF;
     }
-    .portfolio-filter li.current {
+    .blog-filter li.current, .portfolio-filter li.current, .project-filter li.current {
         color: $colorpink;
     }
     .blog-item .details h4.title a {

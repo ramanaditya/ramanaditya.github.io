@@ -200,7 +200,7 @@ section.home {
 /*=================================================================*/
 /*                      PORTFOLIO                              
 /*=================================================================*/
-.portfolio-wrapper {
+.portfolio-wrapper, .blog-wrapper, .project-wrapper {
 	[class*="col-"] {
 		margin-top: 15px;
 		margin-bottom: 15px;
@@ -292,7 +292,7 @@ section.home {
 	}
 }
 
-.portfolio-filter {
+.blog-filter, .portfolio-filter, .project-filter {
 	margin-bottom: 25px;
 	li {
 		color: #5E5C7F;
@@ -314,7 +314,7 @@ section.home {
 	}
 }
 
-select.portfolio-filter-mobile {
+select.portfolio-filter-mobile, select.blog-filter-mobile, select.project-filter-mobile {
 	font-size: 16px;
 	border-radius: 10px;
 	outline: 0;
