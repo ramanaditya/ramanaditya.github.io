@@ -2788,7 +2788,7 @@ body {
 }
 @media only screen and (max-width: 380px) {
   section.home .intro img {
-    width: 40%;
+    width: 39%;
   }
   section.home .intro h1 {
     font-size: 24px;
