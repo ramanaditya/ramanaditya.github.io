@@ -1030,6 +1030,14 @@ section.home.light .social-icons li a:hover {
   margin-top: 15px;
   margin-bottom: 15px;
 }
+.blog-wrapper [class*=col-] {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.project-wrapper [class*=col-] {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
 
 .pf-filter-wrapper {
   display: none;
@@ -1126,10 +1134,10 @@ section.home.light .social-icons li a:hover {
   opacity: 1;
 }
 
-.portfolio-filter {
+.portfolio-filter, .blog-filter, .project-filter {
   margin-bottom: 25px;
 }
-.portfolio-filter li {
+.portfolio-filter li, .blog-filter li, .project-filter li {
   color: #5E5C7F;
   cursor: pointer;
   font-family: "Rubik", sans-serif;
@@ -1140,17 +1148,17 @@ section.home.light .social-icons li a:hover {
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-.portfolio-filter li:hover {
+.portfolio-filter li:hover, .blog-filter li:hover, .project-filter li:hover {
   color: #FF4C60;
 }
-.portfolio-filter li.current {
+.portfolio-filter li.current, .blog-filter li.current, .project-filter li.current {
   color: #FF4C60;
 }
-.portfolio-filter li:not(:last-child) {
+.portfolio-filter li:not(:last-child), .blog-filter li:not(:last-child), .project-filter li:not(:last-child) {
   margin-right: 1.8rem;
 }
 
-select.portfolio-filter-mobile {
+select.portfolio-filter-mobile, select.blog-filter-mobile, select.project-filter-mobile {
   font-size: 16px;
   border-radius: 10px;
   outline: 0;

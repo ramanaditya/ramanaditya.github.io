@@ -487,7 +487,9 @@
 		</div>
 
 		<div class="spacer" data-height="60"></div>
+	</section>
 
+	<section id="education">
 		<div class="container">
 
 			<!-- section title -->
@@ -727,7 +729,125 @@
 
 <!--	</section>-->
 
+
 	<!-- section works -->
+	<section id="blogs">
+
+		<div class="container">
+
+			<!-- section title -->
+			<h2 class="section-title wow fadeInUp">Latest Posts</h2>
+
+			<div class="spacer" data-height="60"></div>
+
+			<!-- portfolio filter (desktop) -->
+			<ul class="blog-filter list-inline wow fadeInUp">
+				<li class="current list-inline-item" data-filter="*">Everything</li>
+				<li class="list-inline-item" data-filter=".data-science">Data Science</li>
+				<li class="list-inline-item" data-filter=".cloud">Cloud</li>
+				<li class="list-inline-item" data-filter=".iot">IoT</li>
+			</ul>
+
+			<!-- portfolio filter (mobile) -->
+			<div class="pf-filter-wrapper">
+				<select class="blog-filter-mobile">
+					<option value="*">Everything</option>
+					<option value=".data-science">Data Science</option>
+					<option value=".cloud">Cloud</option>
+					<option value=".iot">IoT</option>
+<!--					<option value=".branding">Branding</option>-->
+				</select>
+			</div>
+
+<!--			&lt;!&ndash; portolio wrapper &ndash;&gt;-->
+<!--			<div class="row blog-wrapper">-->
+
+
+
+<!--			</div>-->
+			<div class="row blog-wrapper">
+
+				<!-- portfolio item -->
+				<div class="col-md-4 cloud">
+					<!-- blog item -->
+					<div class="blog-item rounded bg-white shadow-dark wow fadeIn">
+						<div class="thumb">
+							<a href="#">
+								<span class="category">Serverless</span>
+							</a>
+							<a href="https://medium.com/@ramanaditya/serverless-with-graphql-c0bf59078303">
+								<img src="assets/images/blog/serverless_with_graphql.png" alt="Serverless with GraphQL" />
+							</a>
+						</div>
+						<div class="details">
+							<h4 class="my-0 title"><a href="https://medium.com/@ramanaditya/serverless-with-graphql-c0bf59078303">Serverless with GraphQL</a></h4>
+							<ul class="list-inline meta mb-0 mt-2">
+								<li class="list-inline-item">Sep 09 '2020</li>
+								<li class="list-inline-item">Medium</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-4 col-sm-6 grid-item data-science">
+					<!-- blog item -->
+					<div class="blog-item rounded bg-white shadow-dark wow fadeIn">
+						<div class="thumb">
+							<a href="#reviews">
+								<span class="category">Data Science</span>
+							</a>
+							<a href="https://medium.com/bellatrixdata/reconfigure-your-journey-to-data-science-44092971082c">
+								<img src="assets/images/blog/reconfigure_your_journey.png" alt="Reconfigure Your Journey to Data Science" />
+							</a>
+						</div>
+						<div class="details">
+							<h4 class="my-0 title"><a href="https://medium.com/bellatrixdata/reconfigure-your-journey-to-data-science-44092971082c">Reconfigure Your Journey to Data Science</a></h4>
+							<ul class="list-inline meta mb-0 mt-2">
+								<li class="list-inline-item">May 26 '2020</li>
+								<li class="list-inline-item">Medium</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-4 iot">
+					<!-- blog item -->
+					<div class="blog-item rounded bg-white shadow-dark wow fadeIn">
+						<div class="thumb">
+							<a href="#">
+								<span class="category">IoT</span>
+							</a>
+							<a href="https://www.linkedin.com/pulse/getting-started-micropython-nodemcu-esp8266-aditya-raman/">
+								<img src="assets/images/blog/getting_started_with_micropython.jpeg" alt="Getting Started with Micropython" />
+							</a>
+						</div>
+						<div class="details">
+							<h4 class="my-0 title"><a href="https://www.linkedin.com/pulse/getting-started-micropython-nodemcu-esp8266-aditya-raman/">Getting Started with MicroPython on NodeMCU ESP8266</a></h4>
+							<ul class="list-inline meta mb-0 mt-2">
+								<li class="list-inline-item">Oct 05 '2020</li>
+								<li class="list-inline-item">LinkedIn</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<!-- more button -->
+<!--			<div class="load-more text-center mt-4">-->
+<!--				<a href="javascript:" class="btn btn-default"><i class="fas fa-spinner"></i> Load more</a>-->
+<!--				&lt;!&ndash; numbered pagination (hidden for infinite scroll) &ndash;&gt;-->
+<!--				<ul class="portfolio-pagination list-inline d-none">-->
+<!--					<li class="list-inline-item">1</li>-->
+<!--					<li class="list-inline-item"><a href="works-2.html">2</a></li>-->
+<!--				</ul>-->
+<!--			</div>-->
+
+		</div>
+
+	</section>
+
+	<!-- section talks -->
 	<section id="talks">
 
 		<div class="container">
@@ -1139,7 +1259,7 @@
 
 	</section>
 
-<!--	&lt;!&ndash; section blog &ndash;&gt;-->
+	<!-- section blog -->
 <!--	<section id="blog">-->
 
 <!--		<div class="container">-->
@@ -1155,7 +1275,7 @@
 <!--					&lt;!&ndash; blog item &ndash;&gt;-->
 <!--					<div class="blog-item rounded bg-white shadow-dark wow fadeIn">-->
 <!--						<div class="thumb">-->
-<!--							<a href="#">-->
+<!--							<a href="#reviews">-->
 <!--								<span class="category">Reviews</span>-->
 <!--							</a>-->
 <!--							<a href="#">-->
@@ -1166,7 +1286,7 @@
 <!--							<h4 class="my-0 title"><a href="#">5 Best App Development Tool for Your Project</a></h4>-->
 <!--							<ul class="list-inline meta mb-0 mt-2">-->
 <!--								<li class="list-inline-item">09 February, 2020</li>-->
-<!--								<li class="list-inline-item">Bolby</li>-->
+<!--								<li class="list-inline-item">Aditya Raman</li>-->
 <!--							</ul>-->
 <!--						</div>-->
 <!--					</div>-->
@@ -1187,7 +1307,7 @@
 <!--							<h4 class="my-0 title"><a href="#">Common Misconceptions About Payment</a></h4>-->
 <!--							<ul class="list-inline meta mb-0 mt-2">-->
 <!--								<li class="list-inline-item">07 February, 2020</li>-->
-<!--								<li class="list-inline-item">Bolby</li>-->
+<!--								<li class="list-inline-item">Aditya Raman</li>-->
 <!--							</ul>-->
 <!--						</div>-->
 <!--					</div>-->
@@ -1208,7 +1328,7 @@
 <!--							<h4 class="my-0 title"><a href="#">3 Things To Know About Startup Business</a></h4>-->
 <!--							<ul class="list-inline meta mb-0 mt-2">-->
 <!--								<li class="list-inline-item">06 February, 2020</li>-->
-<!--								<li class="list-inline-item">Bolby</li>-->
+<!--								<li class="list-inline-item">Aditya Raman</li>-->
 <!--							</ul>-->
 <!--						</div>-->
 <!--					</div>-->
