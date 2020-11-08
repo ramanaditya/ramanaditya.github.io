@@ -8,6 +8,8 @@ description: >- # this means to ignore newlines until "baseurl:"
   Gold Microsoft Learn Student Ambassador | Mentor @MLH
 baseurl: # the subpath of your site, e.g. /blog
 url: # the base hostname & protocol for your site
+repository: ramanaditya/ramanaditya.github.io
+github: [metadata]
 author: Aditya
 street_address: Hunasamaranahalli
 city: Bengaluru
@@ -46,6 +48,7 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-archives
+  - jekyll-gzip
   
 # mimic GitHub Pages with --safe
 whitelist:
@@ -56,6 +59,7 @@ whitelist:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-archives
+  - jekyll-gzip
 
 # Archives
 jekyll-archives:
@@ -72,3 +76,9 @@ gist:
 paginate: 6
 paginate_path: /page:num/
 
+gzip:
+  extensions:
+    - '.html'
+    - '.css'
+    - '.js'
+  replace_files: false
