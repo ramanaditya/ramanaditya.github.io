@@ -2474,12 +2474,12 @@ body.dark .blog-page-section .blog-single {
 }
 
 .slick-next, .slick-prev {
-  width: 40px;
-  height: 40px;
-  line-height: 40px;
+  width: 70px;
+  height: 70px;
+  line-height: 0px;
   text-align: center;
-  background: #454360;
-  border-radius: 0;
+  background: #fa6475; /*#FF4C60;*/
+  border-radius: 50%;
   top: calc(50% - 40px);
   z-index: 1;
   -webkit-transform: translateX(0px);
@@ -2488,21 +2488,21 @@ body.dark .blog-page-section .blog-single {
 }
 
 .slick-next:hover, .slick-next:focus, .slick-prev:hover, .slick-prev:focus {
-  background: #454360;
+  background: #FF4C60;
 }
 
 .slick-prev {
-  left: 0;
+  left: -30%;
 }
 .slick-prev:hover {
-  background: #454360;
+  background: #FF4C60;
 }
 
 .slick-next {
-  right: 0;
+  right: -30%;
 }
 .slick-next:hover {
-  background: #454360;
+  background: #FF4C60;
 }
 
 .slick-next:before, .slick-next:after {
@@ -2517,9 +2517,10 @@ body.dark .blog-page-section .blog-single {
   content: "";
   background: #FFF;
   display: block;
-  width: 1px;
-  height: 14px;
-  top: 8px;
+  width: 2px;
+  height: 30%;
+  top: 25%;
+  left: 45%;
   position: absolute;
   -ms-transform: rotate(45deg);
   /* IE 9 */
@@ -2532,10 +2533,11 @@ body.dark .blog-page-section .blog-single {
   content: "";
   background: #FFF;
   display: block;
-  width: 1px;
-  height: 14px;
+  width: 2px;
+  height: 30%;
   position: absolute;
-  top: 17px;
+  top: 45%;
+  left: 45%;
   -ms-transform: rotate(135deg);
   /* IE 9 */
   -webkit-transform: rotate(135deg);
@@ -2547,9 +2549,10 @@ body.dark .blog-page-section .blog-single {
   content: "";
   background: #FFF;
   display: block;
-  width: 1px;
-  height: 14px;
-  top: 8px;
+  width: 2px;
+  height: 30%;
+  top: 25%;
+  left: 50%;
   position: absolute;
   -ms-transform: rotate(-45deg);
   /* IE 9 */
@@ -2562,10 +2565,11 @@ body.dark .blog-page-section .blog-single {
   content: "";
   background: #FFF;
   display: block;
-  width: 1px;
-  height: 14px;
+  width: 2px;
+  height: 30%;
   position: absolute;
-  top: 17px;
+  top: 45%;
+  left: 50%;
   -ms-transform: rotate(45deg);
   /* IE 9 */
   -webkit-transform: rotate(45deg);
@@ -2671,11 +2675,11 @@ body {
     padding: 300px 0;
   }
 
-  .portfolio-filter {
+  .portfolio-filter, .blog-filter, .project-filter {
     display: none;
   }
 
-  .portfolio-item, .blog-item {
+  .portfolio-item, .blog-item, .project-filter {
     max-width: 360px;
     margin: auto;
   }

@@ -327,7 +327,7 @@ $(document).on('ready', function() {
     =========================================================================*/
     $('.testimonials-wrapper').slick({
       dots: true,
-      arrows: false,
+      arrows: true,
       autoplay: true,
       autoplaySpeed: 3000
     });
