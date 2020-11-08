@@ -1,0 +1,32 @@
+<IfModule mod_expires.c>
+  ExpiresActive On
+
+  # Images
+  ExpiresByType assets/images/jpeg "access plus 1 year"
+  ExpiresByType assets/images/gif "access plus 1 year"
+  ExpiresByType assets/images/png "access plus 1 year"
+  ExpiresByType assets/images/webp "access plus 1 year"
+  ExpiresByType assets/images/svg+xml "access plus 1 year"
+  ExpiresByType assets/images/avatar/jpeg "access plus 1 year"
+  ExpiresByType assets/images/avatar/gif "access plus 1 year"
+  ExpiresByType assets/images/avatar/png "access plus 1 year"
+  ExpiresByType assets/images/avatar/webp "access plus 1 year"
+  ExpiresByType assets/images/avatar/svg+xml "access plus 1 year"
+  ExpiresByType assets/images/blog/jpeg "access plus 1 year"
+  ExpiresByType assets/images/blog/gif "access plus 1 year"
+  ExpiresByType assets/images/blog/png "access plus 1 year"
+  ExpiresByType assets/images/blog/webp "access plus 1 year"
+  ExpiresByType assets/images/blog/svg+xml "access plus 1 year"
+  ExpiresByType assets/images/talks/jpeg "access plus 1 year"
+  ExpiresByType assets/images/talks/gif "access plus 1 year"
+  ExpiresByType assets/images/talks/png "access plus 1 year"
+  ExpiresByType assets/images/talks/webp "access plus 1 year"
+  ExpiresByType assets/images/talks/svg+xml "access plus 1 year"
+
+  # Fonts
+  ExpiresByType assets/fonts/ttf "access plus 1 year"
+  ExpiresByType assets/fonts/otf "access plus 1 year"
+  ExpiresByType assets/fonts/woff "access plus 1 year"
+  ExpiresByType assets/fonts/woff2 "access plus 1 year"
+  ExpiresByType assets/fonts/font-woff "access plus 1 year"
+</IfModule>
