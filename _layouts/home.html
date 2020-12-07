@@ -5,478 +5,562 @@
 
 <body>
 
-{% include preloader.html %}
+	{% include preloader.html %}
 
-{% include header.html %}
+	{% include header.html %}
 
-<!-- main layout -->
-<main class="content-3">
+	<!-- main layout -->
+	<main class="content-3">
 
-	<!-- section home -->
-	<section id="home" class="home d-flex align-items-center">
-		<div class="container">
+		<!-- section home -->
+		<section id="home" class="home d-flex align-items-center">
+			<div class="container">
 
-			<!-- intro -->
-			<div class="intro" >
-				<!-- avatar image -->
-				<img src="assets/images/avatar/aditya_raman_circle_ebd469.png" alt="Aditya Raman" class="mb-4"/>
+				<!-- intro -->
+				<div class="intro">
+					<!-- avatar image -->
+					<img src="assets/images/avatar/aditya_raman_circle_ebd469.png" alt="Aditya Raman" class="mb-4" />
 
-				<!-- info -->
-				<h1 class="mb-2 mt-0">Aditya Raman</h1>
-				<span>{{ site.description }}</span><br>
-				<span>I'm a&nbsp;&nbsp;<b><span class="text-rotating">Backend Developer, Software Engineer, Mathematician, Writer, Cook</span></b></span>
+					<!-- info -->
+					<h1 class="mb-2 mt-0">Aditya Raman</h1>
+					<span>{{ site.description }}</span><br>
+					<span>I'm a&nbsp;&nbsp;<b><span class="text-rotating">Backend Developer, Software Engineer,
+								Mathematician, Writer, Cook</span></b></span>
 
-				<!-- social icons -->
-				<ul class="social-icons light list-inline mb-0 mt-4">
-					<li class="list-inline-item"><a href="{{ site.twitter_url }}"><i class="fab fa-twitter"></i></a></li>
-					<li class="list-inline-item"><a href="{{ site.facebook_url }}"><i class="fab fa-facebook-f"></i></a></li>
-					<li class="list-inline-item"><a href="{{ site.instagram_url }}"><i class="fab fa-instagram"></i></a></li>
-					<li class="list-inline-item"><a href="{{ site.medium_url }}"><i class="fab fa-medium-m"></i></a></li>
-					<li class="list-inline-item"><a href="{{ site.github_url }}"><i class="fab fa-github"></i></a></li>
-					<li class="list-inline-item"><a href="{{ site.linkedin_url }}"><i class="fab fa-linkedin-in"></i></a></li>
-				</ul>
+					<!-- social icons -->
+					<ul class="social-icons light list-inline mb-0 mt-4">
+						<li class="list-inline-item"><a href="{{ site.twitter_url }}"><i class="fab fa-twitter"></i></a>
+						</li>
+						<li class="list-inline-item"><a href="{{ site.facebook_url }}"><i
+									class="fab fa-facebook-f"></i></a></li>
+						<li class="list-inline-item"><a href="{{ site.instagram_url }}"><i
+									class="fab fa-instagram"></i></a></li>
+						<li class="list-inline-item"><a href="{{ site.medium_url }}"><i class="fab fa-medium-m"></i></a>
+						</li>
+						<li class="list-inline-item"><a href="{{ site.github_url }}"><i class="fab fa-github"></i></a>
+						</li>
+						<li class="list-inline-item"><a href="{{ site.linkedin_url }}"><i
+									class="fab fa-linkedin-in"></i></a></li>
+					</ul>
 
-				<!-- buttons -->
-				<div class="mt-4">
-					<a href="#contact" download class="btn btn-default">Hire me <i class="fas fa-paper-plane"></i></a>
-				</div>
-			</div>
-
-			<!-- scroll down mouse wheel -->
-			<div class="scroll-down">
-				<a href="#about" class="mouse-wrapper">
-					<span>Scroll Down</span>
-					<span class="mouse">
-						<span class="wheel"></span>
-					</span>
-				</a>
-			</div>
-
-			<!-- parallax layers -->
-			<div class="parallax" data-relative-input="true">
-
-				<svg width="27" height="29" data-depth="0.3" class="layer p1" xmlns="http://www.w3.org/2000/svg"><path d="M21.15625.60099c4.37954 3.67487 6.46544 9.40612 5.47254 15.03526-.9929 5.62915-4.91339 10.30141-10.2846 12.25672-5.37122 1.9553-11.3776.89631-15.75715-2.77856l2.05692-2.45134c3.50315 2.93948 8.3087 3.78663 12.60572 2.22284 4.297-1.5638 7.43381-5.30209 8.22768-9.80537.79387-4.50328-.8749-9.08872-4.37803-12.02821L21.15625.60099z" fill="#FFD15C" fill-rule="evenodd"/></svg>
-
-				<svg width="26" height="26" data-depth="0.2" class="layer p2" xmlns="http://www.w3.org/2000/svg"><path d="M13 3.3541L2.42705 24.5h21.1459L13 3.3541z" stroke="#FF4C60" stroke-width="3" fill="none" fill-rule="evenodd"/></svg>
-
-				<svg width="30" height="25" data-depth="0.3" class="layer p3" xmlns="http://www.w3.org/2000/svg"><path d="M.1436 8.9282C3.00213 3.97706 8.2841.92763 14.00013.92796c5.71605.00032 10.9981 3.04992 13.85641 8 2.8583 4.95007 2.8584 11.0491-.00014 16.00024l-2.77128-1.6c2.28651-3.96036 2.28631-8.84002.00011-12.8002-2.2862-3.96017-6.5124-6.40017-11.08513-6.4-4.57271.00018-8.79872 2.43984-11.08524 6.4002l-2.77128-1.6z" fill="#44D7B6" fill-rule="evenodd"/></svg>
-
-				<svg width="15" height="23" data-depth="0.6" class="layer p4" xmlns="http://www.w3.org/2000/svg"><rect transform="rotate(30 9.86603 10.13397)" x="7" width="3" height="25" rx="1.5" fill="#FFD15C" fill-rule="evenodd"/></svg>
-
-				<svg width="15" height="23" data-depth="0.2" class="layer p5" xmlns="http://www.w3.org/2000/svg"><rect transform="rotate(30 9.86603 10.13397)" x="7" width="3" height="25" rx="1.5" fill="#6C6CE5" fill-rule="evenodd"/></svg>
-
-				<svg width="49" height="17" data-depth="0.5" class="layer p6" xmlns="http://www.w3.org/2000/svg"><g fill="#FF4C60" fill-rule="evenodd"><path d="M.5 16.5c0-5.71709 2.3825-10.99895 6.25-13.8567 3.8675-2.85774 8.6325-2.85774 12.5 0C23.1175 5.50106 25.5 10.78292 25.5 16.5H23c0-4.57303-1.90625-8.79884-5-11.08535-3.09375-2.28652-6.90625-2.28652-10 0C4.90625 7.70116 3 11.92697 3 16.5H.5z"/><path d="M23.5 16.5c0-5.71709 2.3825-10.99895 6.25-13.8567 3.8675-2.85774 8.6325-2.85774 12.5 0C46.1175 5.50106 48.5 10.78292 48.5 16.5H46c0-4.57303-1.90625-8.79884-5-11.08535-3.09375-2.28652-6.90625-2.28652-10 0-3.09375 2.28651-5 6.51232-5 11.08535h-2.5z"/></g></svg>
-
-				<svg width="26" height="26" data-depth="0.4" class="layer p7" xmlns="http://www.w3.org/2000/svg"><path d="M13 22.6459L2.42705 1.5h21.1459L13 22.6459z" stroke="#FFD15C" stroke-width="3" fill="none" fill-rule="evenodd"/></svg>
-
-				<svg width="19" height="21" data-depth="0.3" class="layer p8" xmlns="http://www.w3.org/2000/svg"><rect transform="rotate(-40 6.25252 10.12626)" x="7" width="3" height="25" rx="1.5" fill="#6C6CE5" fill-rule="evenodd"/></svg>
-
-				<svg width="30" height="25" data-depth="0.3" data-depth-y="-1.30" class="layer p9" xmlns="http://www.w3.org/2000/svg"><path d="M29.8564 16.0718c-2.85854 4.95114-8.1405 8.00057-13.85654 8.00024-5.71605-.00032-10.9981-3.04992-13.85641-8-2.8583-4.95007-2.8584-11.0491.00014-16.00024l2.77128 1.6c-2.28651 3.96036-2.28631 8.84002-.00011 12.8002 2.2862 3.96017 6.5124 6.40017 11.08513 6.4 4.57271-.00018 8.79872-2.43984 11.08524-6.4002l2.77128 1.6z" fill="#6C6CE5" fill-rule="evenodd"/></svg>
-
-				<svg width="47" height="29" data-depth="0.2" class="layer p10" xmlns="http://www.w3.org/2000/svg"><g fill="#44D7B6" fill-rule="evenodd"><path d="M46.78878 17.19094c-1.95535 5.3723-6.00068 9.52077-10.61234 10.8834-4.61167 1.36265-9.0893-.26708-11.74616-4.27524-2.65686-4.00817-3.08917-9.78636-1.13381-15.15866l2.34923.85505c-1.56407 4.29724-1.2181 8.92018.90705 12.12693 2.12514 3.20674 5.70772 4.5107 9.39692 3.4202 3.68921-1.0905 6.92581-4.40949 8.48988-8.70673l2.34923.85505z"/><path d="M25.17585 9.32448c-1.95535 5.3723-6.00068 9.52077-10.61234 10.8834-4.61167 1.36264-9.0893-.26708-11.74616-4.27525C.16049 11.92447-.27182 6.14628 1.68354.77398l2.34923.85505c-1.56407 4.29724-1.2181 8.92018.90705 12.12692 2.12514 3.20675 5.70772 4.5107 9.39692 3.4202 3.68921-1.0905 6.92581-4.40948 8.48988-8.70672l2.34923.85505z"/></g></svg>
-
-				<svg width="33" height="20" data-depth="0.5" class="layer p11" xmlns="http://www.w3.org/2000/svg"><path d="M32.36774.34317c.99276 5.63023-1.09332 11.3614-5.47227 15.03536-4.37895 3.67396-10.3855 4.73307-15.75693 2.77837C5.76711 16.2022 1.84665 11.53014.8539 5.8999l3.15139-.55567c.7941 4.50356 3.93083 8.24147 8.22772 9.8056 4.29688 1.56413 9.10275.71673 12.60554-2.2227C28.34133 9.98771 30.01045 5.4024 29.21635.89884l3.15139-.55567z" fill="#FFD15C" fill-rule="evenodd"/></svg>
-
-			</div>
-		</div>
-
-	</section>
-
-	<!-- section about -->
-	<section id="about">
-
-		<div class="container">
-
-			<!-- section title -->
-			<h2 class="section-title wow fadeInUp">About Me</h2>
-
-			<div class="spacer" data-height="60"></div>
-
-			<div class="row">
-
-				<div class="col-md-3">
-					<div class="text-center text-md-left">
-						<!-- avatar image -->
-						<img src="assets/images/avatar/aditya_raman_circle_ffc5cf.png" alt="Aditya Raman" />
-					</div>
-					<div class="spacer d-md-none d-lg-none" data-height="30"></div>
-				</div>
-
-				<div class="col-md-9 triangle-left-md triangle-top-sm">
-					<div class="rounded bg-white shadow-dark padding-30">
-						<div class="row">
-							<div class="col-md-12">
-								<!-- about text -->
-								<p>I am Aditya Raman, from Bengaluru, India. I am an Open Source Contributor and Community Lover. I have gained experience in Backend Development and DevOps. Currently, I am working on <b>BentoML</b> as an MLH Fellow.
-									<br>Talk to me about Serverless, GraphQL and Machine Learning.
-								</p>
-								<div class="mt-3">
-									<a href="{{ '/assets/download/resume/aditya_raman_resume.pdf' | absolute_url }}" class="btn btn-default" target="_blank" download>Resume <i class="fas fa-download"></i></a>
-									<a href="https://docs.google.com/document/d/e/2PACX-1vSp1HANhrVjG-TcD_-kxyInZ70YaHyfgH_cu-BcR9nisISyRkFB0_2CY7XEykBYlWHmTDdf7CR6L747/pub?embedded=true" class="work-video btn btn-default">View Resume <i class="fas fa-eye"></i></a>
-								</div>
-								<div class="spacer d-md-none d-lg-none" data-height="30"></div>
-							</div>
-<!--							<div class="col-md-6">-->
-<!--								&lt;!&ndash; skill item &ndash;&gt;-->
-<!--								<div class="skill-item">-->
-<!--									<div class="skill-info clearfix">-->
-<!--										<h4 class="float-left mb-3 mt-0">Development</h4>-->
-<!--										<span class="float-right">85%</span>-->
-<!--									</div>-->
-<!--									<div class="progress">-->
-<!--										<div class="progress-bar data-background" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="85" data-color="#FFD15C">-->
-<!--										</div>-->
-<!--									</div>-->
-<!--									<div class="spacer" data-height="20"></div>-->
-<!--								</div>-->
-
-<!--								&lt;!&ndash; skill item &ndash;&gt;-->
-<!--								<div class="skill-item">-->
-<!--									<div class="skill-info clearfix">-->
-<!--										<h4 class="float-left mb-3 mt-0">UI/UX design</h4>-->
-<!--										<span class="float-right">95%</span>-->
-<!--									</div>-->
-<!--									<div class="progress">-->
-<!--										<div class="progress-bar data-background" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="95" data-color="#FF4C60">-->
-<!--										</div>-->
-<!--									</div>-->
-<!--									<div class="spacer" data-height="20"></div>-->
-<!--								</div>-->
-
-<!--								&lt;!&ndash; skill item &ndash;&gt;-->
-<!--								<div class="skill-item">-->
-<!--									<div class="skill-info clearfix">-->
-<!--										<h4 class="float-left mb-3 mt-0">Photography</h4>-->
-<!--										<span class="float-right">70%</span>-->
-<!--									</div>-->
-<!--									<div class="progress">-->
-<!--										<div class="progress-bar data-background" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="70" data-color="#6C6CE5">-->
-<!--										</div>-->
-<!--									</div>-->
-<!--								</div>-->
-<!--							</div>-->
-						</div>
+					<!-- buttons -->
+					<div class="mt-4">
+						<a href="#contact" download class="btn btn-default">Hire me <i
+								class="fas fa-paper-plane"></i></a>
 					</div>
 				</div>
 
-			</div>
-			<!-- row end -->
-
-			<div class="spacer" data-height="70"></div>
-
-<!--			<div class="row">-->
-
-<!--				<div class="col-md-3 col-sm-6">-->
-<!--					&lt;!&ndash; fact item &ndash;&gt;-->
-<!--					<div class="fact-item">-->
-<!--						<span class="icon icon-fire"></span>-->
-<!--						<div class="details">-->
-<!--							<h3 class="mb-0 mt-0 number"><em class="count">198</em></h3>-->
-<!--							<p class="mb-0">Projects completed</p>-->
-<!--						</div>-->
-<!--					</div>-->
-<!--					<div class="spacer d-md-none d-lg-none" data-height="30"></div>-->
-<!--				</div>-->
-
-<!--				<div class="col-md-3 col-sm-6">-->
-<!--					&lt;!&ndash; fact item &ndash;&gt;-->
-<!--					<div class="fact-item">-->
-<!--						<span class="icon icon-cup"></span>-->
-<!--						<div class="details">-->
-<!--							<h3 class="mb-0 mt-0 number"><em class="count">5670</em></h3>-->
-<!--							<p class="mb-0">Cup of coffee</p>-->
-<!--						</div>-->
-<!--					</div>-->
-<!--					<div class="spacer d-md-none d-lg-none" data-height="30"></div>-->
-<!--				</div>-->
-
-<!--				<div class="col-md-3 col-sm-6">-->
-<!--					&lt;!&ndash; fact item &ndash;&gt;-->
-<!--					<div class="fact-item">-->
-<!--						<span class="icon icon-people"></span>-->
-<!--						<div class="details">-->
-<!--							<h3 class="mb-0 mt-0 number"><em class="count">427</em></h3>-->
-<!--							<p class="mb-0">Satisfied clients</p>-->
-<!--						</div>-->
-<!--					</div>-->
-<!--					<div class="spacer d-md-none d-lg-none" data-height="30"></div>-->
-<!--				</div>-->
-
-<!--				<div class="col-md-3 col-sm-6">-->
-<!--					&lt;!&ndash; fact item &ndash;&gt;-->
-<!--					<div class="fact-item">-->
-<!--						<span class="icon icon-badge"></span>-->
-<!--						<div class="details">-->
-<!--							<h3 class="mb-0 mt-0 number"><em class="count">35</em></h3>-->
-<!--							<p class="mb-0">Nominees winner</p>-->
-<!--						</div>-->
-<!--					</div>-->
-<!--				</div>-->
-
-<!--			</div>-->
-
-		</div>
-
-	</section>
-
-<!--	&lt;!&ndash; section services &ndash;&gt;-->
-<!--	<section id="services">-->
-
-<!--		<div class="container">-->
-
-<!--			&lt;!&ndash; section title &ndash;&gt;-->
-<!--			<h2 class="section-title wow fadeInUp">Services</h2>-->
-
-<!--			<div class="spacer" data-height="60"></div>-->
-
-<!--			<div class="row">-->
-
-<!--				<div class="col-md-4">-->
-<!--					&lt;!&ndash; service box &ndash;&gt;-->
-<!--					<div class="service-box rounded data-background padding-30 text-center text-light shadow-blue" data-color="#6C6CE5">-->
-<!--						<img src="assets/images/service-1.svg" alt="UI/UX design" />-->
-<!--						<h3 class="mb-3 mt-0">UI/UX design</h3>-->
-<!--						<p class="mb-0">Lorem ipsum dolor sit amet consectetuer adipiscing elit aenean commodo ligula eget.</p>-->
-<!--					</div>-->
-<!--					<div class="spacer d-md-none d-lg-none" data-height="30"></div>-->
-<!--				</div>-->
-
-<!--				<div class="col-md-4">-->
-<!--					&lt;!&ndash; service box &ndash;&gt;-->
-<!--					<div class="service-box rounded data-background padding-30 text-center shadow-yellow" data-color="#F9D74C">-->
-<!--						<img src="assets/images/service-2.svg" alt="UI/UX design" />-->
-<!--						<h3 class="mb-3 mt-0">Web Development</h3>-->
-<!--						<p class="mb-0">Lorem ipsum dolor sit amet consectetuer adipiscing elit aenean commodo ligula eget.</p>-->
-<!--					</div>-->
-<!--					<div class="spacer d-md-none d-lg-none" data-height="30"></div>-->
-<!--				</div>-->
-
-<!--				<div class="col-md-4">-->
-<!--					&lt;!&ndash; service box &ndash;&gt;-->
-<!--					<div class="service-box rounded data-background padding-30 text-center text-light shadow-pink" data-color="#F97B8B">-->
-<!--						<img src="assets/images/service-3.svg" alt="UI/UX design" />-->
-<!--						<h3 class="mb-3 mt-0">Photography</h3>-->
-<!--						<p class="mb-0">Lorem ipsum dolor sit amet consectetuer adipiscing elit aenean commodo ligula eget.</p>-->
-<!--					</div>-->
-<!--				</div>-->
-
-<!--			</div>-->
-
-<!--			<div class="mt-5 text-center">-->
-<!--				<p class="mb-0">Looking for a custom job? <a href="#contact">Click here</a> to contact me! 👋</p>-->
-<!--			</div>-->
-
-<!--		</div>-->
-
-<!--	</section>-->
-
-	<!-- section experience -->
-	<section id="experience">
-
-		<div class="container">
-
-			<!-- section title -->
-			<h2 class="section-title wow fadeInUp">Experience</h2>
-
-			<div class="spacer" data-height="60"></div>
-
-			<div class="row">
-
-				<div class="col-md-6">
-					<h3 class="section-subtitle text-center">Work Experience</h3>
-
-					<!-- timeline wrapper -->
-					<div class="timeline exp bg-white rounded shadow-dark padding-30 overflow-hidden">
-						<!-- timeline item -->
-						<div class="timeline-container wow fadeInUp">
-							<div class="content">
-								<div class="row">
-									<div class="col-sm-3" style="display: inline">
-										<a href="#company-4" class="gallery-link">
-											<div class="thumb">
-												<img src="assets/images/experience/thumbs/mlh_fellow_logo.webp" alt="MLH Logo Logo"/>
-											</div>
-										</a>
-										<div id="company-4" class="gallery mfp-hide">
-											<a href="assets/images/experience/mlh_fellow_logo.jpeg" title="MLH Fellow"></a>
-										</div>
-									</div>
-									<div class="col-sm-9">
-										<span class="time">FALL 2020 - Present</span><br>
-										<h3 class="title" style="display: inline">MLH Fellow, </h3>
-										<span class="subtitle"><b>Major League Hacking</b></span>
-									</div>
-									<ul>
-										<li>Worked on TwitStat, Orientation Hackathon Project</li>
-									</ul>
-
-								</div>
-							</div>
-						</div>
-
-						<!-- timeline item -->
-						<div class="timeline-container wow fadeInUp" data-wow-delay="0.2s">
-							<div class="content">
-								<div class="row">
-									<div class="col-sm-3">
-										<a href="#company-3" class="gallery-link">
-											<div class="thumb">
-												<img src="assets/images/experience/thumbs/konfhub_logo.webp" alt="KonfHub Logo" />
-											</div>
-										</a>
-										<div id="company-3" class="gallery mfp-hide">
-											<a href="assets/images/experience/konfhub_logo.jpeg" title="Backend Developer at KonfHub"></a>
-										</div>
-									</div>
-									<div class="col-sm-9">
-										<span class="time">JUN 2020 - AUG 2020</span><br>
-										<h3 class="title" style="display: inline">Backend Developer, </h3>
-										<span class="subtitle"><b>KonfHub Technologies LLP</b></span> <i class="fas fa-minus"></i> Bengaluru, IN<br>
-									</div>
-									<ul>
-										<li>Worked on Serverless Framework and AWS AppSync, AWS Lambda Functions</li>
-										<li>Developed GraphQL API, integrating with NodeJs</li>
-										<li>Speaker at Cloud Community Days (CCDays)</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-
-						<!-- timeline item -->
-						<div class="timeline-container wow fadeInUp" data-wow-delay="0.4s">
-							<div class="content">
-								<div class="row">
-									<div class="col-sm-3">
-										<a href="#company-2" class="gallery-link">
-											<div class="thumb">
-												<img src="assets/images/experience/thumbs/smitty_logo.webp" alt="Smitty LLC Logo" />
-											</div>
-										</a>
-										<div id="company-2" class="gallery mfp-hide">
-											<a href="assets/images/experience/smitty_logo.jpeg" title="Software Engineer at Smitty LLC"></a>
-										</div>
-									</div>
-									<div class="col-sm-9">
-										<span class="time">DEC 2019 – MAY 2020</span><br>
-										<h3 class="title" style="display: inline">Software Engineer, </h3>
-										<span class="subtitle"><b>Smitty LLC </b></span><i class="fas fa-minus"></i> Idaho, US<br>
-									</div>
-									<ul>
-										<li>Developed a Mobile App using Flutter</li>
-										<li>Using Django REST Framework developed REST API and hosted on DigitalOcean and later on GCP</li>
-										<li>App is available on Play Store and App Store</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-
-						<!-- timeline item -->
-						<div class="timeline-container wow fadeInUp" data-wow-delay="0.4s">
-							<div class="content">
-								<div class="row">
-									<div class="col-sm-3">
-										<a href="#company-1" class="gallery-link">
-											<div class="thumb">
-												<img src="assets/images/experience/thumbs/trending_skill logo.webp" alt="Trending Skill Logo" />
-											</div>
-										</a>
-										<div id="company-1" class="gallery mfp-hide">
-											<a href="assets/images/experience/trending_skill logo.jpeg" title="Full Stack Developer at Trending Skills"></a>
-										</div>
-									</div>
-									<div class="col-sm-9">
-										<span class="time">OCT 2018 – NOV 2018</span><br>
-										<h3 class="title" style="display: inline">Full Stack Developer, </h3>
-										<span class="subtitle"><b>Trending Skill </b></span><i class="fas fa-minus"></i> Mumbai, IN<br>
-									</div>
-									<ul>
-										<li>Worked mostly on the backend development based on Django</li>
-										<li>Fixed several bugs</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-
-						<!-- main line -->
-						<span class="line"></span>
-
-					</div>
-
+				<!-- scroll down mouse wheel -->
+				<div class="scroll-down">
+					<a href="#about" class="mouse-wrapper">
+						<span>Scroll Down</span>
+						<span class="mouse">
+							<span class="wheel"></span>
+						</span>
+					</a>
 				</div>
 
-				<div class="col-md-6">
-					<h3 class="section-subtitle text-center">Community and Volunteering</h3>
+				<!-- parallax layers -->
+				<div class="parallax" data-relative-input="true">
 
-					<!-- responsive spacer -->
-					<div class="spacer d-md-none d-lg-none" data-height="30"></div>
+					<svg width="27" height="29" data-depth="0.3" class="layer p1" xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M21.15625.60099c4.37954 3.67487 6.46544 9.40612 5.47254 15.03526-.9929 5.62915-4.91339 10.30141-10.2846 12.25672-5.37122 1.9553-11.3776.89631-15.75715-2.77856l2.05692-2.45134c3.50315 2.93948 8.3087 3.78663 12.60572 2.22284 4.297-1.5638 7.43381-5.30209 8.22768-9.80537.79387-4.50328-.8749-9.08872-4.37803-12.02821L21.15625.60099z"
+							fill="#FFD15C" fill-rule="evenodd" /></svg>
 
-					<!-- timeline wrapper -->
-					<div class="timeline community bg-white rounded shadow-dark padding-30 overflow-hidden">
+					<svg width="26" height="26" data-depth="0.2" class="layer p2" xmlns="http://www.w3.org/2000/svg">
+						<path d="M13 3.3541L2.42705 24.5h21.1459L13 3.3541z" stroke="#FF4C60" stroke-width="3"
+							fill="none" fill-rule="evenodd" /></svg>
 
-						<!-- timeline item -->
-						<div class="timeline-container wow fadeInUp" data-wow-delay="0.4s">
-							<div class="content">
-								<div class="row">
-									<div class="col-sm-3">
-										<a href="#community-work-1" class="gallery-link">
-											<div class="thumb">
-												<img src="assets/images/experience/thumbs/microsoft_logo.webp" alt="Microsoft Logo" />
-											</div>
-										</a>
-										<div id="community-work-1" class="gallery mfp-hide">
-											<a href="assets/images/experience/microsoft_logo.png"></a>
-										</div>
-									</div>
-									<div class="col-sm-9">
-										<span class="time">SEP 2019 – Present</span><br>
-										<h3 class="title" style="display: inline">Microsoft Learn Student Ambassador, </h3><span class="subtitle"><b>Microsoft</b></span>
-									</div>
-									<p class="subtitle" style="color: goldenrod"><b>Gold Microsoft Learn Student Ambassador</b></p>
-									<ul>
-										<li>Live QnA with Gold Microsoft Learn Student Ambassadors! 🎙</li>
-										<li>Judge at DubHacks Hackathon</li>
-										<li>Serverless with GraphQL - Blog for the Serverless September</li>
-									</ul>
+					<svg width="30" height="25" data-depth="0.3" class="layer p3" xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M.1436 8.9282C3.00213 3.97706 8.2841.92763 14.00013.92796c5.71605.00032 10.9981 3.04992 13.85641 8 2.8583 4.95007 2.8584 11.0491-.00014 16.00024l-2.77128-1.6c2.28651-3.96036 2.28631-8.84002.00011-12.8002-2.2862-3.96017-6.5124-6.40017-11.08513-6.4-4.57271.00018-8.79872 2.43984-11.08524 6.4002l-2.77128-1.6z"
+							fill="#44D7B6" fill-rule="evenodd" /></svg>
+
+					<svg width="15" height="23" data-depth="0.6" class="layer p4" xmlns="http://www.w3.org/2000/svg">
+						<rect transform="rotate(30 9.86603 10.13397)" x="7" width="3" height="25" rx="1.5"
+							fill="#FFD15C" fill-rule="evenodd" /></svg>
+
+					<svg width="15" height="23" data-depth="0.2" class="layer p5" xmlns="http://www.w3.org/2000/svg">
+						<rect transform="rotate(30 9.86603 10.13397)" x="7" width="3" height="25" rx="1.5"
+							fill="#6C6CE5" fill-rule="evenodd" /></svg>
+
+					<svg width="49" height="17" data-depth="0.5" class="layer p6" xmlns="http://www.w3.org/2000/svg">
+						<g fill="#FF4C60" fill-rule="evenodd">
+							<path
+								d="M.5 16.5c0-5.71709 2.3825-10.99895 6.25-13.8567 3.8675-2.85774 8.6325-2.85774 12.5 0C23.1175 5.50106 25.5 10.78292 25.5 16.5H23c0-4.57303-1.90625-8.79884-5-11.08535-3.09375-2.28652-6.90625-2.28652-10 0C4.90625 7.70116 3 11.92697 3 16.5H.5z" />
+							<path
+								d="M23.5 16.5c0-5.71709 2.3825-10.99895 6.25-13.8567 3.8675-2.85774 8.6325-2.85774 12.5 0C46.1175 5.50106 48.5 10.78292 48.5 16.5H46c0-4.57303-1.90625-8.79884-5-11.08535-3.09375-2.28652-6.90625-2.28652-10 0-3.09375 2.28651-5 6.51232-5 11.08535h-2.5z" />
+						</g>
+					</svg>
+
+					<svg width="26" height="26" data-depth="0.4" class="layer p7" xmlns="http://www.w3.org/2000/svg">
+						<path d="M13 22.6459L2.42705 1.5h21.1459L13 22.6459z" stroke="#FFD15C" stroke-width="3"
+							fill="none" fill-rule="evenodd" /></svg>
+
+					<svg width="19" height="21" data-depth="0.3" class="layer p8" xmlns="http://www.w3.org/2000/svg">
+						<rect transform="rotate(-40 6.25252 10.12626)" x="7" width="3" height="25" rx="1.5"
+							fill="#6C6CE5" fill-rule="evenodd" /></svg>
+
+					<svg width="30" height="25" data-depth="0.3" data-depth-y="-1.30" class="layer p9"
+						xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M29.8564 16.0718c-2.85854 4.95114-8.1405 8.00057-13.85654 8.00024-5.71605-.00032-10.9981-3.04992-13.85641-8-2.8583-4.95007-2.8584-11.0491.00014-16.00024l2.77128 1.6c-2.28651 3.96036-2.28631 8.84002-.00011 12.8002 2.2862 3.96017 6.5124 6.40017 11.08513 6.4 4.57271-.00018 8.79872-2.43984 11.08524-6.4002l2.77128 1.6z"
+							fill="#6C6CE5" fill-rule="evenodd" /></svg>
+
+					<svg width="47" height="29" data-depth="0.2" class="layer p10" xmlns="http://www.w3.org/2000/svg">
+						<g fill="#44D7B6" fill-rule="evenodd">
+							<path
+								d="M46.78878 17.19094c-1.95535 5.3723-6.00068 9.52077-10.61234 10.8834-4.61167 1.36265-9.0893-.26708-11.74616-4.27524-2.65686-4.00817-3.08917-9.78636-1.13381-15.15866l2.34923.85505c-1.56407 4.29724-1.2181 8.92018.90705 12.12693 2.12514 3.20674 5.70772 4.5107 9.39692 3.4202 3.68921-1.0905 6.92581-4.40949 8.48988-8.70673l2.34923.85505z" />
+							<path
+								d="M25.17585 9.32448c-1.95535 5.3723-6.00068 9.52077-10.61234 10.8834-4.61167 1.36264-9.0893-.26708-11.74616-4.27525C.16049 11.92447-.27182 6.14628 1.68354.77398l2.34923.85505c-1.56407 4.29724-1.2181 8.92018.90705 12.12692 2.12514 3.20675 5.70772 4.5107 9.39692 3.4202 3.68921-1.0905 6.92581-4.40948 8.48988-8.70672l2.34923.85505z" />
+						</g>
+					</svg>
+
+					<svg width="33" height="20" data-depth="0.5" class="layer p11" xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M32.36774.34317c.99276 5.63023-1.09332 11.3614-5.47227 15.03536-4.37895 3.67396-10.3855 4.73307-15.75693 2.77837C5.76711 16.2022 1.84665 11.53014.8539 5.8999l3.15139-.55567c.7941 4.50356 3.93083 8.24147 8.22772 9.8056 4.29688 1.56413 9.10275.71673 12.60554-2.2227C28.34133 9.98771 30.01045 5.4024 29.21635.89884l3.15139-.55567z"
+							fill="#FFD15C" fill-rule="evenodd" /></svg>
+
+				</div>
+			</div>
+
+		</section>
+
+		<!-- section about -->
+		<section id="about">
+
+			<div class="container">
+
+				<!-- section title -->
+				<h2 class="section-title wow fadeInUp">About Me</h2>
+
+				<div class="spacer" data-height="60"></div>
+
+				<div class="row">
+
+					<div class="col-md-3">
+						<div class="text-center text-md-left">
+							<!-- avatar image -->
+							<img src="assets/images/avatar/aditya_raman_circle_ffc5cf.png" alt="Aditya Raman" />
+						</div>
+						<div class="spacer d-md-none d-lg-none" data-height="30"></div>
+					</div>
+
+					<div class="col-md-9 triangle-left-md triangle-top-sm">
+						<div class="rounded bg-white shadow-dark padding-30">
+							<div class="row">
+								<div class="col-md-12">
+									<!-- about text -->
+									<p>I am Aditya Raman, from Bengaluru, India. I am an Open Source Contributor and
+										Community Lover. I have gained experience in Backend Development and DevOps.
+										Currently, I am working on <b>BentoML</b> as an MLH Fellow.
+										<br>Talk to me about Serverless, GraphQL and Machine Learning.
+									</p>
 									<div class="row">
+										<div class="mt-3">
+											<a href="{{ '/assets/download/resume/aditya_raman_resume.pdf' | absolute_url }}"
+												class="btn btn-default" target="_blank" download>Resume <i
+													class="fas fa-download"></i></a>
+										</div>&nbsp;
+										<div class="mt-3">
+											<a href="https://docs.google.com/document/d/e/2PACX-1vSp1HANhrVjG-TcD_-kxyInZ70YaHyfgH_cu-BcR9nisISyRkFB0_2CY7XEykBYlWHmTDdf7CR6L747/pub?embedded=true"
+												class="work-video btn btn-default">View Resume <i
+													class="fas fa-eye"></i></a>
+										</div>
+									</div>
+									<div class="spacer d-md-none d-lg-none" data-height="30"></div>
+								</div>
+								<!-- <div class="col-md-6">
+								<img src="assets/images/works/chart (1).png" />
+							</div> -->
+								<!--							<div class="col-md-6">-->
+								<!--								&lt;!&ndash; skill item &ndash;&gt;-->
+								<!--								<div class="skill-item">-->
+								<!--									<div class="skill-info clearfix">-->
+								<!--										<h4 class="float-left mb-3 mt-0">Development</h4>-->
+								<!--										<span class="float-right">85%</span>-->
+								<!--									</div>-->
+								<!--									<div class="progress">-->
+								<!--										<div class="progress-bar data-background" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="85" data-color="#FFD15C">-->
+								<!--										</div>-->
+								<!--									</div>-->
+								<!--									<div class="spacer" data-height="20"></div>-->
+								<!--								</div>-->
+
+								<!--								&lt;!&ndash; skill item &ndash;&gt;-->
+								<!--								<div class="skill-item">-->
+								<!--									<div class="skill-info clearfix">-->
+								<!--										<h4 class="float-left mb-3 mt-0">UI/UX design</h4>-->
+								<!--										<span class="float-right">95%</span>-->
+								<!--									</div>-->
+								<!--									<div class="progress">-->
+								<!--										<div class="progress-bar data-background" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="95" data-color="#FF4C60">-->
+								<!--										</div>-->
+								<!--									</div>-->
+								<!--									<div class="spacer" data-height="20"></div>-->
+								<!--								</div>-->
+
+								<!--								&lt;!&ndash; skill item &ndash;&gt;-->
+								<!--								<div class="skill-item">-->
+								<!--									<div class="skill-info clearfix">-->
+								<!--										<h4 class="float-left mb-3 mt-0">Photography</h4>-->
+								<!--										<span class="float-right">70%</span>-->
+								<!--									</div>-->
+								<!--									<div class="progress">-->
+								<!--										<div class="progress-bar data-background" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="70" data-color="#6C6CE5">-->
+								<!--										</div>-->
+								<!--									</div>-->
+								<!--								</div>-->
+								<!--							</div>-->
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<!-- row end -->
+
+				<div class="spacer" data-height="70"></div>
+
+				<!--			<div class="row">-->
+
+				<!--				<div class="col-md-3 col-sm-6">-->
+				<!--					&lt;!&ndash; fact item &ndash;&gt;-->
+				<!--					<div class="fact-item">-->
+				<!--						<span class="icon icon-fire"></span>-->
+				<!--						<div class="details">-->
+				<!--							<h3 class="mb-0 mt-0 number"><em class="count">198</em></h3>-->
+				<!--							<p class="mb-0">Projects completed</p>-->
+				<!--						</div>-->
+				<!--					</div>-->
+				<!--					<div class="spacer d-md-none d-lg-none" data-height="30"></div>-->
+				<!--				</div>-->
+
+				<!--				<div class="col-md-3 col-sm-6">-->
+				<!--					&lt;!&ndash; fact item &ndash;&gt;-->
+				<!--					<div class="fact-item">-->
+				<!--						<span class="icon icon-cup"></span>-->
+				<!--						<div class="details">-->
+				<!--							<h3 class="mb-0 mt-0 number"><em class="count">5670</em></h3>-->
+				<!--							<p class="mb-0">Cup of coffee</p>-->
+				<!--						</div>-->
+				<!--					</div>-->
+				<!--					<div class="spacer d-md-none d-lg-none" data-height="30"></div>-->
+				<!--				</div>-->
+
+				<!--				<div class="col-md-3 col-sm-6">-->
+				<!--					&lt;!&ndash; fact item &ndash;&gt;-->
+				<!--					<div class="fact-item">-->
+				<!--						<span class="icon icon-people"></span>-->
+				<!--						<div class="details">-->
+				<!--							<h3 class="mb-0 mt-0 number"><em class="count">427</em></h3>-->
+				<!--							<p class="mb-0">Satisfied clients</p>-->
+				<!--						</div>-->
+				<!--					</div>-->
+				<!--					<div class="spacer d-md-none d-lg-none" data-height="30"></div>-->
+				<!--				</div>-->
+
+				<!--				<div class="col-md-3 col-sm-6">-->
+				<!--					&lt;!&ndash; fact item &ndash;&gt;-->
+				<!--					<div class="fact-item">-->
+				<!--						<span class="icon icon-badge"></span>-->
+				<!--						<div class="details">-->
+				<!--							<h3 class="mb-0 mt-0 number"><em class="count">35</em></h3>-->
+				<!--							<p class="mb-0">Nominees winner</p>-->
+				<!--						</div>-->
+				<!--					</div>-->
+				<!--				</div>-->
+
+				<!--			</div>-->
+
+			</div>
+
+		</section>
+
+		<!--	&lt;!&ndash; section services &ndash;&gt;-->
+		<!--	<section id="services">-->
+
+		<!--		<div class="container">-->
+
+		<!--			&lt;!&ndash; section title &ndash;&gt;-->
+		<!--			<h2 class="section-title wow fadeInUp">Services</h2>-->
+
+		<!--			<div class="spacer" data-height="60"></div>-->
+
+		<!--			<div class="row">-->
+
+		<!--				<div class="col-md-4">-->
+		<!--					&lt;!&ndash; service box &ndash;&gt;-->
+		<!--					<div class="service-box rounded data-background padding-30 text-center text-light shadow-blue" data-color="#6C6CE5">-->
+		<!--						<img src="assets/images/service-1.svg" alt="UI/UX design" />-->
+		<!--						<h3 class="mb-3 mt-0">UI/UX design</h3>-->
+		<!--						<p class="mb-0">Lorem ipsum dolor sit amet consectetuer adipiscing elit aenean commodo ligula eget.</p>-->
+		<!--					</div>-->
+		<!--					<div class="spacer d-md-none d-lg-none" data-height="30"></div>-->
+		<!--				</div>-->
+
+		<!--				<div class="col-md-4">-->
+		<!--					&lt;!&ndash; service box &ndash;&gt;-->
+		<!--					<div class="service-box rounded data-background padding-30 text-center shadow-yellow" data-color="#F9D74C">-->
+		<!--						<img src="assets/images/service-2.svg" alt="UI/UX design" />-->
+		<!--						<h3 class="mb-3 mt-0">Web Development</h3>-->
+		<!--						<p class="mb-0">Lorem ipsum dolor sit amet consectetuer adipiscing elit aenean commodo ligula eget.</p>-->
+		<!--					</div>-->
+		<!--					<div class="spacer d-md-none d-lg-none" data-height="30"></div>-->
+		<!--				</div>-->
+
+		<!--				<div class="col-md-4">-->
+		<!--					&lt;!&ndash; service box &ndash;&gt;-->
+		<!--					<div class="service-box rounded data-background padding-30 text-center text-light shadow-pink" data-color="#F97B8B">-->
+		<!--						<img src="assets/images/service-3.svg" alt="UI/UX design" />-->
+		<!--						<h3 class="mb-3 mt-0">Photography</h3>-->
+		<!--						<p class="mb-0">Lorem ipsum dolor sit amet consectetuer adipiscing elit aenean commodo ligula eget.</p>-->
+		<!--					</div>-->
+		<!--				</div>-->
+
+		<!--			</div>-->
+
+		<!--			<div class="mt-5 text-center">-->
+		<!--				<p class="mb-0">Looking for a custom job? <a href="#contact">Click here</a> to contact me! 👋</p>-->
+		<!--			</div>-->
+
+		<!--		</div>-->
+
+		<!--	</section>-->
+
+		<!-- section experience -->
+		<section id="experience">
+
+			<div class="container">
+
+				<!-- section title -->
+				<h2 class="section-title wow fadeInUp">Experience</h2>
+
+				<div class="spacer" data-height="60"></div>
+
+				<div class="row">
+
+					<div class="col-md-6">
+						<h3 class="section-subtitle text-center">Work Experience</h3>
+
+						<!-- timeline wrapper -->
+						<div class="timeline exp bg-white rounded shadow-dark padding-30 overflow-hidden">
+							<!-- timeline item -->
+							<div class="timeline-container wow fadeInUp">
+								<div class="content">
+									<div class="row">
+										<div class="col-sm-3" style="display: inline">
+											<a href="#company-4" class="gallery-link">
+												<div class="thumb">
+													<img src="assets/images/experience/thumbs/mlh_fellow_logo.webp"
+														alt="MLH Logo Logo" />
+												</div>
+											</a>
+											<div id="company-4" class="gallery mfp-hide">
+												<a href="assets/images/experience/mlh_fellow_logo.jpeg"
+													title="MLH Fellow"></a>
+											</div>
+										</div>
+										<div class="col-sm-9">
+											<span class="time">FALL 2020 - Present</span><br>
+											<h3 class="title" style="display: inline">MLH Fellow, </h3>
+											<span class="subtitle"><b>Major League Hacking</b></span>
+										</div>
+										<ul>
+											<li>Worked on TwitStat, Orientation Hackathon Project</li>
+										</ul>
+
+									</div>
+								</div>
+							</div>
+
+							<!-- timeline item -->
+							<div class="timeline-container wow fadeInUp" data-wow-delay="0.2s">
+								<div class="content">
+									<div class="row">
+										<div class="col-sm-3">
+											<a href="#company-3" class="gallery-link">
+												<div class="thumb">
+													<img src="assets/images/experience/thumbs/konfhub_logo.webp"
+														alt="KonfHub Logo" />
+												</div>
+											</a>
+											<div id="company-3" class="gallery mfp-hide">
+												<a href="assets/images/experience/konfhub_logo.jpeg"
+													title="Backend Developer at KonfHub"></a>
+											</div>
+										</div>
+										<div class="col-sm-9">
+											<span class="time">JUN 2020 - AUG 2020</span><br>
+											<h3 class="title" style="display: inline">Backend Developer, </h3>
+											<span class="subtitle"><b>KonfHub Technologies LLP</b></span> <i
+												class="fas fa-minus"></i> Bengaluru, IN<br>
+										</div>
+										<ul>
+											<li>Worked on Serverless Framework and AWS AppSync, AWS Lambda Functions
+											</li>
+											<li>Developed GraphQL API, integrating with NodeJs</li>
+											<li>Speaker at Cloud Community Days (CCDays)</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+
+							<!-- timeline item -->
+							<div class="timeline-container wow fadeInUp" data-wow-delay="0.4s">
+								<div class="content">
+									<div class="row">
+										<div class="col-sm-3">
+											<a href="#company-2" class="gallery-link">
+												<div class="thumb">
+													<img src="assets/images/experience/thumbs/smitty_logo.webp"
+														alt="Smitty LLC Logo" />
+												</div>
+											</a>
+											<div id="company-2" class="gallery mfp-hide">
+												<a href="assets/images/experience/smitty_logo.jpeg"
+													title="Software Engineer at Smitty LLC"></a>
+											</div>
+										</div>
+										<div class="col-sm-9">
+											<span class="time">DEC 2019 – MAY 2020</span><br>
+											<h3 class="title" style="display: inline">Software Engineer, </h3>
+											<span class="subtitle"><b>Smitty LLC </b></span><i class="fas fa-minus"></i>
+											Idaho, US<br>
+										</div>
+										<ul>
+											<li>Developed a Mobile App using Flutter</li>
+											<li>Using Django REST Framework developed REST API and hosted on
+												DigitalOcean and later on GCP</li>
+											<li>App is available on Play Store and App Store</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+
+							<!-- timeline item -->
+							<div class="timeline-container wow fadeInUp" data-wow-delay="0.4s">
+								<div class="content">
+									<div class="row">
+										<div class="col-sm-3">
+											<a href="#company-1" class="gallery-link">
+												<div class="thumb">
+													<img src="assets/images/experience/thumbs/trending_skill logo.webp"
+														alt="Trending Skill Logo" />
+												</div>
+											</a>
+											<div id="company-1" class="gallery mfp-hide">
+												<a href="assets/images/experience/trending_skill logo.jpeg"
+													title="Full Stack Developer at Trending Skills"></a>
+											</div>
+										</div>
+										<div class="col-sm-9">
+											<span class="time">OCT 2018 – NOV 2018</span><br>
+											<h3 class="title" style="display: inline">Full Stack Developer, </h3>
+											<span class="subtitle"><b>Trending Skill </b></span><i
+												class="fas fa-minus"></i> Mumbai, IN<br>
+										</div>
+										<ul>
+											<li>Worked mostly on the backend development based on Django</li>
+											<li>Fixed several bugs</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+
+							<!-- main line -->
+							<span class="line"></span>
+
+						</div>
+
+					</div>
+
+					<div class="col-md-6">
+						<h3 class="section-subtitle text-center">Community and Volunteering</h3>
+
+						<!-- responsive spacer -->
+						<div class="spacer d-md-none d-lg-none" data-height="30"></div>
+
+						<!-- timeline wrapper -->
+						<div class="timeline community bg-white rounded shadow-dark padding-30 overflow-hidden">
+
+							<!-- timeline item -->
+							<div class="timeline-container wow fadeInUp" data-wow-delay="0.4s">
+								<div class="content">
+									<div class="row">
+										<div class="col-sm-3">
+											<a href="#community-work-1" class="gallery-link">
+												<div class="thumb">
+													<img src="assets/images/experience/thumbs/microsoft_logo.webp"
+														alt="Microsoft Logo" />
+												</div>
+											</a>
+											<div id="community-work-1" class="gallery mfp-hide">
+												<a href="assets/images/experience/microsoft_logo.png"></a>
+											</div>
+										</div>
+										<div class="col-sm-9">
+											<span class="time">SEP 2019 – Present</span><br>
+											<h3 class="title" style="display: inline">Microsoft Learn Student
+												Ambassador, </h3><span class="subtitle"><b>Microsoft</b></span>
+										</div>
+										<p class="subtitle" style="color: goldenrod"><b>Gold Microsoft Learn Student
+												Ambassador</b></p>
+										<ul>
+											<li>Live QnA with Gold Microsoft Learn Student Ambassadors! 🎙</li>
+											<li>Judge at DubHacks Hackathon</li>
+											<li>Serverless with GraphQL - Blog for the Serverless September</li>
+										</ul>
+										<div class="row">
 											<a href="#mlsa-badge-1" class="gallery-link">
 												<span class="thumb" style="display: inline">
-													<img src="assets/images/experience/thumbs/level-gold.webp" alt="Gold MLSA Badge" />
+													<img src="assets/images/experience/thumbs/level-gold.webp"
+														alt="Gold MLSA Badge" />
 												</span>
 											</a>
 											<div id="mlsa-badge-1" class="gallery mfp-hide">
-												<a href="assets/images/experience/level-gold.png" title="Gold Microsoft Learn Student Ambassador Badge"></a>
+												<a href="assets/images/experience/level-gold.png"
+													title="Gold Microsoft Learn Student Ambassador Badge"></a>
 											</div>
 											<a href="#mlsa-badge-2" class="gallery-link">
 												<div class="thumb">
-													<img src="assets/images/experience/thumbs/azure_hero_kudos.webp" alt="Azure Hero Kudos" />
+													<img src="assets/images/experience/thumbs/azure_hero_kudos.webp"
+														alt="Azure Hero Kudos" />
 												</div>
 											</a>
 											<div id="mlsa-badge-2" class="gallery mfp-hide">
-												<a href="assets/images/experience/azure_hero_kudos.png" title="Azure Hero Kudos for Contribution in ServerLess September"></a>
+												<a href="assets/images/experience/azure_hero_kudos.png"
+													title="Azure Hero Kudos for Contribution in ServerLess September"></a>
 											</div>
 											<a href="#mlsa-badge-3" class="gallery-link">
 												<div class="thumb">
-													<img src="assets/images/experience/thumbs/Health Badge.webp" alt="Health League Badge" />
+													<img src="assets/images/experience/thumbs/Health Badge.webp"
+														alt="Health League Badge" />
 												</div>
 											</a>
 											<div id="mlsa-badge-3" class="gallery mfp-hide">
-												<a href="assets/images/experience/Health Badge.png" title="Health League Badge"></a>
+												<a href="assets/images/experience/Health Badge.png"
+													title="Health League Badge"></a>
 											</div>
 											<a href="#mlsa-badge-4" class="gallery-link">
 												<div class="thumb">
-													<img src="assets/images/experience/thumbs/level-beta.webp" alt="Beta MLSA Badge" />
+													<img src="assets/images/experience/thumbs/level-beta.webp"
+														alt="Beta MLSA Badge" />
 												</div>
 											</a>
 											<div id="mlsa-badge-4" class="gallery mfp-hide">
-												<a href="assets/images/experience/level-beta.png" title="Beta Microsoft Learn Student Ambassador Badge"></a>
+												<a href="assets/images/experience/level-beta.png"
+													title="Beta Microsoft Learn Student Ambassador Badge"></a>
 											</div>
+										</div>
 									</div>
 								</div>
 							</div>
-						</div>
 
-						<!-- main line -->
-						<span class="line"></span>
+							<!-- main line -->
+							<span class="line"></span>
+
+						</div>
 
 					</div>
 
@@ -484,961 +568,1031 @@
 
 			</div>
 
-		</div>
-
-		<div class="spacer" data-height="60"></div>
-	</section>
-
-	<section id="education">
-		<div class="container">
-
-			<!-- section title -->
-			<h2 class="section-title wow fadeInUp">Education</h2>
-
 			<div class="spacer" data-height="60"></div>
+		</section>
 
-			<div class="row">
+		<section id="education">
+			<div class="container">
 
-				<div class="col-md-6">
+				<!-- section title -->
+				<h2 class="section-title wow fadeInUp">Education</h2>
 
-					<!-- timeline wrapper -->
-					<div class="timeline edu bg-white rounded shadow-dark padding-30 overflow-hidden">
+				<div class="spacer" data-height="60"></div>
 
-						<!-- timeline item -->
-						<div class="timeline-container wow fadeInUp">
-							<div class="content">
-								<span class="time">2017 - Present</span><br>
-								<h3 class="title" style="display: inline">Sir M Visvesvaraya Institute of Technology</h3> <i class="fas fa-minus"></i> Bengaluru, Karnataka, IN<br>
-								<span class="subtitle">Bachelor’s Degree in <b>Computer Science</b> <i class="fas fa-minus"></i> 8.7 CGPA</span>
-								<p></p>
+				<div class="row">
+
+					<div class="col-md-6">
+
+						<!-- timeline wrapper -->
+						<div class="timeline edu bg-white rounded shadow-dark padding-30 overflow-hidden">
+
+							<!-- timeline item -->
+							<div class="timeline-container wow fadeInUp">
+								<div class="content">
+									<span class="time">2017 - Present</span><br>
+									<h3 class="title" style="display: inline">Sir M Visvesvaraya Institute of Technology
+									</h3> <i class="fas fa-minus"></i> Bengaluru, Karnataka, IN<br>
+									<span class="subtitle">Bachelor’s Degree in <b>Computer Science</b> <i
+											class="fas fa-minus"></i> 8.7 CGPA</span>
+									<p></p>
+								</div>
 							</div>
+
+							<!-- main line -->
+							<span class="line"></span>
+
 						</div>
 
-						<!-- main line -->
-						<span class="line"></span>
+					</div>
+
+					<div class="col-md-6">
+
+						<!-- responsive spacer -->
+						<div class="spacer d-md-none d-lg-none" data-height="30"></div>
+
+						<!-- timeline wrapper -->
+						<div class="timeline edu bg-white rounded shadow-dark padding-30 overflow-hidden">
+
+							<!-- timeline item -->
+							<div class="timeline-container wow fadeInUp" data-wow-delay="0.2s">
+								<div class="content">
+									<span class="time">2014 - 2016</span><br>
+									<h3 class="title" style="display: inline">Delhi Public School</h3> <i
+										class="fas fa-minus"></i> Bokaro Steel City, Jharkhand, IN<br>
+									<span class="subtitle">Class 12 with <b>Physics, Chemistry, Maths</b></span>
+									<ul>
+										<li>Debate Club, Volleyball</li>
+									</ul>
+								</div>
+							</div>
+
+							<!-- timeline item -->
+							<div class="timeline-container wow fadeInUp" data-wow-delay="0.4s">
+								<div class="content">
+									<span class="time">2010 - 2014</span><br>
+									<h3 class="title" style="display: inline">SL DAV Public School</h3> <i
+										class="fas fa-minus"></i> Khagaria, Bihar, IN<br>
+									<span class="subtitle">Class 10</span>
+									<ul>
+										<li>Runner Up - English Debate, Zonal Youth Camp</li>
+										<li>Debating, Anchoring, House Captain (Aurobindo House)</li>
+									</ul>
+								</div>
+							</div>
+
+							<!-- main line -->
+							<span class="line"></span>
+
+						</div>
 
 					</div>
 
 				</div>
 
-				<div class="col-md-6">
+			</div>
 
-					<!-- responsive spacer -->
-					<div class="spacer d-md-none d-lg-none" data-height="30"></div>
+		</section>
 
-					<!-- timeline wrapper -->
-					<div class="timeline edu bg-white rounded shadow-dark padding-30 overflow-hidden">
+		<!--	&lt;!&ndash; section works &ndash;&gt;-->
+		<!--	<section id="works">-->
 
-						<!-- timeline item -->
-						<div class="timeline-container wow fadeInUp" data-wow-delay="0.2s">
-							<div class="content">
-								<span class="time">2014 - 2016</span><br>
-								<h3 class="title" style="display: inline">Delhi Public School</h3> <i class="fas fa-minus"></i> Bokaro Steel City, Jharkhand, IN<br>
-								<span class="subtitle">Class 12 with <b>Physics, Chemistry, Maths</b></span>
-								<ul>
-									<li>Debate Club, Volleyball</li>
+		<!--		<div class="container">-->
+
+		<!--			&lt;!&ndash; section title &ndash;&gt;-->
+		<!--			<h2 class="section-title wow fadeInUp">Recent works</h2>-->
+
+		<!--			<div class="spacer" data-height="60"></div>-->
+
+		<!--			&lt;!&ndash; portfolio filter (desktop) &ndash;&gt;-->
+		<!--			<ul class="portfolio-filter list-inline wow fadeInUp">-->
+		<!--				<li class="current list-inline-item" data-filter="*">Everything</li>-->
+		<!--				<li class="list-inline-item" data-filter=".creative">Creative</li>-->
+		<!--				<li class="list-inline-item" data-filter=".art">Art</li>-->
+		<!--				<li class="list-inline-item" data-filter=".design">Design</li>-->
+		<!--				<li class="list-inline-item" data-filter=".branding">Branding</li>-->
+		<!--			</ul>-->
+
+		<!--			&lt;!&ndash; portfolio filter (mobile) &ndash;&gt;-->
+		<!--			<div class="pf-filter-wrapper">-->
+		<!--				<select class="portfolio-filter-mobile">-->
+		<!--					<option value="*">Everything</option>-->
+		<!--					<option value=".creative">Creative</option>-->
+		<!--					<option value=".art">Art</option>-->
+		<!--					<option value=".design">Design</option>-->
+		<!--					<option value=".branding">Branding</option>-->
+		<!--				</select>-->
+		<!--			</div>-->
+
+		<!--			&lt;!&ndash; portolio wrapper &ndash;&gt;-->
+		<!--			<div class="row portfolio-wrapper">-->
+
+		<!--				&lt;!&ndash; portfolio item &ndash;&gt;-->
+		<!--				<div class="col-md-4 col-sm-6 grid-item art">-->
+		<!--					<a href="assets/images/works/1.svg" class="work-image">-->
+		<!--						<div class="portfolio-item rounded shadow-dark">-->
+		<!--							<div class="details">-->
+		<!--								<span class="term">Art</span>-->
+		<!--								<h4 class="title">Project Managment Illustration</h4>-->
+		<!--								<span class="more-button"><i class="icon-magnifier-add"></i></span>-->
+		<!--							</div>-->
+		<!--							<div class="thumb">-->
+		<!--								<img src="assets/images/works/1.svg" alt="Portfolio-title" />-->
+		<!--								<div class="mask"></div>-->
+		<!--							</div>-->
+		<!--						</div>-->
+		<!--					</a>-->
+		<!--				</div>-->
+
+		<!--				&lt;!&ndash; portfolio item &ndash;&gt;-->
+		<!--				<div class="col-md-4 col-sm-6 grid-item creative design">-->
+		<!--					<a href="#small-dialog" class="work-content">-->
+		<!--						<div class="portfolio-item rounded shadow-dark">-->
+		<!--							<div class="details">-->
+		<!--								<span class="term">Creative</span>-->
+		<!--								<h4 class="title">Guest App Walkthrough Screens</h4>-->
+		<!--								<span class="more-button"><i class="icon-options"></i></span>-->
+		<!--							</div>-->
+		<!--							<div class="thumb">-->
+		<!--								<img src="assets/images/works/2.svg" alt="Portfolio-title" />-->
+		<!--								<div class="mask"></div>-->
+		<!--							</div>-->
+		<!--						</div>-->
+		<!--					</a>-->
+		<!--					<div id="small-dialog" class="white-popup zoom-anim-dialog mfp-hide">-->
+		<!--						<img src="assets/images/single-work.svg" alt="Title" />-->
+		<!--						<h2>Guest App Walkthrough Screens</h2>-->
+		<!--						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam hendrerit nibh in massa semper rutrum. In rhoncus eleifend mi id tempus.</p>-->
+		<!--						<p>Donec consectetur, libero at pretium euismod, nisl felis lobortis urna, id tristique nisl lectus eget ligula.</p>-->
+		<!--						<a href="#" class="btn btn-default">View on Dribbble</a>-->
+		<!--					</div>-->
+		<!--				</div>-->
+
+		<!--				&lt;!&ndash; portfolio item &ndash;&gt;-->
+		<!--				<div class="col-md-4 col-sm-6 grid-item branding">-->
+		<!--					<a href="https://www.youtube.com/watch?v=qf9z4ulfmYw" class="work-video">-->
+		<!--						<div class="portfolio-item rounded shadow-dark">-->
+		<!--							<div class="details">-->
+		<!--								<span class="term">Branding</span>-->
+		<!--								<h4 class="title">Delivery App Wireframe</h4>-->
+		<!--								<span class="more-button"><i class="icon-camrecorder"></i></span>-->
+		<!--							</div>-->
+		<!--							<div class="thumb">-->
+		<!--								<img src="assets/images/works/3.svg" alt="Portfolio-title" />-->
+		<!--								<div class="mask"></div>-->
+		<!--							</div>-->
+		<!--						</div>-->
+		<!--					</a>-->
+		<!--				</div>-->
+
+		<!--				&lt;!&ndash; portfolio item &ndash;&gt;-->
+		<!--				<div class="col-md-4 col-sm-6 grid-item creative">-->
+		<!--					<a href="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/240233494&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true" class="work-video">-->
+		<!--						<div class="portfolio-item rounded shadow-dark">-->
+		<!--							<div class="details">-->
+		<!--								<span class="term">Creative</span>-->
+		<!--								<h4 class="title">Onboarding Motivation</h4>-->
+		<!--								<span class="more-button"><i class="icon-music-tone-alt"></i></span>-->
+		<!--							</div>-->
+		<!--							<div class="thumb">-->
+		<!--								<img src="assets/images/works/4.svg" alt="Portfolio-title" />-->
+		<!--								<div class="mask"></div>-->
+		<!--							</div>-->
+		<!--						</div>-->
+		<!--					</a>-->
+		<!--				</div>-->
+
+		<!--				&lt;!&ndash; portfolio item &ndash;&gt;-->
+		<!--				<div class="col-md-4 col-sm-6 grid-item art branding">-->
+		<!--					<a href="#gallery-1" class="gallery-link">-->
+		<!--						<div class="portfolio-item rounded shadow-dark">-->
+		<!--							<div class="details">-->
+		<!--								<span class="term">Art, Branding</span>-->
+		<!--								<h4 class="title">iMac Mockup Design</h4>-->
+		<!--								<span class="more-button"><i class="icon-picture"></i></span>-->
+		<!--							</div>-->
+		<!--							<div class="thumb">-->
+		<!--								<img src="assets/images/works/5.svg" alt="Portfolio-title" />-->
+		<!--								<div class="mask"></div>-->
+		<!--							</div>-->
+		<!--						</div>-->
+		<!--					</a>-->
+		<!--					<div id="gallery-1" class="gallery mfp-hide">-->
+		<!--						<a href="assets/images/works/5.svg"></a>-->
+		<!--						<a href="assets/images/works/4.svg"></a>-->
+		<!--					</div>-->
+		<!--				</div>-->
+
+		<!--				&lt;!&ndash; portfolio item &ndash;&gt;-->
+		<!--				<div class="col-md-4 col-sm-6 grid-item creative design">-->
+		<!--					<a href="https://themeforest.net/user/pxlsolutions/portfolio" target="_blank">-->
+		<!--						<div class="portfolio-item rounded shadow-dark">-->
+		<!--							<div class="details">-->
+		<!--								<span class="term">Creative, Design</span>-->
+		<!--								<h4 class="title">Game Store App Concept</h4>-->
+		<!--								<span class="more-button"><i class="icon-link"></i></span>-->
+		<!--							</div>-->
+		<!--							<div class="thumb">-->
+		<!--								<img src="assets/images/works/6.svg" alt="Portfolio-title" />-->
+		<!--								<div class="mask"></div>-->
+		<!--							</div>-->
+		<!--						</div>-->
+		<!--					</a>-->
+		<!--				</div>-->
+
+		<!--			</div>-->
+
+		<!--			&lt;!&ndash; more button &ndash;&gt;-->
+		<!--			<div class="load-more text-center mt-4">-->
+		<!--				<a href="javascript:" class="btn btn-default"><i class="fas fa-spinner"></i> Load more</a>-->
+		<!--				&lt;!&ndash; numbered pagination (hidden for infinite scroll) &ndash;&gt;-->
+		<!--				<ul class="portfolio-pagination list-inline d-none">-->
+		<!--					<li class="list-inline-item">1</li>-->
+		<!--					<li class="list-inline-item"><a href="works-2.html">2</a></li>-->
+		<!--				</ul>-->
+		<!--			</div>-->
+
+		<!--		</div>-->
+
+		<!--	</section>-->
+
+
+		<!-- section works -->
+		<section id="blogs">
+
+			<div class="container">
+
+				<!-- section title -->
+				<h2 class="section-title wow fadeInUp">Latest Posts</h2>
+
+				<div class="spacer" data-height="60"></div>
+
+				<!-- portfolio filter (desktop) -->
+				<ul class="blog-filter list-inline wow fadeInUp">
+					<li class="current list-inline-item" data-filter="*">Everything</li>
+					<li class="list-inline-item" data-filter=".data-science">Data Science</li>
+					<li class="list-inline-item" data-filter=".serverless">Serverless</li>
+					<li class="list-inline-item" data-filter=".iot">IoT</li>
+				</ul>
+
+				<!-- portfolio filter (mobile) -->
+				<div class="pf-filter-wrapper">
+					<select class="blog-filter-mobile">
+						<option value="*">Everything</option>
+						<option value=".data-science">Data Science</option>
+						<option value=".serverless">Serverless</option>
+						<option value=".iot">IoT</option>
+						<!--					<option value=".branding">Branding</option>-->
+					</select>
+				</div>
+
+				<!--			&lt;!&ndash; portolio wrapper &ndash;&gt;-->
+				<!--			<div class="row blog-wrapper">-->
+
+
+
+				<!--			</div>-->
+				<div class="row blog-wrapper">
+
+					<!-- portfolio item -->
+					<div class="col-md-4 serverless">
+						<!-- blog item -->
+						<div class="blog-item rounded bg-white shadow-dark wow fadeIn">
+							<div class="thumb">
+								<a href="#">
+									<span class="category">Serverless</span>
+								</a><br>
+								<a href="https://dev.to/ramanaditya/seasons-of-serverless-lovely-ladoos-3db6">
+									<img src="assets/images/blog/seasons_of_serverless_lovely_ladoos.png"
+										alt="Seasons of Serverless, Lovely Ladoos" />
+								</a>
+							</div>
+							<div class="details">
+								<h4 class="my-0 title"><a
+										href="https://dev.to/ramanaditya/seasons-of-serverless-lovely-ladoos-3db6">Seasons
+										of Serverless, Lovely Ladoos</a></h4>
+								<ul class="list-inline meta mb-0 mt-2">
+									<li class="list-inline-item">Dec 04 '2020</li>
+									<li class="list-inline-item"><a
+											href="https://dev.to/ramanaditya/seasons-of-serverless-lovely-ladoos-3db6">dev.to</a>
+									</li>
+									<li class="list-inline-item"><a
+											href="https://ramanaditya.medium.com/seasons-of-serverless-lovely-ladoos-8769724ef618">Medium</a>
+									</li>
 								</ul>
 							</div>
 						</div>
+					</div>
 
-						<!-- timeline item -->
-						<div class="timeline-container wow fadeInUp" data-wow-delay="0.4s">
-							<div class="content">
-								<span class="time">2010 - 2014</span><br>
-								<h3 class="title" style="display: inline">SL DAV Public School</h3> <i class="fas fa-minus"></i> Khagaria, Bihar, IN<br>
-								<span class="subtitle">Class 10</span>
-								<ul>
-									<li>Runner Up - English Debate, Zonal Youth Camp</li>
-									<li>Debating, Anchoring, House Captain (Aurobindo House)</li>
+					<div class="col-md-4 serverless">
+						<!-- blog item -->
+						<div class="blog-item rounded bg-white shadow-dark wow fadeIn">
+							<div class="thumb">
+								<a href="#">
+									<span class="category">Serverless</span>
+								</a><br>
+								<a href="https://medium.com/@ramanaditya/serverless-with-graphql-c0bf59078303">
+									<img src="assets/images/blog/serverless_with_graphql.webp"
+										alt="Serverless with GraphQL" />
+								</a>
+							</div>
+							<div class="details">
+								<h4 class="my-0 title"><a
+										href="https://medium.com/@ramanaditya/serverless-with-graphql-c0bf59078303">Serverless
+										with GraphQL</a></h4>
+								<ul class="list-inline meta mb-0 mt-2">
+									<li class="list-inline-item">Sep 09 '2020</li>
+									<li class="list-inline-item">Medium</li>
 								</ul>
 							</div>
 						</div>
+					</div>
 
-						<!-- main line -->
-						<span class="line"></span>
+					<div class="col-md-4 col-sm-6 grid-item data-science">
+						<!-- blog item -->
+						<div class="blog-item rounded bg-white shadow-dark wow fadeIn">
+							<div class="thumb">
+								<a href="#reviews">
+									<span class="category">Data Science</span>
+								</a><br>
+								<a
+									href="https://medium.com/bellatrixdata/reconfigure-your-journey-to-data-science-44092971082c">
+									<img src="assets/images/blog/reconfigure_your_journey.webp"
+										alt="Reconfigure Your Journey to Data Science" />
+								</a>
+							</div>
+							<div class="details">
+								<h4 class="my-0 title"><a
+										href="https://medium.com/bellatrixdata/reconfigure-your-journey-to-data-science-44092971082c">Reconfigure
+										Your Journey to Data Science</a></h4>
+								<ul class="list-inline meta mb-0 mt-2">
+									<li class="list-inline-item">May 26 '2020</li>
+									<li class="list-inline-item">Medium</li>
+								</ul>
+							</div>
+						</div>
+					</div>
 
+					<div class="col-md-4 iot">
+						<!-- blog item -->
+						<div class="blog-item rounded bg-white shadow-dark wow fadeIn">
+							<div class="thumb">
+								<a href="#">
+									<span class="category">IoT</span>
+								</a><br>
+								<a
+									href="https://www.linkedin.com/pulse/getting-started-micropython-nodemcu-esp8266-aditya-raman/">
+									<img src="assets/images/blog/getting_started_with_micropython.webp"
+										alt="Getting Started with Micropython" />
+								</a>
+							</div>
+							<div class="details">
+								<h4 class="my-0 title"><a
+										href="https://www.linkedin.com/pulse/getting-started-micropython-nodemcu-esp8266-aditya-raman/">Getting
+										Started with MicroPython on NodeMCU ESP8266</a></h4>
+								<ul class="list-inline meta mb-0 mt-2">
+									<li class="list-inline-item">Oct 05 '2020</li>
+									<li class="list-inline-item">LinkedIn</li>
+								</ul>
+							</div>
+						</div>
 					</div>
 
 				</div>
+
+				<!-- more button -->
+				<!--			<div class="load-more text-center mt-4">-->
+				<!--				<a href="javascript:" class="btn btn-default"><i class="fas fa-spinner"></i> Load more</a>-->
+				<!--				&lt;!&ndash; numbered pagination (hidden for infinite scroll) &ndash;&gt;-->
+				<!--				<ul class="portfolio-pagination list-inline d-none">-->
+				<!--					<li class="list-inline-item">1</li>-->
+				<!--					<li class="list-inline-item"><a href="works-2.html">2</a></li>-->
+				<!--				</ul>-->
+				<!--			</div>-->
 
 			</div>
 
-		</div>
+		</section>
 
-	</section>
+		<!-- section talks -->
+		<section id="talks">
 
-<!--	&lt;!&ndash; section works &ndash;&gt;-->
-<!--	<section id="works">-->
+			<div class="container">
 
-<!--		<div class="container">-->
+				<!-- section title -->
+				<h2 class="section-title wow fadeInUp">Talks</h2>
 
-<!--			&lt;!&ndash; section title &ndash;&gt;-->
-<!--			<h2 class="section-title wow fadeInUp">Recent works</h2>-->
+				<div class="spacer" data-height="60"></div>
 
-<!--			<div class="spacer" data-height="60"></div>-->
+				<!-- portfolio filter (desktop) -->
+				<ul class="portfolio-filter list-inline wow fadeInUp">
+					<li class="current list-inline-item" data-filter="*">Everything</li>
+					<li class="list-inline-item" data-filter=".seminar">Seminar</li>
+					<li class="list-inline-item" data-filter=".presentation">Presentation</li>
+					<li class="list-inline-item" data-filter=".project">Project</li>
+					<!--				<li class="list-inline-item" data-filter=".branding">Branding</li>-->
+				</ul>
 
-<!--			&lt;!&ndash; portfolio filter (desktop) &ndash;&gt;-->
-<!--			<ul class="portfolio-filter list-inline wow fadeInUp">-->
-<!--				<li class="current list-inline-item" data-filter="*">Everything</li>-->
-<!--				<li class="list-inline-item" data-filter=".creative">Creative</li>-->
-<!--				<li class="list-inline-item" data-filter=".art">Art</li>-->
-<!--				<li class="list-inline-item" data-filter=".design">Design</li>-->
-<!--				<li class="list-inline-item" data-filter=".branding">Branding</li>-->
-<!--			</ul>-->
-
-<!--			&lt;!&ndash; portfolio filter (mobile) &ndash;&gt;-->
-<!--			<div class="pf-filter-wrapper">-->
-<!--				<select class="portfolio-filter-mobile">-->
-<!--					<option value="*">Everything</option>-->
-<!--					<option value=".creative">Creative</option>-->
-<!--					<option value=".art">Art</option>-->
-<!--					<option value=".design">Design</option>-->
-<!--					<option value=".branding">Branding</option>-->
-<!--				</select>-->
-<!--			</div>-->
-
-<!--			&lt;!&ndash; portolio wrapper &ndash;&gt;-->
-<!--			<div class="row portfolio-wrapper">-->
-
-<!--				&lt;!&ndash; portfolio item &ndash;&gt;-->
-<!--				<div class="col-md-4 col-sm-6 grid-item art">-->
-<!--					<a href="assets/images/works/1.svg" class="work-image">-->
-<!--						<div class="portfolio-item rounded shadow-dark">-->
-<!--							<div class="details">-->
-<!--								<span class="term">Art</span>-->
-<!--								<h4 class="title">Project Managment Illustration</h4>-->
-<!--								<span class="more-button"><i class="icon-magnifier-add"></i></span>-->
-<!--							</div>-->
-<!--							<div class="thumb">-->
-<!--								<img src="assets/images/works/1.svg" alt="Portfolio-title" />-->
-<!--								<div class="mask"></div>-->
-<!--							</div>-->
-<!--						</div>-->
-<!--					</a>-->
-<!--				</div>-->
-
-<!--				&lt;!&ndash; portfolio item &ndash;&gt;-->
-<!--				<div class="col-md-4 col-sm-6 grid-item creative design">-->
-<!--					<a href="#small-dialog" class="work-content">-->
-<!--						<div class="portfolio-item rounded shadow-dark">-->
-<!--							<div class="details">-->
-<!--								<span class="term">Creative</span>-->
-<!--								<h4 class="title">Guest App Walkthrough Screens</h4>-->
-<!--								<span class="more-button"><i class="icon-options"></i></span>-->
-<!--							</div>-->
-<!--							<div class="thumb">-->
-<!--								<img src="assets/images/works/2.svg" alt="Portfolio-title" />-->
-<!--								<div class="mask"></div>-->
-<!--							</div>-->
-<!--						</div>-->
-<!--					</a>-->
-<!--					<div id="small-dialog" class="white-popup zoom-anim-dialog mfp-hide">-->
-<!--						<img src="assets/images/single-work.svg" alt="Title" />-->
-<!--						<h2>Guest App Walkthrough Screens</h2>-->
-<!--						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam hendrerit nibh in massa semper rutrum. In rhoncus eleifend mi id tempus.</p>-->
-<!--						<p>Donec consectetur, libero at pretium euismod, nisl felis lobortis urna, id tristique nisl lectus eget ligula.</p>-->
-<!--						<a href="#" class="btn btn-default">View on Dribbble</a>-->
-<!--					</div>-->
-<!--				</div>-->
-
-<!--				&lt;!&ndash; portfolio item &ndash;&gt;-->
-<!--				<div class="col-md-4 col-sm-6 grid-item branding">-->
-<!--					<a href="https://www.youtube.com/watch?v=qf9z4ulfmYw" class="work-video">-->
-<!--						<div class="portfolio-item rounded shadow-dark">-->
-<!--							<div class="details">-->
-<!--								<span class="term">Branding</span>-->
-<!--								<h4 class="title">Delivery App Wireframe</h4>-->
-<!--								<span class="more-button"><i class="icon-camrecorder"></i></span>-->
-<!--							</div>-->
-<!--							<div class="thumb">-->
-<!--								<img src="assets/images/works/3.svg" alt="Portfolio-title" />-->
-<!--								<div class="mask"></div>-->
-<!--							</div>-->
-<!--						</div>-->
-<!--					</a>-->
-<!--				</div>-->
-
-<!--				&lt;!&ndash; portfolio item &ndash;&gt;-->
-<!--				<div class="col-md-4 col-sm-6 grid-item creative">-->
-<!--					<a href="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/240233494&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true" class="work-video">-->
-<!--						<div class="portfolio-item rounded shadow-dark">-->
-<!--							<div class="details">-->
-<!--								<span class="term">Creative</span>-->
-<!--								<h4 class="title">Onboarding Motivation</h4>-->
-<!--								<span class="more-button"><i class="icon-music-tone-alt"></i></span>-->
-<!--							</div>-->
-<!--							<div class="thumb">-->
-<!--								<img src="assets/images/works/4.svg" alt="Portfolio-title" />-->
-<!--								<div class="mask"></div>-->
-<!--							</div>-->
-<!--						</div>-->
-<!--					</a>-->
-<!--				</div>-->
-
-<!--				&lt;!&ndash; portfolio item &ndash;&gt;-->
-<!--				<div class="col-md-4 col-sm-6 grid-item art branding">-->
-<!--					<a href="#gallery-1" class="gallery-link">-->
-<!--						<div class="portfolio-item rounded shadow-dark">-->
-<!--							<div class="details">-->
-<!--								<span class="term">Art, Branding</span>-->
-<!--								<h4 class="title">iMac Mockup Design</h4>-->
-<!--								<span class="more-button"><i class="icon-picture"></i></span>-->
-<!--							</div>-->
-<!--							<div class="thumb">-->
-<!--								<img src="assets/images/works/5.svg" alt="Portfolio-title" />-->
-<!--								<div class="mask"></div>-->
-<!--							</div>-->
-<!--						</div>-->
-<!--					</a>-->
-<!--					<div id="gallery-1" class="gallery mfp-hide">-->
-<!--						<a href="assets/images/works/5.svg"></a>-->
-<!--						<a href="assets/images/works/4.svg"></a>-->
-<!--					</div>-->
-<!--				</div>-->
-
-<!--				&lt;!&ndash; portfolio item &ndash;&gt;-->
-<!--				<div class="col-md-4 col-sm-6 grid-item creative design">-->
-<!--					<a href="https://themeforest.net/user/pxlsolutions/portfolio" target="_blank">-->
-<!--						<div class="portfolio-item rounded shadow-dark">-->
-<!--							<div class="details">-->
-<!--								<span class="term">Creative, Design</span>-->
-<!--								<h4 class="title">Game Store App Concept</h4>-->
-<!--								<span class="more-button"><i class="icon-link"></i></span>-->
-<!--							</div>-->
-<!--							<div class="thumb">-->
-<!--								<img src="assets/images/works/6.svg" alt="Portfolio-title" />-->
-<!--								<div class="mask"></div>-->
-<!--							</div>-->
-<!--						</div>-->
-<!--					</a>-->
-<!--				</div>-->
-
-<!--			</div>-->
-
-<!--			&lt;!&ndash; more button &ndash;&gt;-->
-<!--			<div class="load-more text-center mt-4">-->
-<!--				<a href="javascript:" class="btn btn-default"><i class="fas fa-spinner"></i> Load more</a>-->
-<!--				&lt;!&ndash; numbered pagination (hidden for infinite scroll) &ndash;&gt;-->
-<!--				<ul class="portfolio-pagination list-inline d-none">-->
-<!--					<li class="list-inline-item">1</li>-->
-<!--					<li class="list-inline-item"><a href="works-2.html">2</a></li>-->
-<!--				</ul>-->
-<!--			</div>-->
-
-<!--		</div>-->
-
-<!--	</section>-->
-
-
-	<!-- section works -->
-	<section id="blogs">
-
-		<div class="container">
-
-			<!-- section title -->
-			<h2 class="section-title wow fadeInUp">Latest Posts</h2>
-
-			<div class="spacer" data-height="60"></div>
-
-			<!-- portfolio filter (desktop) -->
-			<ul class="blog-filter list-inline wow fadeInUp">
-				<li class="current list-inline-item" data-filter="*">Everything</li>
-				<li class="list-inline-item" data-filter=".data-science">Data Science</li>
-				<li class="list-inline-item" data-filter=".cloud">Cloud</li>
-				<li class="list-inline-item" data-filter=".iot">IoT</li>
-			</ul>
-
-			<!-- portfolio filter (mobile) -->
-			<div class="pf-filter-wrapper">
-				<select class="blog-filter-mobile">
-					<option value="*">Everything</option>
-					<option value=".data-science">Data Science</option>
-					<option value=".cloud">Cloud</option>
-					<option value=".iot">IoT</option>
-<!--					<option value=".branding">Branding</option>-->
-				</select>
-			</div>
-
-<!--			&lt;!&ndash; portolio wrapper &ndash;&gt;-->
-<!--			<div class="row blog-wrapper">-->
-
-
-
-<!--			</div>-->
-			<div class="row blog-wrapper">
-
-				<!-- portfolio item -->
-				<div class="col-md-4 cloud">
-					<!-- blog item -->
-					<div class="blog-item rounded bg-white shadow-dark wow fadeIn">
-						<div class="thumb">
-							<a href="#">
-								<span class="category">Serverless</span>
-							</a><br>
-							<a href="https://medium.com/@ramanaditya/serverless-with-graphql-c0bf59078303">
-								<img src="assets/images/blog/serverless_with_graphql.webp" alt="Serverless with GraphQL" />
-							</a>
-						</div>
-						<div class="details">
-							<h4 class="my-0 title"><a href="https://medium.com/@ramanaditya/serverless-with-graphql-c0bf59078303">Serverless with GraphQL</a></h4>
-							<ul class="list-inline meta mb-0 mt-2">
-								<li class="list-inline-item">Sep 09 '2020</li>
-								<li class="list-inline-item">Medium</li>
-							</ul>
-						</div>
-					</div>
+				<!-- portfolio filter (mobile) -->
+				<div class="pf-filter-wrapper">
+					<select class="portfolio-filter-mobile">
+						<option value="*">Everything</option>
+						<option value=".seminar">Seminar</option>
+						<option value=".presentation">Presentation</option>
+						<option value=".project">Project</option>
+						<!--					<option value=".branding">Branding</option>-->
+					</select>
 				</div>
 
-				<div class="col-md-4 col-sm-6 grid-item data-science">
-					<!-- blog item -->
-					<div class="blog-item rounded bg-white shadow-dark wow fadeIn">
-						<div class="thumb">
-							<a href="#reviews">
-								<span class="category">Data Science</span>
-							</a><br>
-							<a href="https://medium.com/bellatrixdata/reconfigure-your-journey-to-data-science-44092971082c">
-								<img src="assets/images/blog/reconfigure_your_journey.webp" alt="Reconfigure Your Journey to Data Science" />
-							</a>
-						</div>
-						<div class="details">
-							<h4 class="my-0 title"><a href="https://medium.com/bellatrixdata/reconfigure-your-journey-to-data-science-44092971082c">Reconfigure Your Journey to Data Science</a></h4>
-							<ul class="list-inline meta mb-0 mt-2">
-								<li class="list-inline-item">May 26 '2020</li>
-								<li class="list-inline-item">Medium</li>
-							</ul>
-						</div>
+				<!-- portolio wrapper -->
+				<div class="row portfolio-wrapper">
+
+					<!--				&lt;!&ndash; portfolio item &ndash;&gt;-->
+					<!--				<div class="col-md-4 col-sm-6 grid-item art">-->
+					<!--					<a href="assets/images/works/1.svg" class="work-image">-->
+					<!--						<div class="portfolio-item rounded shadow-dark">-->
+					<!--							<div class="details">-->
+					<!--								<span class="term">Art</span>-->
+					<!--								<h4 class="title">Project Managment Illustration</h4>-->
+					<!--								<span class="more-button"><i class="icon-magnifier-add"></i></span>-->
+					<!--							</div>-->
+					<!--							<div class="thumb">-->
+					<!--								<img src="assets/images/works/1.svg" alt="Portfolio-title" />-->
+					<!--								<div class="mask"></div>-->
+					<!--							</div>-->
+					<!--						</div>-->
+					<!--					</a>-->
+					<!--				</div>-->
+
+					<!--				&lt;!&ndash; portfolio item &ndash;&gt;-->
+					<!--				<div class="col-md-4 col-sm-6 grid-item creative design">-->
+					<!--					<a href="#small-dialog" class="work-content">-->
+					<!--						<div class="portfolio-item rounded shadow-dark">-->
+					<!--							<div class="details">-->
+					<!--								<span class="term">Creative</span>-->
+					<!--								<h4 class="title">Guest App Walkthrough Screens</h4>-->
+					<!--								<span class="more-button"><i class="icon-options"></i></span>-->
+					<!--							</div>-->
+					<!--							<div class="thumb">-->
+					<!--								<img src="assets/images/works/2.svg" alt="Portfolio-title" />-->
+					<!--								<div class="mask"></div>-->
+					<!--							</div>-->
+					<!--						</div>-->
+					<!--					</a>-->
+					<!--					<div id="small-dialog" class="white-popup zoom-anim-dialog mfp-hide">-->
+					<!--						<img src="assets/images/single-work.svg" alt="Title" />-->
+					<!--						<h2>Guest App Walkthrough Screens</h2>-->
+					<!--						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam hendrerit nibh in massa semper rutrum. In rhoncus eleifend mi id tempus.</p>-->
+					<!--						<p>Donec consectetur, libero at pretium euismod, nisl felis lobortis urna, id tristique nisl lectus eget ligula.</p>-->
+					<!--						<a href="#" class="btn btn-default">View on Dribbble</a>-->
+					<!--					</div>-->
+					<!--				</div>-->
+
+					<!-- portfolio item -->
+					<div class="col-md-4 col-sm-6 grid-item seminar">
+						<a href="https://www.youtube.com/watch?v=VA62a9sJ7tw" class="work-video">
+							<div class="portfolio-item rounded shadow-dark">
+								<div class="details">
+									<span class="term">Seminar</span>
+									<h4 class="title">Live QnA with Gold Microsoft Learn Student Ambassadors!! 🎙<br>
+									</h4>
+									<span class="more-button"><i class="icon-camrecorder"></i></span>
+								</div><br>
+								<div class="thumb">
+									<img src="assets/images/talks/liveqnawithgoldmlsa.webp" alt="QnA with Gold MLSA" />
+									<div class="mask"></div>
+								</div><br>
+							</div>
+						</a>
 					</div>
+
+					<!-- portfolio item -->
+					<div class="col-md-4 col-sm-6 grid-item project">
+						<a href="https://docs.google.com/presentation/d/e/2PACX-1vSi7Feaz-Ung_043d7-R-c9OCFUQFQ2TTLbojCosyfX5Lir1EPbBYXvizPNXzy_kw/embed?start=false&loop=false&delayms=3000"
+							class="work-video">
+							<div class="portfolio-item rounded shadow-dark">
+								<div class="details">
+									<span class="term">Project</span>
+									<h4 class="title">C-Med-AIR</h4>
+									<span class="more-button"><i class="fas fa-file-powerpoint"></i></span>
+								</div><br>
+								<div class="thumb">
+									<img src="assets/images/talks/cmedair.webp" alt="C-Med-AIR" />
+									<div class="mask"></div>
+								</div><br>
+							</div>
+						</a>
+					</div>
+
+					<!-- portfolio item -->
+					<div class="col-md-4 col-sm-6 grid-item seminar">
+						<a href="https://www.youtube.com/watch?v=_dZwMidN9wY&t=15734" class="work-video">
+							<div class="portfolio-item rounded shadow-dark">
+								<div class="details">
+									<span class="term">Seminar</span>
+									<h4 class="title">Cloud Community Days<br>Together in Covid-19 - Health of India -
+										Aditya Raman</h4>
+									<span class="more-button"><i class="icon-camrecorder"></i></span>
+								</div><br>
+								<div class="thumb">
+									<img src="assets/images/talks/ccdays_konfhub.webp" alt="Cloud Community Day" />
+									<div class="mask"></div>
+								</div><br>
+							</div>
+						</a>
+					</div>
+
+					<!-- portfolio item -->
+					<div class="col-md-4 col-sm-6 grid-item presentation">
+						<a href="https://docs.google.com/presentation/d/e/2PACX-1vSMKHELLSEoWRHk8ArIF70YsBfepMi24F4m5L1TpSMGzuBlPAauhTrWA0EsmRz4i800DrGWnkQCzWcW/embed?start=false&loop=false&delayms=3000"
+							class="work-video">
+							<div class="portfolio-item rounded shadow-dark">
+								<div class="details">
+									<span class="term">Seminar</span>
+									<h4 class="title">Health of India - Fight COVID-19</h4>
+									<span class="more-button"><i class="fas fa-file-powerpoint"></i></span>
+								</div><br>
+								<div class="thumb">
+									<img src="assets/images/talks/Health of India.webp"
+										alt="Health of India Presentation" />
+									<div class="mask"></div>
+								</div><br>
+							</div>
+						</a>
+					</div>
+
+					<!-- portfolio item -->
+					<div class="col-md-4 col-sm-6 grid-item presentation">
+						<a href="https://docs.google.com/presentation/d/e/2PACX-1vQwjiEl3F8coCJu5mCVZ3w0S33Ts1YSg36P_cFHw7B9PoNGV24pT3UW1zRv1hro7ykeBr_CXqTSw9g5/embed?start=false&loop=false&delayms=3000"
+							class="work-video">
+							<div class="portfolio-item rounded shadow-dark">
+								<div class="details">
+									<span class="term">Seminar</span>
+									<h4 class="title">AI Gaming MiniHack</h4>
+									<span class="more-button"><i class="fas fa-file-powerpoint"></i></span>
+								</div><br>
+								<div class="thumb">
+									<img src="assets/images/talks/AI Gaming Minihack.webp" alt="AI Gaming Minihack" />
+									<div class="mask"></div>
+								</div><br>
+							</div>
+						</a>
+					</div>
+
+					<!-- portfolio item -->
+					<div class="col-md-4 col-sm-6 grid-item presentation">
+						<a href="https://www.slideshare.net/slideshow/embed_code/key/yamTtOUPrsCTo8" class="work-video">
+							<div class="portfolio-item rounded shadow-dark">
+								<div class="details">
+									<span class="term">Seminar</span>
+									<h4 class="title">Web Development 101</h4>
+									<span class="more-button"><i class="fas fa-file-powerpoint"></i></span>
+								</div><br>
+								<div class="thumb">
+									<img src="assets/images/talks/web_dev_seminar.webp" alt="Web Deveopment 101" />
+									<div class="mask"></div>
+								</div><br>
+							</div>
+						</a>
+					</div>
+
+					<!--				&lt;!&ndash; portfolio item &ndash;&gt;-->
+					<!--				<div class="col-md-4 col-sm-6 grid-item creative">-->
+					<!--					<a href="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/240233494&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true" class="work-video">-->
+					<!--						<div class="portfolio-item rounded shadow-dark">-->
+					<!--							<div class="details">-->
+					<!--								<span class="term">Creative</span>-->
+					<!--								<h4 class="title">Onboarding Motivation</h4>-->
+					<!--								<span class="more-button"><i class="icon-music-tone-alt"></i></span>-->
+					<!--							</div>-->
+					<!--							<div class="thumb">-->
+					<!--								<img src="assets/images/works/4.svg" alt="Portfolio-title" />-->
+					<!--								<div class="mask"></div>-->
+					<!--							</div>-->
+					<!--						</div>-->
+					<!--					</a>-->
+					<!--				</div>-->
+
+					<!--				&lt;!&ndash; portfolio item &ndash;&gt;-->
+					<!--				<div class="col-md-4 col-sm-6 grid-item art branding">-->
+					<!--					<a href="#gallery-1" class="gallery-link">-->
+					<!--						<div class="portfolio-item rounded shadow-dark">-->
+					<!--							<div class="details">-->
+					<!--								<span class="term">Art, Branding</span>-->
+					<!--								<h4 class="title">iMac Mockup Design</h4>-->
+					<!--								<span class="more-button"><i class="icon-picture"></i></span>-->
+					<!--							</div>-->
+					<!--							<div class="thumb">-->
+					<!--								<img src="assets/images/works/5.svg" alt="Portfolio-title" />-->
+					<!--								<div class="mask"></div>-->
+					<!--							</div>-->
+					<!--						</div>-->
+					<!--					</a>-->
+					<!--					<div id="gallery-1" class="gallery mfp-hide">-->
+					<!--						<a href="assets/images/works/5.svg"></a>-->
+					<!--						<a href="assets/images/works/4.svg"></a>-->
+					<!--					</div>-->
+					<!--				</div>-->
+
+					<!-- portfolio item -->
+					<!--				<div class="col-md-4 col-sm-6 grid-item creative design">-->
+					<!--					<a href="https://themeforest.net/user/pxlsolutions/portfolio" target="_blank">-->
+					<!--						<div class="portfolio-item rounded shadow-dark">-->
+					<!--							<div class="details">-->
+					<!--								<span class="term">Creative, Design</span>-->
+					<!--								<h4 class="title">Game Store App Concept</h4>-->
+					<!--								<span class="more-button"><i class="icon-link"></i></span>-->
+					<!--							</div>-->
+					<!--							<div class="thumb">-->
+					<!--								<img src="assets/images/works/6.svg" alt="Portfolio-title" />-->
+					<!--								<div class="mask"></div>-->
+					<!--							</div>-->
+					<!--						</div>-->
+					<!--					</a>-->
+					<!--				</div>-->
+
 				</div>
 
-				<div class="col-md-4 iot">
-					<!-- blog item -->
-					<div class="blog-item rounded bg-white shadow-dark wow fadeIn">
-						<div class="thumb">
-							<a href="#">
-								<span class="category">IoT</span>
-							</a><br>
-							<a href="https://www.linkedin.com/pulse/getting-started-micropython-nodemcu-esp8266-aditya-raman/">
-								<img src="assets/images/blog/getting_started_with_micropython.webp" alt="Getting Started with Micropython" />
-							</a>
-						</div>
-						<div class="details">
-							<h4 class="my-0 title"><a href="https://www.linkedin.com/pulse/getting-started-micropython-nodemcu-esp8266-aditya-raman/">Getting Started with MicroPython on NodeMCU ESP8266</a></h4>
-							<ul class="list-inline meta mb-0 mt-2">
-								<li class="list-inline-item">Oct 05 '2020</li>
-								<li class="list-inline-item">LinkedIn</li>
-							</ul>
-						</div>
-					</div>
-				</div>
+				<!-- more button -->
+				<!--			<div class="load-more text-center mt-4">-->
+				<!--				<a href="javascript:" class="btn btn-default"><i class="fas fa-spinner"></i> Load more</a>-->
+				<!--				&lt;!&ndash; numbered pagination (hidden for infinite scroll) &ndash;&gt;-->
+				<!--				<ul class="portfolio-pagination list-inline d-none">-->
+				<!--					<li class="list-inline-item">1</li>-->
+				<!--					<li class="list-inline-item"><a href="works-2.html">2</a></li>-->
+				<!--				</ul>-->
+				<!--			</div>-->
 
 			</div>
 
-			<!-- more button -->
-<!--			<div class="load-more text-center mt-4">-->
-<!--				<a href="javascript:" class="btn btn-default"><i class="fas fa-spinner"></i> Load more</a>-->
-<!--				&lt;!&ndash; numbered pagination (hidden for infinite scroll) &ndash;&gt;-->
-<!--				<ul class="portfolio-pagination list-inline d-none">-->
-<!--					<li class="list-inline-item">1</li>-->
-<!--					<li class="list-inline-item"><a href="works-2.html">2</a></li>-->
-<!--				</ul>-->
-<!--			</div>-->
+		</section>
 
-		</div>
+		<!--	&lt;!&ndash; section prices &ndash;&gt;-->
+		<!--	<section id="prices">-->
 
-	</section>
+		<!--		<div class="container">-->
 
-	<!-- section talks -->
-	<section id="talks">
+		<!--			&lt;!&ndash; section title &ndash;&gt;-->
+		<!--			<h2 class="section-title wow fadeIn">Pricing Plans</h2>-->
 
-		<div class="container">
+		<!--			<div class="spacer" data-height="60"></div>-->
 
-			<!-- section title -->
-			<h2 class="section-title wow fadeInUp">Talks</h2>
+		<!--			<div class="row">-->
 
-			<div class="spacer" data-height="60"></div>
+		<!--				<div class="col-md-4 pr-md-0 mt-md-4 mt-0">-->
+		<!--					&lt;!&ndash; price item &ndash;&gt;-->
+		<!--					<div class="price-item bg-white rounded shadow-dark text-center">-->
+		<!--						<img src="assets/images/price-1.svg" alt="Regular" />-->
+		<!--						<h2 class="plan">Basic</h2>-->
+		<!--						<p>A Simple option but powerful to manage your business</p>-->
+		<!--						<p>Email support</p>-->
+		<!--						<h3 class="price"><em>$</em>9<span>Month</span></h3>-->
+		<!--						<a href="#" class="btn btn-default">Get Started</a>-->
+		<!--					</div>-->
+		<!--				</div>-->
 
-			<!-- portfolio filter (desktop) -->
-			<ul class="portfolio-filter list-inline wow fadeInUp">
-				<li class="current list-inline-item" data-filter="*">Everything</li>
-				<li class="list-inline-item" data-filter=".seminar">Seminar</li>
-				<li class="list-inline-item" data-filter=".presentation">Presentation</li>
-				<li class="list-inline-item" data-filter=".project">Project</li>
-<!--				<li class="list-inline-item" data-filter=".branding">Branding</li>-->
-			</ul>
+		<!--				<div class="col-md-4 px-md-0 my-4 my-md-0">-->
+		<!--					&lt;!&ndash; price item recommended&ndash;&gt;-->
+		<!--					<div class="price-item bg-white rounded shadow-dark text-center best">-->
+		<!--						<span class="badge">Recommended</span>-->
+		<!--						<img src="assets/images/price-2.svg" alt="Premium" />-->
+		<!--						<h2 class="plan">Premium</h2>-->
+		<!--						<p>Unlimited product including apps integrations and more features</p>-->
+		<!--						<p>Mon-Fri support</p>-->
+		<!--						<h3 class="price"><em>$</em>49<span>Month</span></h3>-->
+		<!--						<a href="#" class="btn btn-default">Get Started</a>-->
+		<!--					</div>-->
+		<!--				</div>-->
 
-			<!-- portfolio filter (mobile) -->
-			<div class="pf-filter-wrapper">
-				<select class="portfolio-filter-mobile">
-					<option value="*">Everything</option>
-					<option value=".seminar">Seminar</option>
-					<option value=".presentation">Presentation</option>
-					<option value=".project">Project</option>
-<!--					<option value=".branding">Branding</option>-->
-				</select>
-			</div>
+		<!--				<div class="col-md-4 pl-md-0 mt-md-4 mt-0">-->
+		<!--					&lt;!&ndash; price item &ndash;&gt;-->
+		<!--					<div class="price-item bg-white rounded shadow-dark text-center">-->
+		<!--						<img src="assets/images/price-3.svg" alt="Ultimate" />-->
+		<!--						<h2 class="plan">Ultimate</h2>-->
+		<!--						<p>A wise option for large companies and individuals</p>-->
+		<!--						<p>24/7 support</p>-->
+		<!--						<h3 class="price"><em>$</em>99<span>Month</span></h3>-->
+		<!--						<a href="#" class="btn btn-default">Get Started</a>-->
+		<!--					</div>-->
+		<!--				</div>-->
 
-			<!-- portolio wrapper -->
-			<div class="row portfolio-wrapper">
+		<!--			</div>-->
 
-<!--				&lt;!&ndash; portfolio item &ndash;&gt;-->
-<!--				<div class="col-md-4 col-sm-6 grid-item art">-->
-<!--					<a href="assets/images/works/1.svg" class="work-image">-->
-<!--						<div class="portfolio-item rounded shadow-dark">-->
-<!--							<div class="details">-->
-<!--								<span class="term">Art</span>-->
-<!--								<h4 class="title">Project Managment Illustration</h4>-->
-<!--								<span class="more-button"><i class="icon-magnifier-add"></i></span>-->
-<!--							</div>-->
-<!--							<div class="thumb">-->
-<!--								<img src="assets/images/works/1.svg" alt="Portfolio-title" />-->
-<!--								<div class="mask"></div>-->
-<!--							</div>-->
-<!--						</div>-->
-<!--					</a>-->
-<!--				</div>-->
+		<!--		</div>-->
 
-<!--				&lt;!&ndash; portfolio item &ndash;&gt;-->
-<!--				<div class="col-md-4 col-sm-6 grid-item creative design">-->
-<!--					<a href="#small-dialog" class="work-content">-->
-<!--						<div class="portfolio-item rounded shadow-dark">-->
-<!--							<div class="details">-->
-<!--								<span class="term">Creative</span>-->
-<!--								<h4 class="title">Guest App Walkthrough Screens</h4>-->
-<!--								<span class="more-button"><i class="icon-options"></i></span>-->
-<!--							</div>-->
-<!--							<div class="thumb">-->
-<!--								<img src="assets/images/works/2.svg" alt="Portfolio-title" />-->
-<!--								<div class="mask"></div>-->
-<!--							</div>-->
-<!--						</div>-->
-<!--					</a>-->
-<!--					<div id="small-dialog" class="white-popup zoom-anim-dialog mfp-hide">-->
-<!--						<img src="assets/images/single-work.svg" alt="Title" />-->
-<!--						<h2>Guest App Walkthrough Screens</h2>-->
-<!--						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam hendrerit nibh in massa semper rutrum. In rhoncus eleifend mi id tempus.</p>-->
-<!--						<p>Donec consectetur, libero at pretium euismod, nisl felis lobortis urna, id tristique nisl lectus eget ligula.</p>-->
-<!--						<a href="#" class="btn btn-default">View on Dribbble</a>-->
-<!--					</div>-->
-<!--				</div>-->
+		<!--	</section>-->
 
-				<!-- portfolio item -->
-				<div class="col-md-4 col-sm-6 grid-item seminar">
-					<a href="https://www.youtube.com/watch?v=VA62a9sJ7tw" class="work-video">
-						<div class="portfolio-item rounded shadow-dark">
-							<div class="details">
-								<span class="term">Seminar</span>
-								<h4 class="title">Live QnA with Gold Microsoft Learn Student Ambassadors!! 🎙<br></h4>
-								<span class="more-button"><i class="icon-camrecorder"></i></span>
-							</div><br>
-							<div class="thumb">
-								<img src="assets/images/talks/liveqnawithgoldmlsa.webp" alt="QnA with Gold MLSA" />
-								<div class="mask"></div>
-							</div><br>
+		<!-- section testimonials -->
+		<section id="testimonials">
+
+			<div class="container">
+
+				<!-- section title -->
+				<h2 class="section-title wow fadeInUp">Testimonials</h2>
+
+				<div class="spacer" data-height="60"></div>
+
+				<!-- testimonials wrapper -->
+				<div class="testimonials-wrapper">
+
+					<!-- testimonial item -->
+					<div class="testimonial-item text-center mx-auto">
+						<div class="thumb mb-3 mx-auto">
+							<img src="assets/images/testimonials/srushith.jpeg" alt="customer-name" />
 						</div>
-					</a>
+						<h4 class="mt-3 mb-0">Srushith R</h4>
+						<span class="subtitle">Head of Engineering, KonfHub</span>
+						<div class="bg-white padding-30 shadow-dark rounded triangle-top position-relative mt-4">
+							<p class="mb-0">Aditya is a passionate developer with interesting ideas and thoughts. He is
+								a quick independent learner, takes responsibility and tries to come up with solutions to
+								problems. It was a good experience working with him</p>
+						</div>
+					</div>
+
+					<!-- testimonial item -->
+					<div class="testimonial-item text-center mx-auto">
+						<div class="thumb mb-3 mx-auto">
+							<img src="assets/images/testimonials/anson_chan.jpeg" alt="customer-name" />
+						</div>
+						<h4 class="mt-3 mb-0">Anson Chan</h4>
+						<span class="subtitle">Security - Cloud Platform Engineer, P&G</span>
+						<div class="bg-white padding-30 shadow-dark rounded triangle-top position-relative mt-4">
+							<p class="mb-0">Aditya is an absolute pleasure to work with and demonstrates strong
+								technical skill and agility. Aditya displayed very strong backend skills and fluency in
+								using different types of APIs. With the different projects we had, Aditya consistently
+								proves that he can lead students successfully.<br>Aditya takes a detail oriented and
+								unique approach to all problems and solves them in the best way possible. I absolutely
+								look forward to working with Aditya again in the near future.</p>
+						</div>
+					</div>
+
 				</div>
 
-				<!-- portfolio item -->
-				<div class="col-md-4 col-sm-6 grid-item project">
-					<a href="https://docs.google.com/presentation/d/e/2PACX-1vSi7Feaz-Ung_043d7-R-c9OCFUQFQ2TTLbojCosyfX5Lir1EPbBYXvizPNXzy_kw/embed?start=false&loop=false&delayms=3000" class="work-video">
-						<div class="portfolio-item rounded shadow-dark">
-							<div class="details">
-								<span class="term">Project</span>
-								<h4 class="title">C-Med-AIR</h4>
-								<span class="more-button"><i class="fas fa-file-powerpoint"></i></span>
-							</div><br>
-							<div class="thumb">
-								<img src="assets/images/talks/cmedair.webp" alt="C-Med-AIR" />
-								<div class="mask"></div>
-							</div><br>
-						</div>
-					</a>
-				</div>
-
-				<!-- portfolio item -->
-				<div class="col-md-4 col-sm-6 grid-item seminar">
-					<a href="https://www.youtube.com/watch?v=_dZwMidN9wY&t=15734" class="work-video">
-						<div class="portfolio-item rounded shadow-dark">
-							<div class="details">
-								<span class="term">Seminar</span>
-								<h4 class="title">Cloud Community Days<br>Together in Covid-19 - Health of India - Aditya Raman</h4>
-								<span class="more-button"><i class="icon-camrecorder"></i></span>
-							</div><br>
-							<div class="thumb">
-								<img src="assets/images/talks/ccdays_konfhub.webp" alt="Cloud Community Day" />
-								<div class="mask"></div>
-							</div><br>
-						</div>
-					</a>
-				</div>
-
-				<!-- portfolio item -->
-				<div class="col-md-4 col-sm-6 grid-item presentation">
-					<a href="https://docs.google.com/presentation/d/e/2PACX-1vSMKHELLSEoWRHk8ArIF70YsBfepMi24F4m5L1TpSMGzuBlPAauhTrWA0EsmRz4i800DrGWnkQCzWcW/embed?start=false&loop=false&delayms=3000" class="work-video">
-						<div class="portfolio-item rounded shadow-dark">
-							<div class="details">
-								<span class="term">Seminar</span>
-								<h4 class="title">Health of India - Fight COVID-19</h4>
-								<span class="more-button"><i class="fas fa-file-powerpoint"></i></span>
-							</div><br>
-							<div class="thumb">
-								<img src="assets/images/talks/Health of India.webp" alt="Health of India Presentation" />
-								<div class="mask"></div>
-							</div><br>
-						</div>
-					</a>
-				</div>
-
-				<!-- portfolio item -->
-				<div class="col-md-4 col-sm-6 grid-item presentation">
-					<a href="https://docs.google.com/presentation/d/e/2PACX-1vQwjiEl3F8coCJu5mCVZ3w0S33Ts1YSg36P_cFHw7B9PoNGV24pT3UW1zRv1hro7ykeBr_CXqTSw9g5/embed?start=false&loop=false&delayms=3000" class="work-video">
-						<div class="portfolio-item rounded shadow-dark">
-							<div class="details">
-								<span class="term">Seminar</span>
-								<h4 class="title">AI Gaming MiniHack</h4>
-								<span class="more-button"><i class="fas fa-file-powerpoint"></i></span>
-							</div><br>
-							<div class="thumb">
-								<img src="assets/images/talks/AI Gaming Minihack.webp" alt="AI Gaming Minihack" />
-								<div class="mask"></div>
-							</div><br>
-						</div>
-					</a>
-				</div>
-
-				<!-- portfolio item -->
-				<div class="col-md-4 col-sm-6 grid-item presentation">
-					<a href="https://www.slideshare.net/slideshow/embed_code/key/yamTtOUPrsCTo8" class="work-video">
-						<div class="portfolio-item rounded shadow-dark">
-							<div class="details">
-								<span class="term">Seminar</span>
-								<h4 class="title">Web Development 101</h4>
-								<span class="more-button"><i class="fas fa-file-powerpoint"></i></span>
-							</div><br>
-							<div class="thumb">
-								<img src="assets/images/talks/web_dev_seminar.webp" alt="Web Deveopment 101" />
-								<div class="mask"></div>
-							</div><br>
-						</div>
-					</a>
-				</div>
-
-<!--				&lt;!&ndash; portfolio item &ndash;&gt;-->
-<!--				<div class="col-md-4 col-sm-6 grid-item creative">-->
-<!--					<a href="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/240233494&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true" class="work-video">-->
-<!--						<div class="portfolio-item rounded shadow-dark">-->
-<!--							<div class="details">-->
-<!--								<span class="term">Creative</span>-->
-<!--								<h4 class="title">Onboarding Motivation</h4>-->
-<!--								<span class="more-button"><i class="icon-music-tone-alt"></i></span>-->
-<!--							</div>-->
-<!--							<div class="thumb">-->
-<!--								<img src="assets/images/works/4.svg" alt="Portfolio-title" />-->
-<!--								<div class="mask"></div>-->
-<!--							</div>-->
-<!--						</div>-->
-<!--					</a>-->
-<!--				</div>-->
-
-<!--				&lt;!&ndash; portfolio item &ndash;&gt;-->
-<!--				<div class="col-md-4 col-sm-6 grid-item art branding">-->
-<!--					<a href="#gallery-1" class="gallery-link">-->
-<!--						<div class="portfolio-item rounded shadow-dark">-->
-<!--							<div class="details">-->
-<!--								<span class="term">Art, Branding</span>-->
-<!--								<h4 class="title">iMac Mockup Design</h4>-->
-<!--								<span class="more-button"><i class="icon-picture"></i></span>-->
-<!--							</div>-->
-<!--							<div class="thumb">-->
-<!--								<img src="assets/images/works/5.svg" alt="Portfolio-title" />-->
-<!--								<div class="mask"></div>-->
-<!--							</div>-->
-<!--						</div>-->
-<!--					</a>-->
-<!--					<div id="gallery-1" class="gallery mfp-hide">-->
-<!--						<a href="assets/images/works/5.svg"></a>-->
-<!--						<a href="assets/images/works/4.svg"></a>-->
-<!--					</div>-->
-<!--				</div>-->
-
-				<!-- portfolio item -->
-<!--				<div class="col-md-4 col-sm-6 grid-item creative design">-->
-<!--					<a href="https://themeforest.net/user/pxlsolutions/portfolio" target="_blank">-->
-<!--						<div class="portfolio-item rounded shadow-dark">-->
-<!--							<div class="details">-->
-<!--								<span class="term">Creative, Design</span>-->
-<!--								<h4 class="title">Game Store App Concept</h4>-->
-<!--								<span class="more-button"><i class="icon-link"></i></span>-->
-<!--							</div>-->
-<!--							<div class="thumb">-->
-<!--								<img src="assets/images/works/6.svg" alt="Portfolio-title" />-->
-<!--								<div class="mask"></div>-->
-<!--							</div>-->
-<!--						</div>-->
-<!--					</a>-->
-<!--				</div>-->
+				<!--			<div class="row">-->
+				<!--				<div class="col-md-3 col-6">-->
+				<!--					&lt;!&ndash; client item &ndash;&gt;-->
+				<!--					<div class="client-item">-->
+				<!--						<div class="inner">-->
+				<!--							<img src="assets/images/client-1.svg" alt="client-name" />-->
+				<!--						</div>-->
+				<!--					</div>-->
+				<!--				</div>-->
+				<!--				<div class="col-md-3 col-6">-->
+				<!--					&lt;!&ndash; client item &ndash;&gt;-->
+				<!--					<div class="client-item">-->
+				<!--						<div class="inner">-->
+				<!--							<img src="assets/images/client-2.svg" alt="client-name" />-->
+				<!--						</div>-->
+				<!--					</div>-->
+				<!--				</div>-->
+				<!--				<div class="col-md-3 col-6">-->
+				<!--					&lt;!&ndash; client item &ndash;&gt;-->
+				<!--					<div class="client-item">-->
+				<!--						<div class="inner">-->
+				<!--							<img src="assets/images/client-3.svg" alt="client-name" />-->
+				<!--						</div>-->
+				<!--					</div>-->
+				<!--				</div>-->
+				<!--				<div class="col-md-3 col-6">-->
+				<!--					&lt;!&ndash; client item &ndash;&gt;-->
+				<!--					<div class="client-item">-->
+				<!--						<div class="inner">-->
+				<!--							<img src="assets/images/client-4.svg" alt="client-name" />-->
+				<!--						</div>-->
+				<!--					</div>-->
+				<!--				</div>-->
+				<!--				<div class="col-md-3 col-6">-->
+				<!--					&lt;!&ndash; client item &ndash;&gt;-->
+				<!--					<div class="client-item">-->
+				<!--						<div class="inner">-->
+				<!--							<img src="assets/images/client-5.svg" alt="client-name" />-->
+				<!--						</div>-->
+				<!--					</div>-->
+				<!--				</div>-->
+				<!--				<div class="col-md-3 col-6">-->
+				<!--					&lt;!&ndash; client item &ndash;&gt;-->
+				<!--					<div class="client-item">-->
+				<!--						<div class="inner">-->
+				<!--							<img src="assets/images/client-6.svg" alt="client-name" />-->
+				<!--						</div>-->
+				<!--					</div>-->
+				<!--				</div>-->
+				<!--				<div class="col-md-3 col-6">-->
+				<!--					&lt;!&ndash; client item &ndash;&gt;-->
+				<!--					<div class="client-item">-->
+				<!--						<div class="inner">-->
+				<!--							<img src="assets/images/client-7.svg" alt="client-name" />-->
+				<!--						</div>-->
+				<!--					</div>-->
+				<!--				</div>-->
+				<!--				<div class="col-md-3 col-6">-->
+				<!--					&lt;!&ndash; client item &ndash;&gt;-->
+				<!--					<div class="client-item">-->
+				<!--						<div class="inner">-->
+				<!--							<img src="assets/images/client-8.svg" alt="client-name" />-->
+				<!--						</div>-->
+				<!--					</div>-->
+				<!--				</div>-->
+				<!--			</div>-->
 
 			</div>
 
-			<!-- more button -->
-<!--			<div class="load-more text-center mt-4">-->
-<!--				<a href="javascript:" class="btn btn-default"><i class="fas fa-spinner"></i> Load more</a>-->
-<!--				&lt;!&ndash; numbered pagination (hidden for infinite scroll) &ndash;&gt;-->
-<!--				<ul class="portfolio-pagination list-inline d-none">-->
-<!--					<li class="list-inline-item">1</li>-->
-<!--					<li class="list-inline-item"><a href="works-2.html">2</a></li>-->
-<!--				</ul>-->
-<!--			</div>-->
+		</section>
 
-		</div>
+		<!-- section blog -->
+		<!--	<section id="blog">-->
 
-	</section>
+		<!--		<div class="container">-->
 
-<!--	&lt;!&ndash; section prices &ndash;&gt;-->
-<!--	<section id="prices">-->
+		<!--			&lt;!&ndash; section title &ndash;&gt;-->
+		<!--			<h2 class="section-title wow fadeInUp">Latest Posts</h2>-->
 
-<!--		<div class="container">-->
+		<!--			<div class="spacer" data-height="60"></div>-->
 
-<!--			&lt;!&ndash; section title &ndash;&gt;-->
-<!--			<h2 class="section-title wow fadeIn">Pricing Plans</h2>-->
+		<!--			<div class="row blog-wrapper">-->
 
-<!--			<div class="spacer" data-height="60"></div>-->
+		<!--				<div class="col-md-4">-->
+		<!--					&lt;!&ndash; blog item &ndash;&gt;-->
+		<!--					<div class="blog-item rounded bg-white shadow-dark wow fadeIn">-->
+		<!--						<div class="thumb">-->
+		<!--							<a href="#reviews">-->
+		<!--								<span class="category">Reviews</span>-->
+		<!--							</a>-->
+		<!--							<a href="#">-->
+		<!--								<img src="assets/images/blog/1.svg" alt="blog-title" />-->
+		<!--							</a>-->
+		<!--						</div>-->
+		<!--						<div class="details">-->
+		<!--							<h4 class="my-0 title"><a href="#">5 Best App Development Tool for Your Project</a></h4>-->
+		<!--							<ul class="list-inline meta mb-0 mt-2">-->
+		<!--								<li class="list-inline-item">09 February, 2020</li>-->
+		<!--								<li class="list-inline-item">Aditya Raman</li>-->
+		<!--							</ul>-->
+		<!--						</div>-->
+		<!--					</div>-->
+		<!--				</div>-->
 
-<!--			<div class="row">-->
+		<!--				<div class="col-md-4">-->
+		<!--					&lt;!&ndash; blog item &ndash;&gt;-->
+		<!--					<div class="blog-item rounded bg-white shadow-dark wow fadeIn">-->
+		<!--						<div class="thumb">-->
+		<!--							<a href="#">-->
+		<!--								<span class="category">Tutorial</span>-->
+		<!--							</a>-->
+		<!--							<a href="#">-->
+		<!--								<img src="assets/images/blog/2.svg" alt="blog-title" />-->
+		<!--							</a>-->
+		<!--						</div>-->
+		<!--						<div class="details">-->
+		<!--							<h4 class="my-0 title"><a href="#">Common Misconceptions About Payment</a></h4>-->
+		<!--							<ul class="list-inline meta mb-0 mt-2">-->
+		<!--								<li class="list-inline-item">07 February, 2020</li>-->
+		<!--								<li class="list-inline-item">Aditya Raman</li>-->
+		<!--							</ul>-->
+		<!--						</div>-->
+		<!--					</div>-->
+		<!--				</div>-->
 
-<!--				<div class="col-md-4 pr-md-0 mt-md-4 mt-0">-->
-<!--					&lt;!&ndash; price item &ndash;&gt;-->
-<!--					<div class="price-item bg-white rounded shadow-dark text-center">-->
-<!--						<img src="assets/images/price-1.svg" alt="Regular" />-->
-<!--						<h2 class="plan">Basic</h2>-->
-<!--						<p>A Simple option but powerful to manage your business</p>-->
-<!--						<p>Email support</p>-->
-<!--						<h3 class="price"><em>$</em>9<span>Month</span></h3>-->
-<!--						<a href="#" class="btn btn-default">Get Started</a>-->
-<!--					</div>-->
-<!--				</div>-->
+		<!--				<div class="col-md-4">-->
+		<!--					&lt;!&ndash; blog item &ndash;&gt;-->
+		<!--					<div class="blog-item rounded bg-white shadow-dark wow fadeIn">-->
+		<!--						<div class="thumb">-->
+		<!--							<a href="#">-->
+		<!--								<span class="category">Business</span>-->
+		<!--							</a>-->
+		<!--							<a href="#">-->
+		<!--								<img src="assets/images/blog/3.svg" alt="blog-title" />-->
+		<!--							</a>-->
+		<!--						</div>-->
+		<!--						<div class="details">-->
+		<!--							<h4 class="my-0 title"><a href="#">3 Things To Know About Startup Business</a></h4>-->
+		<!--							<ul class="list-inline meta mb-0 mt-2">-->
+		<!--								<li class="list-inline-item">06 February, 2020</li>-->
+		<!--								<li class="list-inline-item">Aditya Raman</li>-->
+		<!--							</ul>-->
+		<!--						</div>-->
+		<!--					</div>-->
+		<!--				</div>-->
 
-<!--				<div class="col-md-4 px-md-0 my-4 my-md-0">-->
-<!--					&lt;!&ndash; price item recommended&ndash;&gt;-->
-<!--					<div class="price-item bg-white rounded shadow-dark text-center best">-->
-<!--						<span class="badge">Recommended</span>-->
-<!--						<img src="assets/images/price-2.svg" alt="Premium" />-->
-<!--						<h2 class="plan">Premium</h2>-->
-<!--						<p>Unlimited product including apps integrations and more features</p>-->
-<!--						<p>Mon-Fri support</p>-->
-<!--						<h3 class="price"><em>$</em>49<span>Month</span></h3>-->
-<!--						<a href="#" class="btn btn-default">Get Started</a>-->
-<!--					</div>-->
-<!--				</div>-->
+		<!--			</div>-->
 
-<!--				<div class="col-md-4 pl-md-0 mt-md-4 mt-0">-->
-<!--					&lt;!&ndash; price item &ndash;&gt;-->
-<!--					<div class="price-item bg-white rounded shadow-dark text-center">-->
-<!--						<img src="assets/images/price-3.svg" alt="Ultimate" />-->
-<!--						<h2 class="plan">Ultimate</h2>-->
-<!--						<p>A wise option for large companies and individuals</p>-->
-<!--						<p>24/7 support</p>-->
-<!--						<h3 class="price"><em>$</em>99<span>Month</span></h3>-->
-<!--						<a href="#" class="btn btn-default">Get Started</a>-->
-<!--					</div>-->
-<!--				</div>-->
+		<!--		</div>-->
 
-<!--			</div>-->
+		<!--	</section>-->
 
-<!--		</div>-->
+		<!-- section contact -->
+		<section id="contact">
 
-<!--	</section>-->
+			<div class="container">
 
-	<!-- section testimonials -->
-	<section id="testimonials">
+				<!-- section title -->
+				<h2 class="section-title wow fadeInUp">Get In Touch</h2>
 
-		<div class="container">
+				<div class="spacer" data-height="60"></div>
 
-			<!-- section title -->
-			<h2 class="section-title wow fadeInUp">Testimonials</h2>
+				<div class="row">
 
-			<div class="spacer" data-height="60"></div>
-
-			<!-- testimonials wrapper -->
-			<div class="testimonials-wrapper">
-
-				<!-- testimonial item -->
-				<div class="testimonial-item text-center mx-auto">
-					<div class="thumb mb-3 mx-auto">
-						<img src="assets/images/testimonials/srushith.jpeg" alt="customer-name" />
+					<div class="col-md-4">
+						<!-- contact info -->
+						<div class="contact-info">
+							<h3 class="wow fadeInUp">Let's talk about everything!</h3>
+							<p class="wow fadeInUp">Don't like forms? Send me an <a
+									href="mailto:{{ site.email }}">email</a>. 👋</p>
+						</div>
 					</div>
-					<h4 class="mt-3 mb-0">Srushith R</h4>
-					<span class="subtitle">Head of Engineering, KonfHub</span>
-					<div class="bg-white padding-30 shadow-dark rounded triangle-top position-relative mt-4">
-						<p class="mb-0">Aditya is a passionate developer with interesting ideas and thoughts. He is a quick independent learner, takes responsibility and tries to come up with solutions to problems. It was a good experience working with him</p>
-					</div>
-				</div>
 
-				<!-- testimonial item -->
-				<div class="testimonial-item text-center mx-auto">
-					<div class="thumb mb-3 mx-auto">
-						<img src="assets/images/testimonials/anson_chan.jpeg" alt="customer-name" />
-					</div>
-					<h4 class="mt-3 mb-0">Anson Chan</h4>
-					<span class="subtitle">Security - Cloud Platform Engineer, P&G</span>
-					<div class="bg-white padding-30 shadow-dark rounded triangle-top position-relative mt-4">
-						<p class="mb-0">Aditya is an absolute pleasure to work with and demonstrates strong technical skill and agility. Aditya displayed very strong backend skills and fluency in using different types of APIs. With the different projects we had, Aditya consistently proves that he can lead students successfully.<br>Aditya takes a detail oriented and unique approach to all problems and solves them in the best way possible. I absolutely look forward to working with Aditya again in the near future.</p>
-					</div>
-				</div>
+					<div class="col-md-8">
+						<!-- Contact Form -->
+						<form id="contact-form" class="contact-form mt-6" method="post"
+							action="https://formspree.io/f/{{ site.email }}">
 
-			</div>
+							<div class="messages"></div>
 
-<!--			<div class="row">-->
-<!--				<div class="col-md-3 col-6">-->
-<!--					&lt;!&ndash; client item &ndash;&gt;-->
-<!--					<div class="client-item">-->
-<!--						<div class="inner">-->
-<!--							<img src="assets/images/client-1.svg" alt="client-name" />-->
-<!--						</div>-->
-<!--					</div>-->
-<!--				</div>-->
-<!--				<div class="col-md-3 col-6">-->
-<!--					&lt;!&ndash; client item &ndash;&gt;-->
-<!--					<div class="client-item">-->
-<!--						<div class="inner">-->
-<!--							<img src="assets/images/client-2.svg" alt="client-name" />-->
-<!--						</div>-->
-<!--					</div>-->
-<!--				</div>-->
-<!--				<div class="col-md-3 col-6">-->
-<!--					&lt;!&ndash; client item &ndash;&gt;-->
-<!--					<div class="client-item">-->
-<!--						<div class="inner">-->
-<!--							<img src="assets/images/client-3.svg" alt="client-name" />-->
-<!--						</div>-->
-<!--					</div>-->
-<!--				</div>-->
-<!--				<div class="col-md-3 col-6">-->
-<!--					&lt;!&ndash; client item &ndash;&gt;-->
-<!--					<div class="client-item">-->
-<!--						<div class="inner">-->
-<!--							<img src="assets/images/client-4.svg" alt="client-name" />-->
-<!--						</div>-->
-<!--					</div>-->
-<!--				</div>-->
-<!--				<div class="col-md-3 col-6">-->
-<!--					&lt;!&ndash; client item &ndash;&gt;-->
-<!--					<div class="client-item">-->
-<!--						<div class="inner">-->
-<!--							<img src="assets/images/client-5.svg" alt="client-name" />-->
-<!--						</div>-->
-<!--					</div>-->
-<!--				</div>-->
-<!--				<div class="col-md-3 col-6">-->
-<!--					&lt;!&ndash; client item &ndash;&gt;-->
-<!--					<div class="client-item">-->
-<!--						<div class="inner">-->
-<!--							<img src="assets/images/client-6.svg" alt="client-name" />-->
-<!--						</div>-->
-<!--					</div>-->
-<!--				</div>-->
-<!--				<div class="col-md-3 col-6">-->
-<!--					&lt;!&ndash; client item &ndash;&gt;-->
-<!--					<div class="client-item">-->
-<!--						<div class="inner">-->
-<!--							<img src="assets/images/client-7.svg" alt="client-name" />-->
-<!--						</div>-->
-<!--					</div>-->
-<!--				</div>-->
-<!--				<div class="col-md-3 col-6">-->
-<!--					&lt;!&ndash; client item &ndash;&gt;-->
-<!--					<div class="client-item">-->
-<!--						<div class="inner">-->
-<!--							<img src="assets/images/client-8.svg" alt="client-name" />-->
-<!--						</div>-->
-<!--					</div>-->
-<!--				</div>-->
-<!--			</div>-->
+							<div class="row">
+								<div class="column col-md-6">
+									<!-- Name input -->
+									<div class="form-group">
+										<input type="text" class="form-control" name="Name" id="InputName"
+											placeholder="Your name" required="required" data-error="Name is required.">
+										<div class="help-block with-errors"></div>
+									</div>
+								</div>
 
-		</div>
+								<div class="column col-md-6">
+									<!-- Email input -->
+									<div class="form-group">
+										<input type="email" class="form-control" id="InputEmail" name="Email"
+											placeholder="Email address" required="required"
+											data-error="Email is required.">
+										<div class="help-block with-errors"></div>
+									</div>
+								</div>
 
-	</section>
+								<div class="column col-md-12">
+									<!-- Email input -->
+									<div class="form-group">
+										<input type="text" class="form-control" id="InputSubject" name="Subject"
+											placeholder="Subject" required="required" data-error="Subject is required.">
+										<div class="help-block with-errors"></div>
+									</div>
+								</div>
 
-	<!-- section blog -->
-<!--	<section id="blog">-->
-
-<!--		<div class="container">-->
-
-<!--			&lt;!&ndash; section title &ndash;&gt;-->
-<!--			<h2 class="section-title wow fadeInUp">Latest Posts</h2>-->
-
-<!--			<div class="spacer" data-height="60"></div>-->
-
-<!--			<div class="row blog-wrapper">-->
-
-<!--				<div class="col-md-4">-->
-<!--					&lt;!&ndash; blog item &ndash;&gt;-->
-<!--					<div class="blog-item rounded bg-white shadow-dark wow fadeIn">-->
-<!--						<div class="thumb">-->
-<!--							<a href="#reviews">-->
-<!--								<span class="category">Reviews</span>-->
-<!--							</a>-->
-<!--							<a href="#">-->
-<!--								<img src="assets/images/blog/1.svg" alt="blog-title" />-->
-<!--							</a>-->
-<!--						</div>-->
-<!--						<div class="details">-->
-<!--							<h4 class="my-0 title"><a href="#">5 Best App Development Tool for Your Project</a></h4>-->
-<!--							<ul class="list-inline meta mb-0 mt-2">-->
-<!--								<li class="list-inline-item">09 February, 2020</li>-->
-<!--								<li class="list-inline-item">Aditya Raman</li>-->
-<!--							</ul>-->
-<!--						</div>-->
-<!--					</div>-->
-<!--				</div>-->
-
-<!--				<div class="col-md-4">-->
-<!--					&lt;!&ndash; blog item &ndash;&gt;-->
-<!--					<div class="blog-item rounded bg-white shadow-dark wow fadeIn">-->
-<!--						<div class="thumb">-->
-<!--							<a href="#">-->
-<!--								<span class="category">Tutorial</span>-->
-<!--							</a>-->
-<!--							<a href="#">-->
-<!--								<img src="assets/images/blog/2.svg" alt="blog-title" />-->
-<!--							</a>-->
-<!--						</div>-->
-<!--						<div class="details">-->
-<!--							<h4 class="my-0 title"><a href="#">Common Misconceptions About Payment</a></h4>-->
-<!--							<ul class="list-inline meta mb-0 mt-2">-->
-<!--								<li class="list-inline-item">07 February, 2020</li>-->
-<!--								<li class="list-inline-item">Aditya Raman</li>-->
-<!--							</ul>-->
-<!--						</div>-->
-<!--					</div>-->
-<!--				</div>-->
-
-<!--				<div class="col-md-4">-->
-<!--					&lt;!&ndash; blog item &ndash;&gt;-->
-<!--					<div class="blog-item rounded bg-white shadow-dark wow fadeIn">-->
-<!--						<div class="thumb">-->
-<!--							<a href="#">-->
-<!--								<span class="category">Business</span>-->
-<!--							</a>-->
-<!--							<a href="#">-->
-<!--								<img src="assets/images/blog/3.svg" alt="blog-title" />-->
-<!--							</a>-->
-<!--						</div>-->
-<!--						<div class="details">-->
-<!--							<h4 class="my-0 title"><a href="#">3 Things To Know About Startup Business</a></h4>-->
-<!--							<ul class="list-inline meta mb-0 mt-2">-->
-<!--								<li class="list-inline-item">06 February, 2020</li>-->
-<!--								<li class="list-inline-item">Aditya Raman</li>-->
-<!--							</ul>-->
-<!--						</div>-->
-<!--					</div>-->
-<!--				</div>-->
-
-<!--			</div>-->
-
-<!--		</div>-->
-
-<!--	</section>-->
-
-	<!-- section contact -->
-	<section id="contact">
-
-		<div class="container">
-
-			<!-- section title -->
-			<h2 class="section-title wow fadeInUp">Get In Touch</h2>
-
-			<div class="spacer" data-height="60"></div>
-
-			<div class="row">
-
-				<div class="col-md-4">
-					<!-- contact info -->
-					<div class="contact-info">
-						<h3 class="wow fadeInUp">Let's talk about everything!</h3>
-						<p class="wow fadeInUp">Don't like forms? Send me an <a href="mailto:{{ site.email }}">email</a>. 👋</p>
-					</div>
-				</div>
-
-				<div class="col-md-8">
-					<!-- Contact Form -->
-					<form id="contact-form" class="contact-form mt-6" method="post" action="https://formspree.io/f/{{ site.email }}">
-
-						<div class="messages"></div>
-
-						<div class="row">
-							<div class="column col-md-6">
-								<!-- Name input -->
-								<div class="form-group">
-									<input type="text" class="form-control" name="Name" id="InputName" placeholder="Your name" required="required" data-error="Name is required.">
-									<div class="help-block with-errors"></div>
+								<div class="column col-md-12">
+									<!-- Message textarea -->
+									<div class="form-group">
+										<textarea name="Message" id="InputMessage" class="form-control" rows="5"
+											placeholder="Message" required="required"
+											data-error="Message is required."></textarea>
+										<div class="help-block with-errors"></div>
+									</div>
 								</div>
 							</div>
 
-							<div class="column col-md-6">
-								<!-- Email input -->
-								<div class="form-group">
-									<input type="email" class="form-control" id="InputEmail" name="Email" placeholder="Email address" required="required" data-error="Email is required.">
-									<div class="help-block with-errors"></div>
-								</div>
-							</div>
+							<button type="submit" id="submit" value="Submit" class="btn btn-default">Send
+								Message</button><!-- Send Button -->
 
-							<div class="column col-md-12">
-								<!-- Email input -->
-								<div class="form-group">
-									<input type="text" class="form-control" id="InputSubject" name="Subject" placeholder="Subject" required="required" data-error="Subject is required.">
-									<div class="help-block with-errors"></div>
-								</div>
-							</div>
+						</form>
+						<!-- Contact Form end -->
+					</div>
 
-							<div class="column col-md-12">
-								<!-- Message textarea -->
-								<div class="form-group">
-									<textarea name="Message" id="InputMessage" class="form-control" rows="5" placeholder="Message" required="required" data-error="Message is required."></textarea>
-									<div class="help-block with-errors"></div>
-								</div>
-							</div>
-						</div>
-
-						<button type="submit" id="submit" value="Submit" class="btn btn-default">Send Message</button><!-- Send Button -->
-
-					</form>
-					<!-- Contact Form end -->
 				</div>
 
 			</div>
 
-		</div>
+		</section>
 
-	</section>
+		<div class="spacer" data-height="96"></div>
 
-    <div class="spacer" data-height="96"></div>
+		<footer class="footer">
+			<div class="container">
+				<!-- social icons -->
+				<ul class="social-icons light list-inline mb-0 mt-4">
+					<li class="list-inline-item"><a href="{{ site.twitter_url }}"><i class="fab fa-twitter"></i></a>
+					</li>
+					<li class="list-inline-item"><a href="{{ site.facebook_url }}"><i class="fab fa-facebook-f"></i></a>
+					</li>
+					<li class="list-inline-item"><a href="{{ site.instagram_url }}"><i class="fab fa-instagram"></i></a>
+					</li>
+					<li class="list-inline-item"><a href="{{ site.medium_url }}"><i class="fab fa-medium-m"></i></a>
+					</li>
+					<li class="list-inline-item"><a href="{{ site.github_url }}"><i class="fab fa-github"></i></a></li>
+					<li class="list-inline-item"><a href="{{ site.linkedin_url }}"><i
+								class="fab fa-linkedin-in"></i></a></li>
+				</ul>
+			</div>
+			<div class="spacer" data-height="30"></div>
+			<div class="container">
+				<span class="copyright">Copyright © 2020 Aditya Raman. All rights reserved.</span>
+			</div>
+			<div class="spacer" data-height="60"></div>
+		</footer>
 
-    <footer class="footer">
-		<div class="container">
-			<!-- social icons -->
-			<ul class="social-icons light list-inline mb-0 mt-4">
-				<li class="list-inline-item"><a href="{{ site.twitter_url }}"><i class="fab fa-twitter"></i></a></li>
-				<li class="list-inline-item"><a href="{{ site.facebook_url }}"><i class="fab fa-facebook-f"></i></a></li>
-				<li class="list-inline-item"><a href="{{ site.instagram_url }}"><i class="fab fa-instagram"></i></a></li>
-				<li class="list-inline-item"><a href="{{ site.medium_url }}"><i class="fab fa-medium-m"></i></a></li>
-				<li class="list-inline-item"><a href="{{ site.github_url }}"><i class="fab fa-github"></i></a></li>
-				<li class="list-inline-item"><a href="{{ site.linkedin_url }}"><i class="fab fa-linkedin-in"></i></a></li>
-			</ul>
-		</div>
-		<div class="spacer" data-height="30"></div>
-        <div class="container">
-            <span class="copyright">Copyright © 2020 Aditya Raman. All rights reserved.</span>
-        </div>
-		<div class="spacer" data-height="60"></div>
-    </footer>
+	</main>
 
-</main>
+	<!-- Go to top button -->
+	<a href="javascript:" id="return-to-top"><i class="fas fa-arrow-up"></i></a>
 
-<!-- Go to top button -->
-<a href="javascript:" id="return-to-top"><i class="fas fa-arrow-up"></i></a>
-
-{% include javascript.html %}
+	{% include javascript.html %}
 
 </body>
+
 </html>
