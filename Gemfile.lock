@@ -268,15 +268,14 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages
-  jekyll
   jekyll-archives
   jekyll-feed (~> 0.12)
-  jekyll-gist
+  jekyll-gist (~> 1.5.0)
   jekyll-gzip
   jekyll-last-modified-at
-  jekyll-paginate
+  jekyll-paginate (~> 1.1.0)
   jekyll-seo-tag
-  jekyll-twitter-plugin
+  jekyll-twitter-plugin (~> 2.1.0)
   tzinfo (~> 1.2)
   tzinfo-data
   wdm (~> 0.1.1)
