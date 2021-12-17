@@ -4,17 +4,17 @@ subtitle: Raman
 email: adityaraman96@gmail.com
 altemail: adityaraman_cs004@sirmvit.edu
 description: >- # this means to ignore newlines until "baseurl:"
-  Backend Developer | Software Engineer | MLH Fellow | DevOps |
-  Gold Microsoft Learn Student Ambassador | Mentor @MLH
+  Entrepreneur | Backend Developer | Software Engineer | MLH Fellow |
+  DevOps | Gold Microsoft Learn Student Ambassador
 baseurl: # the subpath of your site, e.g. /blog
 url: # the base hostname & protocol for your site
 repository: ramanaditya/ramanaditya.github.io
 github: [metadata]
 author: Aditya
-street_address: Hunasamaranahalli
+street_address: Whitefield
 city: Bengaluru
 state: Karnataka
-zip_code: 562157
+zip_code: 560066
 country: India
 phone: (+91) 99015-61092
 
